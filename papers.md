@@ -22,4 +22,4 @@ title: Papers
 
 
 ## Other
-My PhD thesis can be found <a href='/assets/files/ericwong_phd_scs_2020.pdf'>here</a>. 
+My PhD thesis can be found <a href='https://opencommons.uconn.edu/cgi/viewcontent.cgi?article=8494&context=dissertations'>here</a>. 
