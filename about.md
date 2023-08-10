@@ -4,11 +4,11 @@ title: About Me
 ---
 
 # Bio
-Eric Wong is an Assistant Professor in the Department of Computer and Information Science at the University of Pennsylvania. He researches the foundations of robust systems, building on elements of machine learning and optimization to debug, understand, and develop reliable systems. 
+Jin Lu is an assistant professor at the [School of Computing](https://www.cs.uga.edu/) at the University of Georiga, His major research interests include machine learning, data mining, optimization, smart mobility, biomedical informatics, and health informatics. He is particularly interested in transparent machine learning models, high-performance algorithms, and interpretable methods for critical scientific and engineering problems. 
 
 <!-- He is a 2020 Siebel Scholar and received an honorable mention for his thesis on the robustness of deep networks to adversarial examples at Carnegie Mellon University advised by Zico Kolter. Prior to joining UPenn, he was a postdoc at CSAIL MIT advised by Aleksander Madry.  -->
 
-<a href="https://riceric22.github.io/assets/img/photo_small.jpg">[Link to photo]</a>
+<a href="https://riceric22.github.io/assets/img/photo_small_Jin.jpg">[Link to photo]</a>
 
 <a href="https://riceric22.github.io/assets/files/cv.pdf">[Link to cv]</a>
 
@@ -41,6 +41,13 @@ Eric Wong is an Assistant Professor in the Department of Computer and Informatio
     transform: scale(1.05);
   }
 </style>
+
+## Education
+Ph.D. Computer Science and Engineering, University of Connecticut, United States of America
+
+MSc Applied Mathematics, Xi'an Jiaotong University, China
+
+BSc Applied Mathematics,Northwestern Polytechnical University, China
 
 
 ## Miscellaneous
