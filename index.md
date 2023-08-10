@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Eric Wong
-subtitle: Assistant Professor, University of Pennsylvania
+title: Jin Lu
+subtitle: Assistant Professor, University of Georgia
 ---
 
 |--|--|
-| Office | [Levine 506](https://goo.gl/maps/yZmpgFMjUKhGnpXb6) |
-| Email | [exwong@cis](mailto:exwong@cis.upenn.edu) |
-| Lab Blog | [debugml.github.io](https://debugml.github.io/)
+| Office | [549A Boyd Research and Education Center](https://www.google.com/maps/place/Boyd+Research+and+Education+Center/@33.9458127,-83.3772037,17z/data=!3m1!4b1!4m6!3m5!1s0x88f66ce394ad0f0f:0x6aa484a8c1f4899f!8m2!3d33.9458127!4d-83.3746288!16s%2Fg%2F11bwhb0lgs?entry=ttu) |
+| Email | [jin.lu@uga.edu](mailto:jin.lu@uga.edu) |
+<!-- | Lab Blog | [michlab.github.io](https://michlab.github.io/) -->
 
-I am an assistant professor at the [Department of Computer and Information Science](https://www.cis.upenn.edu/) at the University of Pennsylvania, working on debugging machine learning and making systems actually do what we want them to do. I'm also a part of the [ASSET Center](https://blog.seas.upenn.edu/penn-engineerings-new-asset-center-will-focus-on-the-safety-explainability-and-trustworthiness-of-ai-systems/) on safe, explainable, and trustworthy AI systems. Previously, I completed my PhD at CMU advised by [Zico Kolter](https://zicokolter.com/), and did a postdoc with [Aleksander Madry](https://people.csail.mit.edu/madry/). 
+I am an assistant professor at the [School of Computing](https://www.cs.uga.edu/) at the University of Georiga, His major research interests include machine learning, data mining, optimization, smart mobility, biomedical informatics, and health informatics. He is particularly interested in transparent machine learning models, high-performance algorithms, and interpretable methods for critical scientific and engineering problems.
 
 *PhD applicants*: If you're interested, you will need to 
 
