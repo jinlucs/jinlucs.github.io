@@ -1,176 +1,167 @@
 - year: 2023
   papers: 
-  - title: Stability Guarantees for Feature Attributions with Multiplicative Smoothing
-    link: https://arxiv.org/abs/2307.05902
-    authors: Anton Xue, Rajeev Alur, Eric Wong
+  - title: Mobilizing Personalized Federated Learning via Random Walk Stochastic ADMM
+    link: https://arxiv.org/pdf/2304.12534
+    authors: Ziba Parsons, Fei Dou, Houyi Du, Zheng Song, Jin Lu
     conference: 
     blog: 
     github: 
 
-  - title: 'TopEx: Topic-based Explanations for Model Comparison'
-    link: https://arxiv.org/abs/2306.00976
-    authors: Shreya Havaldar, Adam Stein, Eric Wong, Lyle Ungar
-    conference: In proceedings of the International Conference on Learning Representations, Tiny Papers Track (ICLR), 2023
+  - title: 'A bisection reinforcement learning approach to 3-D indoor localization'
+    link: https://ieeexplore.ieee.org/ielaam/6488907/9398162/9272985-aam.pdf
+    authors: Fei Dou, Jin Lu, Tingyang Xu, Chun-Hsi Huang, Jinbo Bi
+    conference: IEEE Internet of Things Journal, 2021
     blog: 
     github: 
 
-  - title: Rectifying Group Irregularities in Explanations for Distribution Shift
-    link: https://arxiv.org/abs/2305.16308
-    authors: Adam Stein, Yinjun Wu, Eric Wong, Mayur Naik
-    conference: 
+  - title: Automatic depression prediction using internet traffic characteristics on smartphones
+    link: https://www.sciencedirect.com/science/article/am/pii/S2352648320300295
+    authors: Chaoqun Yue, Shweta Ware, Reynaldo Morillo, Jin Lu, Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing Wang
+    conference: Smart Health, 2020
     blog: 
     github: 
 
-  - title: Do Machine Learning Models Learn Common Sense?
-    link: https://arxiv.org/abs/2303.01433
-    authors: Aaditya Naik, Yinjun Wu, Mayur Naik, Eric Wong
-    conference: In Proceedings of the International Conference on Machine learning (ICML), 2023
+  - title: Predicting depressive symptoms using smartphone data
+    link: https://www.sciencedirect.com/science/article/am/pii/S2352648319300571
+    authors: Shweta Ware, Chaoqun Yue, Reynaldo Morillo, Jin Lu, Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing Wang
+    conference: Smart Health, 2020
     blog: 
     github: 
 
-  - title: In-context Example Selection with Influences
-    link: https://arxiv.org/abs/2302.11042
-    authors: Tai Nguyen, Eric Wong
-    conference: 
-    blog: https://debugml.github.io/incontext-influences/
-    github: https://github.com/DebugML/incontext_influences
+  - title: Multi-view cluster analysis with incomplete data to understand treatment effects
+    link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7455020/ 
+    authors: Guoqing Chao, Jiangwen Sun, Jin Lu, An-Li Wang, Daniel D Langleben, Chiang-Shan Li, Jinbo Bi
+    conference: Information Sciences, 2019
+    blog: 
+    github: 
 
-  - title: Adversarial Prompting for Black Box Foundation Models
-    link: https://arxiv.org/abs/2302.04237
-    authors: Natalie Maus*, Patrick Chao*, Eric Wong, Jacob Gardner 
-    conference: Keynote in [DLSP 2023](https://dls2023.ieee-security.org/)
-    blog: https://debugml.github.io/adversarial-prompts/
-    github: https://github.com/DebugML/adversarial_prompting
+  - title: Large-scale automatic depression screening using meta-data from wifi infrastructure
+    link: https://dl.acm.org/doi/pdf/10.1145/3287073
+    authors: Shweta Ware, Chaoqun Yue, Reynaldo Morillo, Jin Lu, Chao Shang, Jayesh Kamath, Athanasios Bamis, Jinbo Bi, Alexander Russell, Bing Wang
+    conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (also on UbiComp, 2019), 2019
+    blog: 
+    github: 
 
-  - title: Faithful Chain-of-Thought Reasoning
-    link: https://arxiv.org/abs/2301.13379
-    authors: Qing Lyu*, Shreya Havaldar*, Adam Stein*, Li Zhang, Delip Rao, Eric Wong, Marianna Apidianaki, Chris Callison-Burch
-    conference: 
+  - title: Inferring phenotypes from substance use via collaborative matrix completion
+    link: https://link.springer.com/article/10.1186/s12918-018-0623-5
+    authors: Jin Lu, Jiangwen Sun, Xinyu Wang, Henry Kranzler, Joel Gelernter, Jinbo Bi
+    conference: BMC Systems Biology, 2018
     blog: 
     github: 
 
 - year: 2022
   papers: 
-  - title: A data-based perspective on transfer learning
-    link: https://arxiv.org/abs/2207.05739
-    authors: Saachi Jain*, Hadi Salman*, Alaa Khaddaj*, Eric Wong, Sung Min Park, Aleksander Madry
-    conference: In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023  
-    blog: https://gradientscience.org/data-transfer/
-    github: https://github.com/MadryLab/data-transfer
+  - title: Top-down indoor localization with Wi-fi fingerprints using deep Q-network
+    link: https://www.researchgate.net/profile/Fei-Dou/publication/329561852_Top-Down_Indoor_Localization_with_Wi-Fi_Fingerprints_Using_Deep_Q-Network/links/5ca83c54299bf118c4b5966d/Top-Down-Indoor-Localization-with-Wi-Fi-Fingerprints-Using-Deep-Q-Network.pdf 
+    authors: Fei Dou, Jin Lu, Zigeng Wang, Xia Xiao, Jinbo Bi, Chun-Hsi Huang
+    conference: IEEE 15th International Conference on Mobile Ad Hoc and Sensor Systems (MASS), 2018
+    blog: 
+    github: 
 
-  - title: When does bias transfer in transfer learning
-    link: https://arxiv.org/abs/2207.02842
-    authors: Hadi Salman*, Saachi Jain*, Andrew Ilyas*, Logan Engstrom*, Eric Wong, Aleksander Madry 
-    conference: 
-    blog: https://gradientscience.org/bias-transfer/
-    github: https://github.com/MadryLab/bias-transfer
+  - title: Fusing location data for depression prediction
+    link: https://ieeexplore.ieee.org/ielaam/6687317/9443230/8482349-aam.pdf
+    authors: Chaoqun Yue, Shweta Ware, Reynaldo Morillo, Jin Lu, Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing Wang
+    conference: IEEE Transactions on Big Data, 2018
+    blog: 
+    github: 
 
-  - title: Missingness bias in model debugging
-    link: https://arxiv.org/abs/2204.08945
-    authors: Saachi Jain*, Hadi Salman*, Pengchuan Zhang, Vibhav Vineet, Sal Vemprala, Aleksander Madry  
-    conference: In proceedings of the International Conference on Learning Representations (ICLR), 2022  
-    blog: https://gradientscience.org/missingness/
-    github: https://github.com/MadryLab/missingness
+  - title: Joint modeling of heterogeneous sensing data for depression assessment via multi-task learning
+    link: https://dl.acm.org/doi/pdf/10.1145/3191753
+    authors: Jin Lu, Chao Shang, Chaoqun Yue, Reynaldo Morillo, Shweta Ware, Jayesh Kamath, Athanasios Bamis, Alexander Russell, Bing Wang, Jinbo Bi 
+    conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (also on UbiComp, 2018), 2018
+    blog: 
+    github: 
 
 - year: 2021
   papers: 
-  - title: Certified patch robustness via smoothed vision transformers
-    link: https://arxiv.org/abs/2110.07719
-    authors: Hadi Salman*, Saachi Jain*, Eric Wong*, Aleksander Madry 
-    conference: In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022  
-    blog: https://gradientscience.org/smoothing/
-    github: https://github.com/MadryLab/smoothed-vit
-
-  - title: "DeepSplit: Scalable verification of deep neural networks via operator splitting"
-    link: https://arxiv.org/abs/2106.09117
-    authors: Shaoru Chen*, Eric Wong*, J. Zico Kolter, Mahyar Fazlyab  
-    conference: In Proceedings of the IEEE Open Journal of Control Systems (OJCS), 2022  
+  - title: Edge attention-based multi-relational graph convolutional networks
+    link: https://drive.google.com/file/d/1-1UM-5aFHZNeiEguV3OexJI5VyQVGxR0/view
+    authors: Chao Shang, Qinqing Liu, Ko-Shin Chen, Jiangwen Sun, Jin Lu, Jinfeng Yi, Jinbo Bi 
+    conference: 
     blog: 
     github: 
 
-  - title: Leveraging Sparse Linear Layers for Debuggable Deep Networks
-    link: https://arxiv.org/abs/2105.04857
-    authors: Eric Wong*, Shibani Santurkar*, Aleksander Madry  
-    conference: In Proceedings of the International Conference on Machine learning (ICML), 2021 *Long Oral*  
-    blog: https://gradientscience.org/glm_saga/
-    github: https://github.com/madrylab/debuggabledeepnetworks
+  - title: VIGAN: Missing view imputation with generative adversarial networks
+    link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5813842/
+    authors: Chao Shang, Aaron Palmer, Jiangwen Sun, Ko-Shin Chen, Jin Lu, Jinbo Bi
+    conference: IEEE International conference on big data (Big Data), 2017
+    blog: 
+    github: 
+
+  - title: Collaborative phenotype inference from comorbid substance use disorders and genotypes
+    link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5947969/
+    authors: Jin Lu, Jiangwen Sun, Xinyu Wang, Henry R Kranzler, Joel Gelernter, Jinbo Bi
+    conference: IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2017
+    blog:
+    github:
 
 - year: 2020
   papers: 
-  - title: Learning perturbation sets for robust machine learning
+  - title: Bi-subspace saliency detection
     link: https://arxiv.org/abs/2007.08450
-    authors: Eric Wong, J. Zico Kolter 
-    conference: In proceedings of the International Conference on Learning Representations (ICLR), 2021  
-    blog: https://locuslab.github.io/2020-07-20-perturbation/
-    github: https://github.com/locuslab/perturbation_learning/
-
-  - title: Overfitting in adversarially robust deep learning 
-    link: https://arxiv.org/abs/2002.11569
-    authors: Leslie Rice*, Eric Wong*, J. Zico Kolter 
-    conference: In Proceedings of the International Conference on Machine learning (ICML), 2020  
-    blog: 
-    github: https://github.com/locuslab/robust_overfitting/ 
-
-  - title: Neural network virtual sensors for fuel injection quantities with provable performance specifications
-    link: http://arxiv.org/abs/2007.00147
-    authors: Eric Wong, Tim Schneider, Joerg Schmitt, Frank R. Schmidt, J. Zico Kolter  
-    conference: In Proceedings of the IEEE Intelligent Vehicles Syimposium (IV), 2020
+    authors: Jin Lu, Fei Dou
+    conference: IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC), 2017
     blog: 
     github: 
 
-  - title: "Fast is better than free: revisiting adversarial training"
-    link: https://arxiv.org/abs/2001.03994
-    authors: Eric Wong*, Leslie Rice*, J. Zico Kolter  
-    conference: In Proceedings of the International Conference on Learning Representations (ICLR), 2020
+  - title: Prediction of clinical depression using smartphone sensory data
+    link: 
+    authors: Jayesh Kamath, Asma Farhan, Chaoqun Yue, Morillo Reynaldo, Shweta Ware, Jin Lu, Jinbo Bi, Alexander Russel, Bamis Athanosis, Bing Wang
+    conference: Neuropsychopharmacology, 2016
+    blog: 
+    github: 
+
+  - title: Behavior vs. introspection - refining prediction of clinical depression via smartphone sensing data
+    link: https://nlab.engr.uconn.edu/papers/Farhan-behavior-2016.pdf
+    authors: Asma Ahmad Farhan, Chaoqun Yue, Reynaldo Morillo, Shweta Ware, Jin Lu, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing Wang
+    conference: IEEE wireless health (WH), 2016
+    blog: 
+    github: 
+
+  - title: "Formation of point bars through rising and falling flood stages: Evidence from bar morphology, sediment transport and bed shear stress"
+    link: 
+    authors: Chenliang Wu, Mohammad S Ullah, Jin Lu, Janok P Bhattacharya
+    conference: Sedimentology, 2016
     blog: 
     github: 
 
 - year: 2019
   papers: 
-  - title: Adversarial robustness against the union of multiple perturbation models
-    link: https://arxiv.org/abs/1909.04068
-    authors: Pratyush Maini, Eric Wong, J. Zico Kolter  
-    conference: In Proceedings of the International Conference on Machine learning (ICML), 2020  
+  - title: Multi-view bi-clustering to identify smartphone sensing features indicative of depression
+    link: https://nlab.engr.uconn.edu/papers/Farhan_CHASE2016.pdf
+    authors: Asma Ahmad Farhan, Jin Lu, Jinbo Bi, Alexander Russell, Bing Wang, Athanasios Bamis  
+    conference: IEEE first international conference on connected health - applications, systems and engineering technologies (CHASE), 2016
     blog: 
-    github: https://github.com/locuslab/robust_union/
+    github:
 
-  - title: Wasserstein adversarial examples
-    link: https://arxiv.org/abs/1902.07906
-    authors: Eric Wong, Frank R. Schmidt, J. Zico Kolter  
-    conference: In Proceedings of the International Conference on Machine Learning (ICML), 2019  
+  - title: A sparse interactive model for matrix completion with side information
+    link: https://proceedings.neurips.cc/paper_files/paper/2016/file/093b60fd0557804c8ba0cbf1453da22f-Paper.pdf
+    authors: Jin Lu, Guannan Liang, Jiangwen Sun, Jinbo Bi
+    conference: Advances in neural information processing systems (NeuRIPS), 2016  
     blog: 
     github: 
 
 - year: 2018
   papers: 
-  - title: Scaling provable adversarial defenses
+  - title: Near Bed Flow Process Inferred From Bar Morphology, Sediment Transport and Grain Size Distribution of a Plan-View Exposed Ancient Point Bar Complex
     link: https://arxiv.org/abs/1805.12514
-    authors: Eric Wong, Frank R. Schmidt, Jan Hendrik Metzen, J. Zico Kolter  
-    conference: In Neural Information Processing Systems (NeurIPS), 2018  
+    authors: Mohammad S Ullah Chenliang Wu, Janok Bhattacharya, Jin Lu
+    conference: AAPG Annual Convention and Exhibition, 2015  
     blog: 
-    github: https://github.com/locuslab/convex_adversarial/
+    github: 
 
 - year: 2017
   papers: 
-  - title: Provable defenses against adversarial examples via the convex outer adversarial polytope
-    link: https://arxiv.org/abs/1711.00851
-    authors: Eric Wong, J. Zico Kolter  
-    conference: "In Proceedings of the International Conference on Machine Learning (ICML), 2018; Best defense paper at [NIPS 2017 ML &amp; Security Workshop](https://machine-learning-and-security.github.io/)"
-    blog: https://locuslab.github.io/2019-03-12-provable/
-    github: https://github.com/locuslab/convex_adversarial/
-
-  - title: A Semismooth Newton Method for Fast, Generic Convex Programming
-    link: https://arxiv.org/abs/1705.00772
-    authors: Alnur Ali*, Eric Wong*, J. Zico Kolter  
-    conference: In Proceedings of the International Conference on Machine Learning (ICML), 2017  
+  - title: Multi-view sparse co-clustering via proximal alternating linearized minimization
+    link: http://proceedings.mlr.press/v37/sunb15.pdf
+    authors: Jiangwen Sun, Jin Lu, Tingyang Xu, Jinbo Bi
+    conference: Proceedings of The 32nd International Conference on Machine Learning (ICML), 2015
     blog: 
-    github: https://github.com/locuslab/newton_admm/
+    github: 
 
-- year: 2015
-  papers: 
-  - title: An SVD and Derivative Kernel Approach to Learning from Geometric Data
-    link: http://zicokolter.com/publications/wong2015svdkernel.pdf
-    authors: Eric Wong, J. Zico Kolter  
-    conference: In Proceedings of the Conference on Artificial Intelligence (AAAI), 2015
+  - title: A sparse integrative cluster analysis for understanding soybean phenotypes
+    link: https://www.cs.odu.edu/~jsun/doc/pub/bibm-bi-2014.pdf
+    authors: Jinbo Bi, Jiangwen Sun, Tingyang Xu, Jin Lu, Yansong Ma, Lijuan Qiu 
+    conference: IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2014
     blog: 
     github: 
