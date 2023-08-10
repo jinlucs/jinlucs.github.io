@@ -19,6 +19,7 @@ email: jin.lu at uga dot edu
 
 navbar-links:
   # Group: "group"
+  Home: "https://jinlucs.github.io/"
   # Blog: "https://debugml.github.io/"
   # Research: "research"
   Teaching: "teaching"
