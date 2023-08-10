@@ -9,11 +9,11 @@
 # --- Required options --- #
 
 # Name of website
-title: Eric Wong
+title: Jin Lu
 
 # Your name to show in the footer
-author: Eric Wong
-email: exwong at cis dot upenn dot edu
+author: Jin Lu
+email: jin.lu at uga dot edu
 
 # --- List of links in the navigation bar --- #
 
@@ -24,7 +24,7 @@ navbar-links:
   Teaching: "teaching"
 #   CV: "/assets/files/cv.pdf"
   Papers: "papers"
-  # Software: "https://github.com/riceric22/"
+  # Software: "https://github.com/roadin/"
   About: "about"
 #   Bio: "About"
 
@@ -40,7 +40,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-# title-img: "/assets/img/photo_small.jpg"
+# title-img: "/assets/img/photo_small_jin.jpg"
 
 
 # --- Footer social media links --- #
@@ -48,10 +48,10 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "exwong@cis.upenn.edu"
+  email: "jin.lu@uga.edu"
 #  facebook: deanattali
-  github: riceric22
-  twitter: riceric22
+  github: roadin
+#  twitter: riceric22
 #  patreon: DeanAttali
 #  youtube: c/daattali
 #  medium: yourname
@@ -70,7 +70,7 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-  google-scholar: citations?user=pWnTMRkAAAAJ&hl=en
+  google-scholar: citations?user=FK_W-KIAAAAJ&hl
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
