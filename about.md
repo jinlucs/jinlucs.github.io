@@ -53,7 +53,7 @@ BSc Applied Mathematics,Northwestern Polytechnical University, China
 
 Something I enjoy: soccer, reading, writing, and miaodao martial arts.
 
-{% assign filenames = "bass.jpg,katana.jpg,reading.jpg,travel.jpg,ramen.jpg,soccer.jpg" | split: "," %}
+{% assign filenames = "bass.png,katana.png,reading.png,travel.png,ramen.png,soccer.png" | split: "," %}
 <div class ="image-gallery">
 {% for name in filenames %}
     <div class="box">
