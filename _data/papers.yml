@@ -81,7 +81,7 @@
     blog: 
     github: 
 
-  - title: VIGAN: Missing view imputation with generative adversarial networks
+  - title: VIGAN - Missing view imputation with generative adversarial networks
     link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5813842/
     authors: Chao Shang, Aaron Palmer, Jiangwen Sun, Ko-Shin Chen, Jin Lu, Jinbo Bi
     conference: IEEE International conference on big data (Big Data), 2017
