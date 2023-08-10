@@ -13,22 +13,13 @@ I am an assistant professor at the [School of Computing](https://www.cs.uga.edu/
 
 *PhD applicants*: If you're interested, you will need to 
 
-1. Apply to the [CIS department](https://www.cis.upenn.edu/graduate/program-offerings/doctoral-program/) 
+1. Apply to the [School of Computing](https://www.cs.uga.edu/doctor-philosophy-computer-science) 
 2. Select me as a potential advisor in your application. 
 
-*Undergraduates/masters students*: If you are a UPenn student and are interested in doing independent machine learning research, then I would recommend (1) take CIS 5200 (2) read this [blog post](https://www.alextamkin.com/essays/tips-for-new-researchers). I would strongly recommend you take my special topics course, 3990-002 Mathematics for Machine Learning so that you are prepared for the mathematics behind the research. If you are not at UPenn, I do not currently have opportunities for external students. 
-
-In Fall 2023, I will be teaching a special topics course 3990-002 Mathematics for Machine Learning. See course website [here](https://www.cis.upenn.edu/~exwong/moml/). If you're interested in doing advanced research or graduate coursework in AI/machine learning but have taken only the core math requirements of the CS degree, then this course is for you. 
+*Undergraduates/masters students*: If you are a UGA student and are interested in doing independent machine learning research, then I would recommend (1) take CSCI(PHIL) 4550/6550 (2) read this [blog post](https://www.alextamkin.com/essays/tips-for-new-researchers). 
 
 ### Recent News
-+ July '23: Our paper ["Do Machine Learning Models Learn Statistical Rules Inferred from Data?"](https://arxiv.org/abs/2303.01433) will be presented at ICML 2023
-+ May '23: I gave a keynote talk at [DLSP 2023](https://dls2023.ieee-security.org/) on adversarial prompting
-+ Mar '22: I am on the organizing committee for the ICML 2023 [2nd Workshop on New Frontiers in Adversarial Machine Learning](https://advml-frontier.github.io/)
-+ Mar '23: We've released a new [blog post](https://debugml.github.io/adversarial-prompts/) covering our recent work on *adversarial prompting*
-+ Mar '23: We've released a new [blog post](https://debugml.github.io/incontext-influences/) covering our recent work on *in-context influences*
-+ Jan '23: I am teaching CIS 5200 Machine Learning with [Surbhi Goel](https://www.surbhigoel.com/)
-+ July '22: I am creating a new course on [debugging the ML pipeline]({{ site.baseurl }}{% link debugml.md %}) for the Fall 2022 semester 
-+ May '22: I will be moving to UPenn CIS as an Assistant Professor starting Fall 2022
++ May '23: I will be moving to UGA School of Computing as an Assistant Professor starting Fall 2023
 
 <!-- 
 + March '22: I am on the organizing committee for the ICML 2022 [Workshop on New Frontiers in Adversarial Machine Learning](https://advml-frontier.github.io/)
