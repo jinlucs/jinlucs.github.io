@@ -51,7 +51,7 @@ BSc Applied Mathematics,Northwestern Polytechnical University, China
 
 ## Miscellaneous
 
-Something I enjoy: soccer, reading, writing, and miaodao martial arts.
+Activities I find enjoyable: soccer, reading, writing, miaodao martial arts, and more.
 
 {% assign filenames = "bass.png,katana.png,reading.png,travel.png,ramen.png,soccer.png" | split: "," %}
 <div class ="image-gallery">
