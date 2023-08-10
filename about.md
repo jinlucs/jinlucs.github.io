@@ -49,19 +49,16 @@ MSc Applied Mathematics, Xi'an Jiaotong University, China
 
 BSc Applied Mathematics,Northwestern Polytechnical University, China
 
-
 ## Miscellaneous
 
-I used to do competitive ballroom dancing as well as hip hop. 
+Something I enjoy: soccer, reading, writing, and miaodao martial arts.
 
-I love experimenting with cooking, and occasionally post pictures of my creations on [Instagram](https://www.instagram.com/riceric22/). 
-
-{% assign filenames = "french_toast.jpg,lobster_rolls.jpg,katsudon.jpg,mac_and_cheese.jpg,karaage.jpg,roast_pork.jpg,wok_stir_fry.jpg,shortrib.jpg,steak.jpg" | split: "," %}
+{% assign filenames = "bass.jpg,katana.jpg,reading.jpg,travel.jpg,ramen.jpg,soccer.jpg" | split: "," %}
 <div class ="image-gallery">
 {% for name in filenames %}
     <div class="box">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/img/food/full/{{ name }}">
-      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/food/thumbs/{{ name }}" alt="{{ name }}"  class="img-gallery" />
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/img/cat/full/{{ name }}">
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/cat/thumbs/{{ name }}" alt="{{ name }}"  class="img-gallery" />
      </a>
     </div>
  {% endfor %}
