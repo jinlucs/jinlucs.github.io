@@ -4,7 +4,7 @@ title: Papers
 ---
 
 {% for collection in site.data.papers %}
-### {{ collection.year }}
+<!-- ### {{ collection.year }} -->
   {% for paper in collection.papers %}
   + [{{ paper.title }}]({{ paper.link }})  
     {{ paper.authors | replace: "*", "\*" }}  
