@@ -43,7 +43,7 @@ Jin Lu is an assistant professor at the [School of Computing](https://www.cs.uga
 </style>
 
 ## Education
-Ph.D. Computer Science and Engineering, University of Connecticut, United States of America
+Ph.D. Computer Science and Engineering, University of Connecticut, USA
 
 MSc Applied Mathematics, Xi'an Jiaotong University, China
 
