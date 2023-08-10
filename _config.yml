@@ -18,11 +18,11 @@ email: jin.lu at uga dot edu
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Group: "group"
-  Blog: "https://debugml.github.io/"
-  Research: "research"
+  # Group: "group"
+  # Blog: "https://debugml.github.io/"
+  # Research: "research"
   Teaching: "teaching"
-#   CV: "/assets/files/cv.pdf"
+  CV: "/assets/files/cv.pdf"
   Papers: "papers"
   # Software: "https://github.com/roadin/"
   About: "about"

@@ -3,15 +3,14 @@ layout: page
 title: Teaching 
 ---
 
-### Teaching at University of Pennsylvania
-+ [**CIS 3990-002** Mathematics of Machine Learning, Fall 2023]({{ site.baseurl }}{% link moml.md %})
-+ [**CIS 5200** Machine Learning, Spring 2023](https://machine-learning-upenn.github.io/)
-+ [**CIS 7000-005** Debugging Data and Models, Fall 2022]({{ site.baseurl }}{% link debugml.md %})
+### Teaching at University of Georgia
++ [**CSCI** Data Structures, Fall 2023](https://www.cs.uga.edu/courses/content/csci-2720)
 
-### Teaching assistant at Carnegie Mellon University
-+ [**15-388/688** *Head TA* Practical Data Science, Fall 2016](http://www.datasciencecourse.org/)
-+ **10-715** Advanced Introduction to Machine Learning, Fall 2015
-+ **15-451** Algorithms, Fall 2014
-+ **08-766/781** Pervasive and Mobile Computing Services, Spring 2014
-+ **08-766/781** Pervasive and Mobile Computing Services, Spring 2013
-+ **08-723** Mobile Development for iOS and Android, Spring 2013
+### Teaching at University of Michigan
++ [**CIS 583** Deep Learning, Winter 2021-2022]
++ [**CIS 579** Artificial Intelligence, Fall 2021-2022]
++ [**CIS 5700** Advanced Data Mining, Winter 2020-2022]
++ [**CIS 405/505** Algorithm Analysis and Design, Fall 2019-2022]
+
+### Co-Lecturer at University of Connecticut
++ **CSE5820** Machine Learning, Spring 2019
