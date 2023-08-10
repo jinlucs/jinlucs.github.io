@@ -1,5 +1,5 @@
 # - year: 2023
-  papers: 
+  # papers: 
   - title: Mobilizing Personalized Federated Learning via Random Walk Stochastic ADMM
     link: https://arxiv.org/pdf/2304.12534
     authors: Ziba Parsons, Fei Dou, Houyi Du, Zheng Song, Jin Lu
@@ -50,7 +50,7 @@
     github: 
 
 # - year: 2022
-  papers: 
+  # papers: 
   - title: Top-down indoor localization with Wi-fi fingerprints using deep Q-network
     link: https://www.researchgate.net/profile/Fei-Dou/publication/329561852_Top-Down_Indoor_Localization_with_Wi-Fi_Fingerprints_Using_Deep_Q-Network/links/5ca83c54299bf118c4b5966d/Top-Down-Indoor-Localization-with-Wi-Fi-Fingerprints-Using-Deep-Q-Network.pdf 
     authors: Fei Dou, Jin Lu, Zigeng Wang, Xia Xiao, Jinbo Bi, Chun-Hsi Huang
@@ -73,7 +73,7 @@
     github: 
 
 # - year: 2021
-  papers: 
+  # papers: 
   - title: Edge attention-based multi-relational graph convolutional networks
     link: https://drive.google.com/file/d/1-1UM-5aFHZNeiEguV3OexJI5VyQVGxR0/view
     authors: Chao Shang, Qinqing Liu, Ko-Shin Chen, Jiangwen Sun, Jin Lu, Jinfeng Yi, Jinbo Bi 
@@ -96,7 +96,7 @@
     github:
 
 # - year: 2020
-  papers: 
+  # papers: 
   - title: Bi-subspace saliency detection
     link: https://arxiv.org/abs/2007.08450
     authors: Jin Lu, Fei Dou
@@ -126,7 +126,7 @@
     github: 
 
 # - year: 2019
-  papers: 
+  # papers: 
   - title: Multi-view bi-clustering to identify smartphone sensing features indicative of depression
     link: https://nlab.engr.uconn.edu/papers/Farhan_CHASE2016.pdf
     authors: Asma Ahmad Farhan, Jin Lu, Jinbo Bi, Alexander Russell, Bing Wang, Athanasios Bamis  
@@ -142,7 +142,7 @@
     github: 
 
 # - year: 2018
-  papers: 
+  # papers: 
   - title: Near Bed Flow Process Inferred From Bar Morphology, Sediment Transport and Grain Size Distribution of a Plan-View Exposed Ancient Point Bar Complex
     link: https://arxiv.org/abs/1805.12514
     authors: Mohammad S Ullah Chenliang Wu, Janok Bhattacharya, Jin Lu
@@ -151,7 +151,7 @@
     github: 
 
 # - year: 2017
-  papers: 
+  # papers: 
   - title: Multi-view sparse co-clustering via proximal alternating linearized minimization
     link: http://proceedings.mlr.press/v37/sunb15.pdf
     authors: Jiangwen Sun, Jin Lu, Tingyang Xu, Jinbo Bi
