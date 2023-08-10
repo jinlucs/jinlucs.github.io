@@ -7,7 +7,6 @@ subtitle: Assistant Professor, University of Georgia
 |--|--|
 | Office | [549A Boyd Research and Education Center](https://www.google.com/maps/place/Boyd+Research+and+Education+Center/@33.9458127,-83.3772037,17z/data=!3m1!4b1!4m6!3m5!1s0x88f66ce394ad0f0f:0x6aa484a8c1f4899f!8m2!3d33.9458127!4d-83.3746288!16s%2Fg%2F11bwhb0lgs?entry=ttu) |
 | Email | [jin.lu@uga.edu](mailto:jin.lu@uga.edu) |
-<!-- | Lab Blog | [michlab.github.io](https://michlab.github.io/) -->
 
 I am an assistant professor at the [School of Computing](https://www.cs.uga.edu/) at the University of Georiga, His major research interests include machine learning, data mining, optimization, smart mobility, biomedical informatics, and health informatics. He is particularly interested in transparent machine learning models, high-performance algorithms, and interpretable methods for critical scientific and engineering problems.
 
