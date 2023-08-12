@@ -8,7 +8,7 @@ Jin Lu is an assistant professor at the [School of Computing](https://www.cs.uga
 
 <!-- He is a 2020 Siebel Scholar and received an honorable mention for his thesis on the robustness of deep networks to adversarial examples at Carnegie Mellon University advised by Zico Kolter. Prior to joining UPenn, he was a postdoc at CSAIL MIT advised by Aleksander Madry.  -->
 
-<a href="https://jinlucs.github.io/assets/img/photo_small_Jin.jpg">[Link to photo]</a>
+<a href="https://jinlucs.github.io/assets/img/photo_small_jin.png">[Link to photo]</a>
 
 <a href="https://jinlucs.github.io/assets/files/cv.pdf">[Link to cv]</a>
 
