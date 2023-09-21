@@ -1,6 +1,6 @@
 - year:
   papers: 
-  - title: Polyhedron Attention Module: Learning Adaptive-order Interactions
+  - title: 'Polyhedron Attention Module: Learning Adaptive-order Interactions'
     link: 
     authors: Tan Zhu, Fei Dou, Xinyu Wang, Jin Lu, Jinbo Bi
     conference: Advances in neural information processing systems (NeuRIPS), 2023
@@ -8,10 +8,17 @@
     github: 
     
   
-  - title: Mobilizing Personalized Federated Learning via Random Walk Stochastic ADMM
+  - title: 'Mobilizing Personalized Federated Learning via Random Walk Stochastic ADMM'
     link: https://arxiv.org/pdf/2304.12534
     authors: Ziba Parsons, Fei Dou, Houyi Du, Zheng Song, Jin Lu
-    conference: Advances in neural information processing systems (NeuRIPS), 2016  
+    conference: Advances in neural information processing systems (NeuRIPS), 2023  
+    blog: 
+    github: 
+
+  - title: 'On-Device Indoor Positioning: A Federated Reinforcement Learning Approach With Heterogeneous Devices'
+    link: 
+    authors: Fei Dou, Jin Lu, Tan Zhu, Jinbo Bi
+    conference: IEEE Internet of Things Journal, 2022
     blog: 
     github: 
 
