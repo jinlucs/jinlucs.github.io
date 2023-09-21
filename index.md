@@ -18,6 +18,8 @@ I am an assistant professor at the [School of Computing](https://www.cs.uga.edu/
 *Undergraduates/masters students*: If you are a UGA student and are interested in doing independent machine learning research, then I would recommend (1) take CSCI(PHIL) 4550/6550 (2) read this [blog post](https://www.alextamkin.com/essays/tips-for-new-researchers). 
 
 ### Recent News
++ Sep '23: Our paper "Polyhedron Attention Module: Learning Adaptive-order Interactions" was accepted at NeurIPS 2023
++ Sep '23: Our paper "Mobilizing Personalized Federated Learning in Infrastructure-Less and Heterogeneous Environments via Random Walk Stochastic ADMM" was accepted at NeurIPS 2023
 + May '23: I will be moving to UGA School of Computing as an Assistant Professor starting Fall 2023
 
 <!-- 
