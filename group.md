@@ -2,6 +2,26 @@
 layout: page
 title: Group  
 ---
+### Master students
+
+<div class ="avatar-gallery">
+{% for student in site.data.group.phd %}
+    <div class="avatar-container">
+    	<div class="avatar-img-border">
+	      <img src="{{ student.photo | relative_url }}" alt="{{ student.name }}"  class="avatar-img" />
+  		</div>	
+	    <div class="avatar-name">
+		    <a href="{{ student.url }}">{{ student.name }}</a>
+		      {% if student.coadvisor -%}
+		      <br>(co-advised with <a href="{{ student.coadvisor_url }}">{{ student.coadvisor }}</a>)
+		      {%- endif %}
+		</div>
+    </div>
+ {% endfor %}
+</div>
+
+<hr style="clear:both;">
+
 
 ### PhD students
 
