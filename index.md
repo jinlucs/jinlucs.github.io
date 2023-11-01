@@ -15,6 +15,10 @@ I am an assistant professor at the [School of Computing](https://www.cs.uga.edu/
 1. Apply to the [School of Computing](https://www.cs.uga.edu/doctor-philosophy-computer-science) 
 2. Select me as a potential advisor in your application. 
 
+
+*Master Project applicants*: If you're interested, you will need to apply through this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSevdmLbC-GsE4u-pA57T2jd1ZAHnOAm5R-8peGjHstPMOm6Kg/viewform?usp=sf_link).
+
+
 *Undergraduates/masters students*: If you are a UGA student and are interested in doing independent machine learning research, then I would recommend (1) take CSCI(PHIL) 4550/6550 (2) read this [blog post](https://www.alextamkin.com/essays/tips-for-new-researchers). 
 
 ### Recent News
