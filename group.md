@@ -5,7 +5,7 @@ title: Group
 ### Master students
 
 <div class ="avatar-gallery">
-{% for student in site.data.group.phd %}
+{% for student in site.data.group.master %}
     <div class="avatar-container">
     	<div class="avatar-img-border">
 	      <img src="{{ student.photo | relative_url }}" alt="{{ student.name }}"  class="avatar-img" />
