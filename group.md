@@ -23,7 +23,7 @@ title: Group
 <hr style="clear:both;">
 
 
-### PhD students
+<!-- ### PhD students
 
 <div class ="avatar-gallery">
 {% for student in site.data.group.phd %}
@@ -39,9 +39,9 @@ title: Group
 		</div>
     </div>
  {% endfor %}
-</div>
+</div> -->
 
-<hr style="clear:both;">
+<!-- <hr style="clear:both;"> -->
 
 ### Collaborators
 
