@@ -43,7 +43,7 @@ title: Group
 
 <!-- <hr style="clear:both;"> -->
 
-### Collaborators
+<!-- ### Collaborators
 
 In addition, I have had the fortune of being able to work on various papers with the following students/postdocs here at UPenn: 
 
@@ -53,5 +53,5 @@ In addition, I have had the fortune of being able to work on various papers with
 + [Patrick Chao](https://patrickrchao.github.io/)
 + [Tai Nguyen](https://taidnguyen.github.io/)
 + [Veronica Lyu](https://veronica320.github.io/)
-+ [Yinjun Wu](https://www.seas.upenn.edu/~wuyinjun/)
++ [Yinjun Wu](https://www.seas.upenn.edu/~wuyinjun/) -->
 
