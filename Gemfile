@@ -8,3 +8,7 @@ gemspec
 group :jekyll_plugins do
   gem 'jekyll-spaceship'
 end
+
+# Workaround: jekyll/builder:3.8 ships old RubyGems (3.0.6),
+# but ffi >= 1.17 requires RubyGems >= 3.3.22.
+gem "ffi", "= 1.16.3"
