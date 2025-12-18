@@ -1,0 +1,410 @@
+- bibkey: ruan2026large
+  type: article
+  title: Large language models for bioinformatics
+  authors:
+  - Wei Ruan
+  - Yanjun Lyu
+  - Jing Zhang
+  - Jiazhang Cai
+  - Peng Shu
+  - Yang Ge
+  - Yao Lu
+  - Shang Gao
+  - Yue Wang
+  - Peilong Wang
+  - others
+  authors_html: Wei Ruan, Yanjun Lyu, Jing Zhang, Jiazhang Cai, Peng Shu, Yang Ge,
+    Yao Lu, Shang Gao, Yue Wang, Peilong Wang, others
+  year: 2026
+  month: 0
+  venue: Quantitative Biology
+  url: null
+  note: ''
+  sort_key: 202600
+- bibkey: zhong2024evaluation
+  type: article
+  title: 'Evaluation of openai o1: Opportunities and challenges of agi'
+  authors:
+  - Tianyang Zhong
+  - Zhengliang Liu
+  - Yi Pan
+  - Yutong Zhang
+  - Yifan Zhou
+  - Shizhe Liang
+  - Zihao Wu
+  - Yanjun Lyu
+  - Peng Shu
+  - Xiaowei Yu
+  - others
+  authors_html: Tianyang Zhong, Zhengliang Liu, Yi Pan, Yutong Zhang, Yifan Zhou,
+    Shizhe Liang, Zihao Wu, Yanjun Lyu, Peng Shu, Xiaowei Yu, others
+  year: 2024
+  month: 0
+  venue: arXiv preprint arXiv:2409.18486
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: latif2024systematic
+  type: article
+  title: A systematic assessment of openai o1-preview for higher order thinking in
+    education
+  authors:
+  - Ehsan Latif
+  - Yifan Zhou
+  - Shuchen Guo
+  - Yizhu Gao
+  - Lehong Shi
+  - Matthew Nayaaba
+  - Gyeonggeon Lee
+  - Liang Zhang
+  - Arne Bewersdorff
+  - Luyang Fang
+  - others
+  authors_html: Ehsan Latif, Yifan Zhou, Shuchen Guo, Yizhu Gao, Lehong Shi, Matthew
+    Nayaaba, Gyeonggeon Lee, Liang Zhang, Arne Bewersdorff, Luyang Fang, others
+  year: 2024
+  month: 0
+  venue: arXiv preprint arXiv:2410.21287
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: dou2023towards
+  type: article
+  title: 'Towards artificial general intelligence (agi) in the internet of things
+    (iot): Opportunities and challenges'
+  authors:
+  - Fei Dou
+  - Jin Ye
+  - Geng Yuan
+  - Qin Lu
+  - Wei Niu
+  - Haijian Sun
+  - Le Guan
+  - Guoyu Lu
+  - Gengchen Mai
+  - Ninghao Liu
+  - others
+  authors_html: Fei Dou, Jin Ye, Geng Yuan, Qin Lu, Wei Niu, Haijian Sun, Le Guan,
+    Guoyu Lu, Gengchen Mai, Ninghao Liu, others
+  year: 2023
+  month: 0
+  venue: arXiv preprint arXiv:2309.07438
+  url: null
+  note: ''
+  sort_key: 202300
+- bibkey: dou2023device
+  type: article
+  title: 'On-device indoor positioning: A federated reinforcement learning approach
+    with heterogeneous devices'
+  authors:
+  - Fei Dou
+  - Jin Lu
+  - Tan Zhu
+  - Jinbo Bi
+  authors_html: Fei Dou, <strong>Jin Lu</strong>, Tan Zhu, Jinbo Bi
+  year: 2023
+  month: 0
+  venue: IEEE Internet of Things Journal
+  url: null
+  note: ''
+  sort_key: 202300
+- bibkey: ware2020predicting
+  type: article
+  title: Predicting depressive symptoms using smartphone data
+  authors:
+  - Shweta Ware
+  - Chaoqun Yue
+  - Reynaldo Morillo
+  - Jin Lu
+  - Chao Shang
+  - Jinbo Bi
+  - Jayesh Kamath
+  - Alexander Russell
+  - Athanasios Bamis
+  - Bing Wang
+  authors_html: Shweta Ware, Chaoqun Yue, Reynaldo Morillo, <strong>Jin Lu</strong>,
+    Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing
+    Wang
+  year: 2020
+  month: 0
+  venue: Smart Health
+  url: null
+  note: ''
+  sort_key: 202000
+- bibkey: yue2020automatic
+  type: article
+  title: Automatic depression prediction using internet traffic characteristics on
+    smartphones
+  authors:
+  - Chaoqun Yue
+  - Shweta Ware
+  - Reynaldo Morillo
+  - Jin Lu
+  - Chao Shang
+  - Jinbo Bi
+  - Jayesh Kamath
+  - Alexander Russell
+  - Athanasios Bamis
+  - Bing Wang
+  authors_html: Chaoqun Yue, Shweta Ware, Reynaldo Morillo, <strong>Jin Lu</strong>,
+    Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing
+    Wang
+  year: 2020
+  month: 0
+  venue: Smart Health
+  url: null
+  note: ''
+  sort_key: 202000
+- bibkey: dou2020bisection
+  type: article
+  title: A bisection reinforcement learning approach to 3-D indoor localization
+  authors:
+  - Fei Dou
+  - Jin Lu
+  - Tingyang Xu
+  - Chun-Hsi Huang
+  - Jinbo Bi
+  authors_html: Fei Dou, <strong>Jin Lu</strong>, Tingyang Xu, Chun-Hsi Huang, Jinbo
+    Bi
+  year: 2020
+  month: 0
+  venue: IEEE Internet of Things Journal
+  url: null
+  note: ''
+  sort_key: 202000
+- bibkey: chao2019multi
+  type: article
+  title: Multi-view cluster analysis with incomplete data to understand treatment
+    effects
+  authors:
+  - Guoqing Chao
+  - Jiangwen Sun
+  - Jin Lu
+  - An-Li Wang
+  - Daniel D Langleben
+  - Chiang-Shan Li
+  - Jinbo Bi
+  authors_html: Guoqing Chao, Jiangwen Sun, <strong>Jin Lu</strong>, An-Li Wang, Daniel
+    D Langleben, Chiang-Shan Li, Jinbo Bi
+  year: 2019
+  month: 0
+  venue: Information sciences
+  url: null
+  note: ''
+  sort_key: 201900
+- bibkey: dou2018top
+  type: inproceedings
+  title: Top-down indoor localization with Wi-fi fingerprints using deep Q-network
+  authors:
+  - Fei Dou
+  - Jin Lu
+  - Zigeng Wang
+  - Xia Xiao
+  - Jinbo Bi
+  - Chun-Hsi Huang
+  authors_html: Fei Dou, <strong>Jin Lu</strong>, Zigeng Wang, Xia Xiao, Jinbo Bi,
+    Chun-Hsi Huang
+  year: 2018
+  month: 0
+  venue: 2018 IEEE 15th International Conference on Mobile Ad Hoc and Sensor Systems
+    (MASS)
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: ware2018large
+  type: article
+  title: Large-scale automatic depression screening using meta-data from wifi infrastructure
+  authors:
+  - Shweta Ware
+  - Chaoqun Yue
+  - Reynaldo Morillo
+  - Jin Lu
+  - Chao Shang
+  - Jayesh Kamath
+  - Athanasios Bamis
+  - Jinbo Bi
+  - Alexander Russell
+  - Bing Wang
+  authors_html: Shweta Ware, Chaoqun Yue, Reynaldo Morillo, <strong>Jin Lu</strong>,
+    Chao Shang, Jayesh Kamath, Athanasios Bamis, Jinbo Bi, Alexander Russell, Bing
+    Wang
+  year: 2018
+  month: 0
+  venue: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: lu2018joint
+  type: article
+  title: Joint modeling of heterogeneous sensing data for depression assessment via
+    multi-task learning
+  authors:
+  - Jin Lu
+  - Chao Shang
+  - Chaoqun Yue
+  - Reynaldo Morillo
+  - Shweta Ware
+  - Jayesh Kamath
+  - Athanasios Bamis
+  - Alexander Russell
+  - Bing Wang
+  - Jinbo Bi
+  authors_html: <strong>Jin Lu</strong>, Chao Shang, Chaoqun Yue, Reynaldo Morillo,
+    Shweta Ware, Jayesh Kamath, Athanasios Bamis, Alexander Russell, Bing Wang, Jinbo
+    Bi
+  year: 2018
+  month: 0
+  venue: Proceedings of the ACM on interactive, mobile, wearable and ubiquitous technologies
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: yue2018fusing
+  type: article
+  title: Fusing location data for depression prediction
+  authors:
+  - Chaoqun Yue
+  - Shweta Ware
+  - Reynaldo Morillo
+  - Jin Lu
+  - Chao Shang
+  - Jinbo Bi
+  - Jayesh Kamath
+  - Alexander Russell
+  - Athanasios Bamis
+  - Bing Wang
+  authors_html: Chaoqun Yue, Shweta Ware, Reynaldo Morillo, <strong>Jin Lu</strong>,
+    Chao Shang, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing
+    Wang
+  year: 2018
+  month: 0
+  venue: IEEE Transactions on Big Data
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: shang2018edge
+  type: article
+  title: Edge attention-based multi-relational graph convolutional networks
+  authors:
+  - Chao Shang
+  - Qinqing Liu
+  - Ko-Shin Chen
+  - Jiangwen Sun
+  - Jin Lu
+  - Jinfeng Yi
+  - Jinbo Bi
+  authors_html: Chao Shang, Qinqing Liu, Ko-Shin Chen, Jiangwen Sun, <strong>Jin Lu</strong>,
+    Jinfeng Yi, Jinbo Bi
+  year: 2018
+  month: 0
+  venue: arXiv preprint arXiv:1802.04944
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: shang2017vigan
+  type: inproceedings
+  title: 'VIGAN: Missing view imputation with generative adversarial networks'
+  authors:
+  - Chao Shang
+  - Aaron Palmer
+  - Jiangwen Sun
+  - Ko-Shin Chen
+  - Jin Lu
+  - Jinbo Bi
+  authors_html: Chao Shang, Aaron Palmer, Jiangwen Sun, Ko-Shin Chen, <strong>Jin
+    Lu</strong>, Jinbo Bi
+  year: 2017
+  month: 0
+  venue: 2017 IEEE International conference on big data (Big Data)
+  url: null
+  note: ''
+  sort_key: 201700
+- bibkey: farhan2016multi
+  type: inproceedings
+  title: Multi-view bi-clustering to identify smartphone sensing features indicative
+    of depression
+  authors:
+  - Asma Ahmad Farhan
+  - Jin Lu
+  - Jinbo Bi
+  - Alexander Russell
+  - Bing Wang
+  - Athanasios Bamis
+  authors_html: Asma Ahmad Farhan, <strong>Jin Lu</strong>, Jinbo Bi, Alexander Russell,
+    Bing Wang, Athanasios Bamis
+  year: 2016
+  month: 0
+  venue: '2016 IEEE first international conference on connected health: applications,
+    systems and engineering technologies (CHASE)'
+  url: null
+  note: ''
+  sort_key: 201600
+- bibkey: wu2016formation
+  type: article
+  title: 'Formation of point bars through rising and falling flood stages: Evidence
+    from bar morphology, sediment transport and bed shear stress'
+  authors:
+  - Chenliang Wu
+  - Mohammad S Ullah
+  - Jin Lu
+  - Janok P Bhattacharya
+  authors_html: Chenliang Wu, Mohammad S Ullah, <strong>Jin Lu</strong>, Janok P Bhattacharya
+  year: 2016
+  month: 0
+  venue: Sedimentology
+  url: null
+  note: ''
+  sort_key: 201600
+- bibkey: farhan2016behavior
+  type: inproceedings
+  title: 'Behavior vs. introspection: refining prediction of clinical depression via
+    smartphone sensing data'
+  authors:
+  - Asma Ahmad Farhan
+  - Chaoqun Yue
+  - Reynaldo Morillo
+  - Shweta Ware
+  - Jin Lu
+  - Jinbo Bi
+  - Jayesh Kamath
+  - Alexander Russell
+  - Athanasios Bamis
+  - Bing Wang
+  authors_html: Asma Ahmad Farhan, Chaoqun Yue, Reynaldo Morillo, Shweta Ware, <strong>Jin
+    Lu</strong>, Jinbo Bi, Jayesh Kamath, Alexander Russell, Athanasios Bamis, Bing
+    Wang
+  year: 2016
+  month: 0
+  venue: 2016 IEEE wireless health (WH)
+  url: null
+  note: ''
+  sort_key: 201600
+- bibkey: lu2016sparse
+  type: article
+  title: A sparse interactive model for matrix completion with side information
+  authors:
+  - Jin Lu
+  - Guannan Liang
+  - Jiangwen Sun
+  - Jinbo Bi
+  authors_html: <strong>Jin Lu</strong>, Guannan Liang, Jiangwen Sun, Jinbo Bi
+  year: 2016
+  month: 0
+  venue: Advances in neural information processing systems
+  url: null
+  note: ''
+  sort_key: 201600
+- bibkey: sun2015multi
+  type: inproceedings
+  title: Multi-view sparse co-clustering via proximal alternating linearized minimization
+  authors:
+  - Jiangwen Sun
+  - Jin Lu
+  - Tingyang Xu
+  - Jinbo Bi
+  authors_html: Jiangwen Sun, <strong>Jin Lu</strong>, Tingyang Xu, Jinbo Bi
+  year: 2015
+  month: 0
+  venue: Proceedings of The 32nd International Conference on Machine Learning
+  url: null
+  note: ''
+  sort_key: 201500
