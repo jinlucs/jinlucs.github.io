@@ -4,7 +4,7 @@ title: Daily arXiv Digest
 permalink: /arxiv/
 ---
 
-Daily ML + Optimization papers (auto-generated).
+Daily ML + Optimization papers.
 
 {% assign arxiv_posts = site.posts | where_exp: "p", "p.categories contains 'arxiv'" %}
 
