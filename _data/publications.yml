@@ -21,6 +21,345 @@
   url: null
   note: ''
   sort_key: 202600
+- bibkey: zhang2025towards
+  type: inproceedings
+  title: Towards memory-efficient and sustainable machine unlearning on edge using
+    zeroth-order optimizer
+  authors:
+  - Ci Zhang
+  - Chence Yang
+  - Qitao Tan
+  - Jun Liu
+  - Ao Li
+  - Yanzhi Wang
+  - Jin Lu
+  - Jinhui Wang
+  - Geng Yuan
+  authors_html: Ci Zhang, Chence Yang, Qitao Tan, Jun Liu, Ao Li, Yanzhi Wang, <strong>Jin
+    Lu</strong>, Jinhui Wang, Geng Yuan
+  year: 2025
+  month: 0
+  venue: Proceedings of the Great Lakes Symposium on VLSI 2025
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: li2025smarter
+  type: article
+  title: 'Smarter Together: Combining Large Language Models and Small Models for Physiological
+    Signals Visual Inspection'
+  authors:
+  - Huayu Li
+  - Zhengxiao He
+  - Xiwen Chen
+  - Ci Zhang
+  - Stuart F Quan
+  - William DS Killgore
+  - Shu-Fen Wung
+  - Chen X Chen
+  - Geng Yuan
+  - Jin Lu
+  - others
+  authors_html: Huayu Li, Zhengxiao He, Xiwen Chen, Ci Zhang, Stuart F Quan, William
+    DS Killgore, Shu-Fen Wung, Chen X Chen, Geng Yuan, <strong>Jin Lu</strong>, others
+  year: 2025
+  month: 0
+  venue: Journal of Healthcare Informatics Research
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: yang2025rethinking
+  type: article
+  title: Rethinking the Potential of Layer Freezing for Efficient DNN Training
+  authors:
+  - Chence Yang
+  - Ci Zhang
+  - Lei Lu
+  - Qitao Tan
+  - Sheng Li
+  - Ao Li
+  - Xulong Tang
+  - Shaoyi Huang
+  - Jinzhen Wang
+  - Guoming Li
+  - others
+  authors_html: Chence Yang, Ci Zhang, Lei Lu, Qitao Tan, Sheng Li, Ao Li, Xulong
+    Tang, Shaoyi Huang, Jinzhen Wang, Guoming Li, others
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2508.15033
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: tan2025perturbation
+  type: article
+  title: Perturbation-efficient zeroth-order optimization for hardware-friendly on-device
+    training
+  authors:
+  - Qitao Tan
+  - Sung-En Chang
+  - Rui Xia
+  - Huidong Ji
+  - Chence Yang
+  - Ci Zhang
+  - Jun Liu
+  - Zheng Zhan
+  - Zhenman Fang
+  - Zhou Zou
+  - others
+  authors_html: Qitao Tan, Sung-En Chang, Rui Xia, Huidong Ji, Chence Yang, Ci Zhang,
+    Jun Liu, Zheng Zhan, Zhenman Fang, Zhou Zou, others
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2504.20314
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: dou2025local
+  type: inproceedings
+  title: 'LOCAL: Latent Orthonormal Contrastive Learning for Paired Image Classification'
+  authors:
+  - Fei Dou
+  - Jin Lu
+  - Tan Zhu
+  - Jinbo Bi
+  authors_html: Fei Dou, <strong>Jin Lu</strong>, Tan Zhu, Jinbo Bi
+  year: 2025
+  month: 0
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: deng2025hop
+  type: article
+  title: 'HoP: Homeomorphic Polar Learning for Hard Constrained Optimization'
+  authors:
+  - Ke Deng
+  - Hanwen Zhang
+  - Jin Lu
+  - Haijian Sun
+  authors_html: Ke Deng, Hanwen Zhang, <strong>Jin Lu</strong>, Haijian Sun
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2502.00304
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: zhao2025helene
+  type: inproceedings
+  title: 'Helene: Hessian layer-wise clipping and gradient annealing for accelerating
+    fine-tuning llm with zeroth-order optimization'
+  authors:
+  - Huaqin Zhao
+  - Jiaxi Li
+  - Yi Pan
+  - Shizhe Liang
+  - Xiaofeng Yang
+  - Fei Dou
+  - Tianming Liu
+  - Jin Lu
+  authors_html: Huaqin Zhao, Jiaxi Li, Yi Pan, Shizhe Liang, Xiaofeng Yang, Fei Dou,
+    Tianming Liu, <strong>Jin Lu</strong>
+  year: 2025
+  month: 0
+  venue: Proceedings of the 2025 Conference on Empirical Methods in Natural Language
+    Processing
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: tan2025harmony
+  type: article
+  title: 'Harmony in divergence: Towards fast, accurate, and memory-efficient zeroth-order
+    llm fine-tuning'
+  authors:
+  - Qitao Tan
+  - Jun Liu
+  - Zheng Zhan
+  - Caiwei Ding
+  - Yanzhi Wang
+  - Xiaolong Ma
+  - Jaewoo Lee
+  - Jin Lu
+  - Geng Yuan
+  authors_html: Qitao Tan, Jun Liu, Zheng Zhan, Caiwei Ding, Yanzhi Wang, Xiaolong
+    Ma, Jaewoo Lee, <strong>Jin Lu</strong>, Geng Yuan
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2502.03304
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: zeng2025fusion
+  type: article
+  title: Fusion of Multiple Data Sources for Vehicle Crashworthiness Prediction Using
+    CycleGAN and Temporal Convolutional Networks
+  authors:
+  - Jice Zeng
+  - Zhenyan Gao
+  - Yang Li
+  - Saeed Barbat
+  - Jin Lu
+  - Zhen Hu
+  authors_html: Jice Zeng, Zhenyan Gao, Yang Li, Saeed Barbat, <strong>Jin Lu</strong>,
+    Zhen Hu
+  year: 2025
+  month: 0
+  venue: Journal of Mechanical Design
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: li2025enhancing
+  type: article
+  title: Enhancing Visual Inspection Capability of Multi-Modal Large Language Models
+    on Medical Time Series with Supportive Conformalized and Interpretable Small Specialized
+    Models
+  authors:
+  - Huayu Li
+  - Xiwen Chen
+  - Ci Zhang
+  - Stuart F Quan
+  - William DS Killgore
+  - Shu-Fen Wung
+  - Chen X Chen
+  - Geng Yuan
+  - Jin Lu
+  - Ao Li
+  authors_html: Huayu Li, Xiwen Chen, Ci Zhang, Stuart F Quan, William DS Killgore,
+    Shu-Fen Wung, Chen X Chen, Geng Yuan, <strong>Jin Lu</strong>, Ao Li
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2501.16215
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: zhao2025care
+  type: article
+  title: 'CARE: Contrastive Alignment for ADL Recognition from Event-Triggered Sensor
+    Streams'
+  authors:
+  - Junhao Zhao
+  - Zishuai Liu
+  - Ruili Fang
+  - Jin Lu
+  - Linghan Zhang
+  - Fei Dou
+  authors_html: Junhao Zhao, Zishuai Liu, Ruili Fang, <strong>Jin Lu</strong>, Linghan
+    Zhang, Fei Dou
+  year: 2025
+  month: 0
+  venue: arXiv preprint arXiv:2510.16988
+  url: null
+  note: ''
+  sort_key: 202500
+- bibkey: saeidifar2024zero
+  type: article
+  title: Zero-shot image segmentation for monitoring thermal conditions of individual
+    cage-free laying hens
+  authors:
+  - Mahtab Saeidifar
+  - Guoming Li
+  - Lilong Chai
+  - Ramesh Bist
+  - Khaled M Rasheed
+  - Jin Lu
+  - Ahmad Banakar
+  - Tianming Liu
+  - Xiao Yang
+  authors_html: Mahtab Saeidifar, Guoming Li, Lilong Chai, Ramesh Bist, Khaled M Rasheed,
+    <strong>Jin Lu</strong>, Ahmad Banakar, Tianming Liu, Xiao Yang
+  year: 2024
+  month: 0
+  venue: Computers and Electronics in Agriculture
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: xu2024towards
+  type: article
+  title: 'Towards next-generation medical agent: How o1 is reshaping decision-making
+    in medical scenarios'
+  authors:
+  - Shaochen Xu
+  - Yifan Zhou
+  - Zhengliang Liu
+  - Zihao Wu
+  - Tianyang Zhong
+  - Huaqin Zhao
+  - Yiwei Li
+  - Hanqi Jiang
+  - Yi Pan
+  - Junhao Chen
+  - others
+  authors_html: Shaochen Xu, Yifan Zhou, Zhengliang Liu, Zihao Wu, Tianyang Zhong,
+    Huaqin Zhao, Yiwei Li, Hanqi Jiang, Yi Pan, Junhao Chen, others
+  year: 2024
+  month: 0
+  venue: arXiv preprint arXiv:2411.14461
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: li2024proximal
+  type: inproceedings
+  title: Proximal Federated Learning for Body Mass Index Monitoring using Commodity
+    WiFi
+  authors:
+  - Jiaxi Li
+  - Kiran Davuluri
+  - Khairul Mottakin
+  - Zheng Song
+  - Fei Dou
+  - Jin Lu
+  authors_html: Jiaxi Li, Kiran Davuluri, Khairul Mottakin, Zheng Song, Fei Dou, <strong>Jin
+    Lu</strong>
+  year: 2024
+  month: 0
+  venue: Proceedings of the 30th Annual International Conference on Mobile Computing
+    and Networking
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: zhong2024linglong
+  type: article
+  title: Linglong Kong
+  authors:
+  - Tianyang Zhong
+  - Zhengliang Liu
+  - Yi Pan
+  - Yutong Zhang
+  - Yifan Zhou
+  - Shizhe Liang
+  - Zihao Wu
+  - Yanjun Lyu
+  - Peng Shu
+  - Xiaowei Yu
+  - others
+  authors_html: Tianyang Zhong, Zhengliang Liu, Yi Pan, Yutong Zhang, Yifan Zhou,
+    Shizhe Liang, Zihao Wu, Yanjun Lyu, Peng Shu, Xiaowei Yu, others
+  year: 2024
+  month: 0
+  venue: Zhen Xiang, Yudan Ren, Jun Liu, Xi Jiang, Yu Bao, Wei Zhang, Xiang Li, Gang
+    Li, Wei Liu, Dinggang Shen, Andrea Sikora, Xiaoming Zhai, Dajiang Zhu, and Tianming
+    Liu
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: kusam2024generative
+  type: inproceedings
+  title: Generative-AI assisted feedback provisioning for project-based learning in
+    CS courses
+  authors:
+  - Venkata Alekhya Kusam
+  - Larnell Moore
+  - Summit Shrestha
+  - Zheng Song
+  - Jin Lu
+  - Qiang Zhu
+  authors_html: Venkata Alekhya Kusam, Larnell Moore, Summit Shrestha, Zheng Song,
+    <strong>Jin Lu</strong>, Qiang Zhu
+  year: 2024
+  month: 0
+  venue: 2024 ASEE Annual Conference & Exposition
+  url: null
+  note: ''
+  sort_key: 202400
 - bibkey: zhong2024evaluation
   type: article
   title: 'Evaluation of openai o1: Opportunities and challenges of agi'
@@ -41,6 +380,25 @@
   year: 2024
   month: 0
   venue: arXiv preprint arXiv:2409.18486
+  url: null
+  note: ''
+  sort_key: 202400
+- bibkey: saeidifar2024automatic
+  type: article
+  title: Automatic Segmentation of Birds Using a Combination of Object Detection and
+    Foundation Image Segmentation Models
+  authors:
+  - Mahtab Saeidifar
+  - Guoming Li
+  - Jin Lu
+  - Chai Lilong
+  - Ramesh Bist
+  - Xiao Yang
+  authors_html: Mahtab Saeidifar, Guoming Li, <strong>Jin Lu</strong>, Chai Lilong,
+    Ramesh Bist, Xiao Yang
+  year: 2024
+  month: 0
+  venue: International Journal of Advances in Electronics and Computer Science
   url: null
   note: ''
   sort_key: 202400
@@ -92,6 +450,22 @@
   url: null
   note: ''
   sort_key: 202300
+- bibkey: zhu2023polyhedron
+  type: article
+  title: 'Polyhedron Attention Module: Learning Adaptive-order Interactions'
+  authors:
+  - Tan Zhu
+  - Fei Dou
+  - Xinyu Wang
+  - Jin Lu
+  - Jinbo Bi
+  authors_html: Tan Zhu, Fei Dou, Xinyu Wang, <strong>Jin Lu</strong>, Jinbo Bi
+  year: 2023
+  month: 0
+  venue: Advances in Neural Information Processing Systems
+  url: null
+  note: ''
+  sort_key: 202300
 - bibkey: dou2023device
   type: article
   title: 'On-device indoor positioning: A federated reinforcement learning approach
@@ -108,6 +482,59 @@
   url: null
   note: ''
   sort_key: 202300
+- bibkey: parsons2023mobilizing
+  type: article
+  title: Mobilizing personalized federated learning in infrastructure-less and heterogeneous
+    environments via random walk stochastic ADMM
+  authors:
+  - Ziba Parsons
+  - Fei Dou
+  - Houyi Du
+  - Zheng Song
+  - Jin Lu
+  authors_html: Ziba Parsons, Fei Dou, Houyi Du, Zheng Song, <strong>Jin Lu</strong>
+  year: 2023
+  month: 0
+  venue: Advances in Neural Information Processing Systems
+  url: null
+  note: ''
+  sort_key: 202300
+- bibkey: davuluri2023bmeye
+  type: inproceedings
+  title: 'BMEye: Public Health-Oriented Body Mass Index Monitoring using Commodity
+    WiFi'
+  authors:
+  - Kiran Davuluri
+  - Khairul Mottakin
+  - Zheng Song
+  - Jin Lu
+  - Mark Allison
+  authors_html: Kiran Davuluri, Khairul Mottakin, Zheng Song, <strong>Jin Lu</strong>,
+    Mark Allison
+  year: 2023
+  month: 0
+  venue: IEEE 9th World Forum on Internet of Things
+  url: null
+  note: ''
+  sort_key: 202300
+- bibkey: wang2022decode
+  type: article
+  title: 'Decode-and-compare: An efficient verification scheme for coded distributed
+    edge computing'
+  authors:
+  - Jin Wang
+  - Zhaobo Lu
+  - Mingjia Fu
+  - Jianping Wang
+  - Kejie Lu
+  - Admela Jukan
+  authors_html: Jin Wang, Zhaobo Lu, Mingjia Fu, Jianping Wang, Kejie Lu, Admela Jukan
+  year: 2022
+  month: 0
+  venue: IEEE Transactions on Cloud Computing
+  url: null
+  note: ''
+  sort_key: 202200
 - bibkey: ware2020predicting
   type: article
   title: Predicting depressive symptoms using smartphone data
@@ -172,6 +599,18 @@
   url: null
   note: ''
   sort_key: 202000
+- bibkey: lu2019towards
+  type: phdthesis
+  title: Towards Provable and Scalable Machine Learning
+  authors:
+  - Jin Lu
+  authors_html: <strong>Jin Lu</strong>
+  year: 2019
+  month: 0
+  venue: ''
+  url: null
+  note: ''
+  sort_key: 201900
 - bibkey: chao2019multi
   type: article
   title: Multi-view cluster analysis with incomplete data to understand treatment
@@ -258,6 +697,24 @@
   url: null
   note: ''
   sort_key: 201800
+- bibkey: lu2018inferring
+  type: article
+  title: Inferring phenotypes from substance use via collaborative matrix completion
+  authors:
+  - Jin Lu
+  - Jiangwen Sun
+  - Xinyu Wang
+  - Henry Kranzler
+  - Joel Gelernter
+  - Jinbo Bi
+  authors_html: <strong>Jin Lu</strong>, Jiangwen Sun, Xinyu Wang, Henry Kranzler,
+    Joel Gelernter, Jinbo Bi
+  year: 2018
+  month: 0
+  venue: BMC systems biology
+  url: null
+  note: ''
+  sort_key: 201800
 - bibkey: yue2018fusing
   type: article
   title: Fusing location data for depression prediction
@@ -278,6 +735,26 @@
   year: 2018
   month: 0
   venue: IEEE Transactions on Big Data
+  url: null
+  note: ''
+  sort_key: 201800
+- bibkey: shang2018edge
+  type: article
+  title: Edge attention-based multi-relational graph convolutional networks. arXiv
+    e-prints
+  authors:
+  - Chao Shang
+  - Qinqing Liu
+  - Ko-Shin Chen
+  - Jiangwen Sun
+  - Jin Lu
+  - Jinfeng Yi
+  - others
+  authors_html: Chao Shang, Qinqing Liu, Ko-Shin Chen, Jiangwen Sun, <strong>Jin Lu</strong>,
+    Jinfeng Yi, others
+  year: 2018
+  month: 0
+  venue: arXiv preprint arXiv:1802.04944
   url: null
   note: ''
   sort_key: 201800
@@ -318,6 +795,78 @@
   url: null
   note: ''
   sort_key: 201700
+- bibkey: lu2017collaborative
+  type: inproceedings
+  title: Collaborative phenotype inference from comorbid substance use disorders and
+    genotypes
+  authors:
+  - Jin Lu
+  - Jiangwen Sun
+  - Xinyu Wang
+  - Henry R Kranzler
+  - Joel Gelernter
+  - Jinbo Bi
+  authors_html: <strong>Jin Lu</strong>, Jiangwen Sun, Xinyu Wang, Henry R Kranzler,
+    Joel Gelernter, Jinbo Bi
+  year: 2017
+  month: 0
+  venue: 2017 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+  url: null
+  note: ''
+  sort_key: 201700
+- bibkey: lu2017bi
+  type: inproceedings
+  title: Bi-subspace saliency detection
+  authors:
+  - Jin Lu
+  - Fei Dou
+  authors_html: <strong>Jin Lu</strong>, Fei Dou
+  year: 2017
+  month: 0
+  venue: 2017 IEEE 7th Annual Computing and Communication Workshop and Conference
+    (CCWC)
+  url: null
+  note: ''
+  sort_key: 201700
+- bibkey: lu2016supplementary
+  type: article
+  title: Supplementary Materials for “A Sparse Interactive Model for Matrix Completion
+    with Side Information”
+  authors:
+  - Jin Lu
+  - Guannan Liang
+  - Jiangwen Sun
+  - Jinbo Bi
+  authors_html: <strong>Jin Lu</strong>, Guannan Liang, Jiangwen Sun, Jinbo Bi
+  year: 2016
+  month: 0
+  venue: ''
+  url: null
+  note: ''
+  sort_key: 201600
+- bibkey: kamath2016prediction
+  type: inproceedings
+  title: Prediction of clinical depression using smartphone sensory data
+  authors:
+  - Jayesh Kamath
+  - Asma Farhan
+  - Chaoqun Yue
+  - Morillo Reynaldo
+  - Shweta Ware
+  - Jin Lu
+  - Jinbo Bi
+  - Alexander Russel
+  - Bamis Athanosis
+  - Bing Wang
+  authors_html: Jayesh Kamath, Asma Farhan, Chaoqun Yue, Morillo Reynaldo, Shweta
+    Ware, <strong>Jin Lu</strong>, Jinbo Bi, Alexander Russel, Bamis Athanosis, Bing
+    Wang
+  year: 2016
+  month: 0
+  venue: Neuropsychopharmacology
+  url: null
+  note: ''
+  sort_key: 201600
 - bibkey: farhan2016multi
   type: inproceedings
   title: Multi-view bi-clustering to identify smartphone sensing features indicative
@@ -393,6 +942,19 @@
   url: null
   note: ''
   sort_key: 201600
+- bibkey: chenliang2015near
+  type: inproceedings
+  title: Near Bed Flow Process Inferred From Bar Morphology, Sediment Transport and
+    Grain Size Distribution of a Plan-View Exposed Ancient Point Bar Complex
+  authors:
+  - Janok Bhattacharya, Jin Lu, Mohammad S Ullah Chenliang Wu
+  authors_html: Janok Bhattacharya, Jin Lu, Mohammad S Ullah Chenliang Wu
+  year: 2015
+  month: 0
+  venue: AAPG Annual Convention and Exhibition
+  url: null
+  note: ''
+  sort_key: 201500
 - bibkey: sun2015multi
   type: inproceedings
   title: Multi-view sparse co-clustering via proximal alternating linearized minimization
@@ -408,3 +970,21 @@
   url: null
   note: ''
   sort_key: 201500
+- bibkey: bi2014sparse
+  type: inproceedings
+  title: A sparse integrative cluster analysis for understanding soybean phenotypes
+  authors:
+  - Jinbo Bi
+  - Jiangwen Sun
+  - Tingyang Xu
+  - Jin Lu
+  - Yansong Ma
+  - Lijuan Qiu
+  authors_html: Jinbo Bi, Jiangwen Sun, Tingyang Xu, <strong>Jin Lu</strong>, Yansong
+    Ma, Lijuan Qiu
+  year: 2014
+  month: 0
+  venue: 2014 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+  url: null
+  note: ''
+  sort_key: 201400
