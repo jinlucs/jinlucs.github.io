@@ -61,7 +61,7 @@ jobs:
           # GEMINI_MODEL: "gemini-2.0-flash"
 
           LLM_PROVIDER: "groq"
-          GROQ_API_KEY: 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
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: llama-3.3-70b-versatile
          
         run: |
