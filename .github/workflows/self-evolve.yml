@@ -1,0 +1,82 @@
+name: Self-evolve website (publications + daily arXiv)
+
+on:
+  schedule:
+    # daily at 09:15 UTC (adjust as you like)
+    - cron: "15 9 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "assets/bib/**"
+      - "scripts/**"
+      - ".github/workflows/self-evolve.yml"
+      # Avoid infinite loops: don't re-run when the bot commits generated outputs.
+      # GitHub docs: you can't use both paths and paths-ignore; use "!" exclusions inside paths. :contentReference[oaicite:4]{index=4}
+      - "!_data/publications.yml"
+      - "!_data/arxiv_seen.json"
+      - "!_posts/**"
+
+permissions:
+  contents: write
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Update publications from BibTeX
+        run: |
+          python scripts/update_publications.py \
+            --bib assets/bib/publications.bib \
+            --out _data/publications.yml \
+            --me "Jin Lu"
+
+      - name: Generate daily arXiv digest
+        env:
+          ARXIV_CATS: "cs.LG,stat.ML,math.OC"
+          HOURS_BACK: "36"
+          MAX_RESULTS: "80"
+          TOP_N: "5"
+
+          # Choose ONE provider:
+          # LLM_PROVIDER: "groq"
+          # GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # GROQ_MODEL: "llama-3.3-70b-versatile"
+
+          # OR:
+          # LLM_PROVIDER: "gemini"
+          # GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # GEMINI_MODEL: "gemini-2.0-flash"
+
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+        run: |
+          python scripts/arxiv_digest.py
+
+      - name: Commit & push (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -A
+            git commit -m "Auto-update: publications + daily arXiv digest"
+            git push
+          else
+            echo "No changes to commit."
+          fi

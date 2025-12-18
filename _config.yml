@@ -24,6 +24,7 @@ navbar-links:
   # Research: "research"
   Teaching: "teaching"
   Papers: "papers"
+  ArXiv Digest: "arxiv"
   CV: "/assets/files/cv.pdf"
   # Software: "https://github.com/roadin/"
   About: "about"

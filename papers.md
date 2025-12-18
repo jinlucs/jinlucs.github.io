@@ -1,25 +1,38 @@
 ---
 layout: page
 title: Papers
+permalink: /papers/
 ---
 
-{% for collection in site.data.papers %}
-<!-- ### {{ collection.year }} -->
-  {% for paper in collection.papers %}
-  + [{{ paper.title }}]({{ paper.link }})  
-    {{ paper.authors | replace: "*", "\*" }}  
-    {% if paper.conference -%}
-      {{ paper.conference }}  
-    {% endif -%}
-    {% if paper.blog -%}
-      [Blog Post]({{ paper.blog }}){%- if paper.github %} \+ {% endif -%}
-    {%- endif -%}
-    {%- if paper.blog -%}
-      [Source Code on GitHub]({{ paper.github }})
-    {%- endif %}
-  {% endfor %}
+<p>
+  This page is auto-generated from my BibTeX file.
+  <a href="/assets/bib/publications.bib">Download BibTeX</a>
+</p>
+
+{% assign pubs = site.data.publications | sort: "sort_key" | reverse %}
+{% assign pubs_by_year = pubs | group_by: "year" %}
+
+{% for y in pubs_by_year %}
+### {{ y.name }}
+
+<ul>
+{% for p in y.items %}
+  <li>
+    {% if p.url %}
+      <a href="{{ p.url }}">{{ p.title }}</a>
+    {% else %}
+      {{ p.title }}
+    {% endif %}
+    <br/>
+    {{ p.authors_html }}
+    {% if p.venue and p.venue != "" %}
+      <br/><em>{{ p.venue }}</em>
+    {% endif %}
+    {% if p.note and p.note != "" %}
+      — {{ p.note }}
+    {% endif %}
+  </li>
 {% endfor %}
+</ul>
 
-
-## Other
-My PhD thesis can be found <a href='https://opencommons.uconn.edu/cgi/viewcontent.cgi?article=8494&context=dissertations'>here</a>. 
+{% endfor %}
