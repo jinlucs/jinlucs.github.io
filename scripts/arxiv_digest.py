@@ -119,6 +119,65 @@ class LLM:
         raise NotImplementedError
 
 
+
+class CloudflareWorkersAILLM(LLM):
+    """
+    Cloudflare Workers AI OpenAI-compatible chat completions endpoint.
+
+    Docs show:
+      baseURL: https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1
+      POST   : https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions
+      Header : Authorization: Bearer {api_token}
+    """
+
+    def __init__(self, api_token: str, account_id: str, model: str) -> None:
+        self.api_token = api_token
+        self.account_id = account_id
+        self.model = model
+        self.url = (
+            f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions"
+        )
+
+    def generate(self, system: str, user: str, max_tokens: int = 1200) -> str:
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            "temperature": 0.2,
+            "max_tokens": max_tokens,
+        }
+
+        r = requests.post(
+            self.url,
+            headers={
+                "Authorization": f"Bearer {self.api_token}",
+                "Content-Type": "application/json",
+            },
+            json=payload,
+            timeout=60,
+        )
+        r.raise_for_status()
+        data = r.json()
+
+        # Cloudflare's OpenAI-compat endpoint should return an OpenAI-style object.
+        # Some Cloudflare endpoints wrap payloads under "result", so handle both.
+        root = data.get("result") if isinstance(data, dict) and "result" in data else data
+
+        if isinstance(root, dict):
+            if "choices" in root and isinstance(root["choices"], list) and root["choices"]:
+                msg = root["choices"][0].get("message") or {}
+                if isinstance(msg, dict) and "content" in msg:
+                    return str(msg["content"]).strip()
+
+            # Fallback for /ai/run style responses: {"result": {"response": "..."}, ...}
+            if "response" in root:
+                return str(root["response"]).strip()
+
+        raise ValueError(f"Unexpected Workers AI response schema: {data}")
+
+
 class GroqLLM(LLM):
     """
     Groq provides an OpenAI-compatible endpoint:
@@ -182,16 +241,43 @@ class GeminiLLM(LLM):
 
 def get_llm_from_env() -> Optional[LLM]:
     provider = (os.getenv("LLM_PROVIDER") or "").strip().lower()
+
+    # Cloudflare Workers AI (OpenAI compatible)
+    if provider in {"cloudflare", "workersai", "workers-ai", "workers_ai", "cf"}:
+        token = (
+            os.getenv("CF_API_TOKEN")
+            or os.getenv("CLOUDFLARE_API_TOKEN")
+            or os.getenv("CLOUDFLARE_API_KEY")
+            or ""
+        ).strip()
+        account_id = (
+            os.getenv("CF_ACCOUNT_ID")
+            or os.getenv("CLOUDFLARE_ACCOUNT_ID")
+            or ""
+        ).strip()
+        model = (
+            os.getenv("CF_MODEL")
+            or os.getenv("CLOUDFLARE_MODEL")
+            or "@cf/meta/llama-3.1-8b-instruct"
+        ).strip()
+
+        if token and account_id:
+            return CloudflareWorkersAILLM(token, account_id, model)
+
+    # Groq (kept for optional use)
     if provider == "groq":
-        key = os.getenv("GROQ_API_KEY", "").strip()
-        model = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+        key = (os.getenv("GROQ_API_KEY") or "").strip()
+        model = (os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile").strip()
         if key:
             return GroqLLM(key, model)
+
+    # Gemini (kept for optional use)
     if provider == "gemini":
-        key = os.getenv("GEMINI_API_KEY", "").strip()
-        model = os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip()
+        key = (os.getenv("GEMINI_API_KEY") or "").strip()
+        model = (os.getenv("GEMINI_MODEL") or "gemini-2.0-flash").strip()
         if key:
             return GeminiLLM(key, model)
+
     return None
 
 
@@ -288,8 +374,10 @@ def write_digest_post(
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{yyyy_mm_dd}-arxiv-digest.md"
 
-    # Avoid overwriting if already created today
-    if out_path.exists():
+    force = (os.getenv("FORCE") or "").strip().lower() in ("1", "true", "yes")
+
+    # Avoid overwriting unless forced
+    if out_path.exists() and not force:
         return None
 
     lines: List[str] = []
@@ -343,6 +431,7 @@ def main() -> None:
     top_n = int(os.getenv("TOP_N") or "5")
 
     llm = get_llm_from_env()
+    force = (os.getenv("FORCE") or "").strip().lower() in ("1", "true", "yes")
 
     papers = fetch_recent_arxiv(cats=cats, hours_back=hours_back, max_results=max_results)
 
@@ -355,7 +444,8 @@ def main() -> None:
         except Exception:
             seen = set()
 
-    papers = [p for p in papers if p.arxiv_id not in seen]
+    if not force:
+        papers = [p for p in papers if p.arxiv_id not in seen]
 
     chosen = choose_interesting(papers, top_n=top_n, llm=llm)
 
