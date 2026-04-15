@@ -1,34 +1,81 @@
+@'
 ---
 layout: page
 title: Research
+subtitle: Machine learning, optimization, foundation models, and AI systems in the wild
 ---
 
-How can we make sure that deep learning models are actually doing what we want them to do? I study  the foundations of robust and reliable machine learning: how to understand, debug, and guarantee the behavior of machine learning models. My research interests span machine learning, optimization, and robustness, in order to develop principled methods with an eye towards scalability and practicality in real-world settings. 
+I lead a research program on rigorous, efficient, and deployable AI. My work sits at the intersection of machine learning, optimization, systems, and interdisciplinary applications. A recurring goal across projects is to design methods that remain useful when computation, communication, interpretability, or reliability constraints matter as much as raw accuracy.
 
-To achieve this goal, my work touches upon a variety of topics. Some examples include generative modeling, sparsity, influence functions, transformers, linear programs, overfitting, biases, and transfer learning. Below we summarize some of the main questions we've been looking at. 
+### 1. Optimization for AI
+Optimization is a core theme of my work. I study optimization methods that support modern machine learning systems, especially when standard first-order assumptions break down or deployment constraints become important.
 
-# Principled Model Explanations
-What does a model explanation mean? Even though explanations in machine learning purport to explain the prediction process, we still don't know what we can conclude from many common explanations for large machine learning models. We're looking into constructing principled explanations that have guaranteed, provable meaning for the end user. Some examples include: 
-+ **Certified interpretability.** Explanations of model predictions in machine learning are often criticized for being misleading and brittle. We are interested in learning models with provably stable post-hoc explanations. 
-+ **Explaining distribution shift.** Models need to work well when their environments change. But how exactly do environments change? We are developing tools that can pinpoint how and why distributions are changing while respecting inherent structure in the data. 
+Current directions include:
+- convex and nonconvex optimization for machine learning;
+- projected, proximal, and bilevel methods;
+- derivative-free and zeroth-order optimization;
+- optimization under communication, memory, and hardware constraints.
 
-# Debugging Machine Learning
-When your machine learning model behaves strangely, how do you find and fix the issue? We're developing systems that enable scalable and interactive analysis of machine learning pipelines to describe and correct these so-called "bugs". For example: 
-+ **Generating rules at scale.** Machine learning models behave in surprising ways that sometimes defy basic common sense, or basic rules about the world. We are creating systems that can automatically extract common rules for machine learning systems at scale.
-+ **Interactive ML debugger.** In research, we often assume a specific formulation of a problem to solve, but in practice, we often don't know what this is a priori. We are building interactive debugging tools for inspecting machine learning pipelines and identifying issues in the pipeline. 
+This line of work also informs my teaching, especially my graduate course on Optimization in AI and the proposed new course CSCI 8830 Advanced Optimization Methods in AI.
 
-# Prompting Science
-A recent learning paradigm known as "prompting" allows users to adapt models with natural language instructions. We are working on developing tools and methods to automatically guide and support prompt design. 
-+ **Adversarial Prompting.** The internet has found numerous examples of prompts elucidating strange outputs from large language models. We're developing tools that automatically search for prompts that can remain under the radar but achieve certain goals. 
-+ **Chain of thought.** Asking the large language model to explain its output can improve its performance (i.e. "chain of thought"), but the explanation may have little or nothing to do with the actual output. We've studied how to make this paradigm directly faithful, or causal, to the ultimate prediction. 
+### 2. Efficient Foundation Models and LLM Adaptation
+Recent projects in my group focus on efficient adaptation and fine-tuning of large models. I am interested in making foundation model training and deployment more practical without giving up robustness or scientific rigor.
 
-# Past research
-In the past, I've also worked on a variety of other topics. 
+Representative topics include:
+- zeroth-order optimization for LLM fine-tuning;
+- quantization-aware and memory-efficient on-device training;
+- efficient DNN training and layer freezing;
+- instruction tuning, causal control, and robustness;
+- machine unlearning and model editing.
 
-**Understanding transfer learning.** More data and bigger models in the form of pretraining typically leads to better performance when transferred to a downstream task. However, pretraining and transferring can have unexpected effects that are not always beneficial. We have studied how transfer learning can insert unintended spurious correlations to the downstrea model, and found that certain subpopulations used in pretraining can actually harm transfer performance. 
+This work connects optimization, systems, and trustworthy AI, and it is motivated by the growing need to adapt large models in resource-limited environments.
 
-**Beyond L-p: characterizing robustness in the real world.** Research in adversarial robustness typically focuses on robustness to L-p norm-bounded perturbations. However, the types of changes and perturbations that occur in real-world settings often cannot be described via an L-p ball. To bridge the gap from L-p perturbations to real-world changes, we proposed and studied new perturbation sets that capture real-world phenomena. 
+### 3. Federated, Distributed, and On-Device Learning
+Another major thrust of my research is learning in decentralized and heterogeneous environments. Real deployments often involve multiple devices, partial data, unreliable communication, and non-identical local conditions. I work on algorithms that remain effective under these realities.
 
-**Understanding and improving robust optimization.** Adversarial training is a popular robust optimization method for empirically defending against adversarial examples. However, adversarial training does not always behave the way we expect it to. We demonstrate how, unlike standard training, adversarial training is more prone to various forms of overfitting during the training process, such as robust overfitting and catastrophic overfitting. Understanding these issues allowed us to greatly accelerate and improve the performance of adversarial training approaches. 
+Representative topics include:
+- federated learning on heterogeneous clients;
+- decentralized and infrastructure-less learning;
+- personalized federated learning;
+- on-device model adaptation;
+- edge AI and Internet of Things applications.
 
-**Provable guarantees for deep networks.** Adversarial examples have established that deep networks are exceedingly brittle, and are not robust to small targeted perturbations. Empirical defenses and attacks are prone to blind spots, leading to unreliable robustness estimates. Instead, we derived scalable, provable defenses which provides a differentiable, guaranteed bound on the output of a network that can be used to train convolutional networks with robustness guarantees. 
+This thread of work has led to projects on WiFi sensing, mobile systems, edge intelligence, and learning on constrained hardware.
+
+### 4. Multimodal AI for Health, Agriculture, and Sensing
+I collaborate widely on AI methods that integrate images, language, event streams, physiological signals, and other sensor data. These applications give rise to important algorithmic questions about robustness, interpretability, multimodal fusion, and efficient deployment.
+
+Representative applications include:
+- multimodal medical time-series analysis;
+- physiological signal interpretation and supportive small models;
+- contactless BMI and blood pressure monitoring;
+- smart-home activity recognition;
+- poultry monitoring and precision agriculture;
+- AI-assisted breeding and other domain-specific scientific workflows.
+
+A common principle in these collaborations is that useful AI systems should be interpretable, resource-aware, and robust enough for real operational settings.
+
+### Selected Recent Publications
+- Roots Beneath the Cut: Uncovering the Risk of Concept Recovery in Pruning-Based Unlearning for Diffusion Models, CVPR 2026
+- MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual Information, PAKDD 2026
+- ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences, SenSys 2026
+- CARE: Contrastive Alignment for ADL Recognition from Event-Triggered Sensor Streams, PerCom 2026
+- LOCAL: Latent Orthonormal Contrastive Learning for Paired Image Classification, ICCV 2025
+- HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-Tuning LLM with Zeroth-Order Optimization, EMNLP 2025
+- Harmony in Divergence: Towards Fast, Accurate, and Memory-Efficient Zeroth-Order LLM Fine-Tuning, NeurIPS 2025
+- Proximal Federated Learning for Body Mass Index Monitoring Using Commodity WiFi, MobiCom 2024
+
+See the full [publications list](/papers/) for more.
+
+### Funding and Collaborations
+My research has been supported through collaborations and internal awards, including the NIH-supported CARE-TRAC project and University of Georgia awards related to LLM inference in IoT, Neuro-AI integration, and AI-assisted breeding. I collaborate with researchers across computing, engineering, medicine, agriculture, and environmental science.
+
+### Talks and Visibility
+I regularly present this work in conference venues, invited seminars, and university research events. Recent presentations include talks connected to ICCV, EMNLP, NeurIPS, ICCAD, GLSVLSI, MobiCom, and UGA's AI Research Spotlight.
+
+### Learn More
+- [Papers](/papers/)
+- [Teaching](/teaching/)
+- [Group](/group/)
+- [Daily arXiv Digest](/arxiv/)
+'@ | Set-Content -Path .\research.md -Encoding UTF8
