@@ -361,6 +361,12 @@ def explain_with_math(p: Paper, llm: Optional[LLM]) -> str:
     return llm.generate(system, user, max_tokens=1200).strip()
 
 
+def _append_raw_block(lines: List[str], block_lines: List[str]) -> None:
+    lines.append("{% raw %}")
+    lines.extend(block_lines)
+    lines.append("{% endraw %}")
+
+
 def write_digest_post(
     date_utc: datetime,
     chosen: List[Paper],
@@ -394,17 +400,22 @@ def write_digest_post(
     lines.append("")
 
     for i, p in enumerate(chosen, start=1):
-        lines.append(f"## {i}) {p.title}")
-        lines.append(f"- **Authors:** {', '.join(p.authors)}")
-        lines.append(f"- **arXiv:** [{p.arxiv_id}]({p.abs_url}) · [pdf]({p.pdf_url})")
+        metadata_lines = [
+            f"## {i}) {p.title}",
+            f"- **Authors:** {', '.join(p.authors)}",
+            f"- **arXiv:** [{p.arxiv_id}]({p.abs_url}) · [pdf]({p.pdf_url})",
+        ]
         if p.categories:
-            lines.append(f"- **Categories:** {', '.join(p.categories)}")
-        lines.append("")
-        lines.append("### Abstract")
-        lines.append(f"> {p.abstract}")
+            metadata_lines.append(f"- **Categories:** {', '.join(p.categories)}")
+        metadata_lines.extend([
+            "",
+            "### Abstract",
+            f"> {p.abstract}",
+        ])
+        _append_raw_block(lines, metadata_lines)
         lines.append("")
         lines.append("### Math explanation (LLM)")
-        lines.append(explain_with_math(p, llm))
+        _append_raw_block(lines, [explain_with_math(p, llm)])
         lines.append("")
 
     out_path.write_text("\n".join(lines), encoding="utf-8")

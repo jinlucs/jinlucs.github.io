@@ -1,65 +1,40 @@
 ---
 layout: page
 title: About Me
+subtitle: Background, appointments, and research interests
 ---
 
-# Bio
-Jin Lu is an assistant professor at the [School of Computing](https://www.cs.uga.edu/) at the University of Georiga, His major research interests include machine learning, data mining, optimization, smart mobility, biomedical informatics, and health informatics. He is particularly interested in transparent machine learning models, high-performance algorithms, and interpretable methods for critical scientific and engineering problems. 
+[Headshot](/assets/img/photo_small_jin.jpg) | [Download CV](/assets/files/cv.pdf)
 
-<!-- He is a 2020 Siebel Scholar and received an honorable mention for his thesis on the robustness of deep networks to adversarial examples at Carnegie Mellon University advised by Zico Kolter. Prior to joining UPenn, he was a postdoc at CSAIL MIT advised by Aleksander Madry.  -->
+I am an Assistant Professor in the [School of Computing](https://www.cs.uga.edu/) at the University of Georgia. Since joining UGA in Fall 2023, I have been building an interdisciplinary research program at the intersection of machine learning, optimization, trustworthy AI, and edge intelligence. My work aims to make AI systems more rigorous, efficient, and deployable in real-world environments.
 
-<a href="https://jinlucs.github.io/assets/img/photo_small_jin.png">[Link to photo]</a>
+### Current Appointments
+- Assistant Professor, School of Computing, University of Georgia, 2023-present
+- Faculty Fellow, Institute for Artificial Intelligence, University of Georgia, 2023-present
+- Graduate Faculty, School of Computing, University of Georgia, 2023-present
 
-<a href="https://jinlucs.github.io/assets/files/cv.pdf">[Link to cv]</a>
+### Previous Appointments
+- Assistant Professor, Department of Computer and Information Science, University of Michigan-Dearborn, 2019-2023
+- Faculty Member, Precision Health, University of Michigan, 2019-2023
+- Affiliated Faculty Member, Michigan Institute for Data Science (MIDAS), University of Michigan, 2019-2023
 
+### Education
+- PhD in Computer Science and Engineering, University of Connecticut, 2019
+- MS in Computer Science and Engineering, University of Connecticut, 2019
+- MS in Applied Mathematics, Xi'an Jiaotong University, 2014
+- BS in Applied Mathematics, Northwestern Polytechnical University, 2010
 
-<style type="text/css">
-   /*! div style */
-  .image-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
-    justify-content: center;
-    padding: 4px;
-  }
+### Research Interests
+My research spans machine learning, mathematical optimization, efficient training and adaptation of foundation models, federated and distributed learning, multimodal sensing, and trustworthy AI. I am particularly interested in methods that are both principled and practical: algorithms with strong theoretical motivation that also work under the resource, deployment, and reliability constraints of real applications.
 
-  .box {
-      flex-basis: 25%;
-      width: 100%;
-      padding: 10px;
-      margin: 2px;
-  }
+### Interdisciplinary Work
+A major theme of my work is collaboration across domains. I have worked with researchers in computing, engineering, agriculture, medicine, public health, and environmental science. These collaborations have led to projects in physiological signal understanding, contactless health monitoring, precision poultry farming, AI-assisted breeding, AI for education, and scientific modeling.
 
-  .img-gallery {
-	width: 100%;
-  height: 200px;
-	object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-  }
-  .img-gallery:hover {
-    transform: scale(1.05);
-  }
-</style>
+### Mentoring and Service
+Mentoring is a central part of my work. At UGA, I have supervised master's students in project, research, and thesis work, advised PhD students, and served on graduate committees across computing and related disciplines. I also contribute professional service to the AI community through program committee work, conference reviewing, journal reviewing, and grant review.
 
-## Education
-Ph.D. Computer Science and Engineering, University of Connecticut, USA
+### Selected Recognition
+- Student Career Success Influencer Award, University of Georgia, 2024
 
-MSc Applied Mathematics, Xi'an Jiaotong University, China
-
-BSc Applied Mathematics,Northwestern Polytechnical University, China
-
-## Miscellaneous
-
-Activities I find enjoyable: soccer, reading, writing, miaodao martial arts, and more.
-
-{% assign filenames = "bass.png,katana.png,reading.png,travel.png,ramen.png,soccer.png" | split: "," %}
-<div class ="image-gallery">
-{% for name in filenames %}
-    <div class="box">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/img/cat/full/{{ name }}">
-      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/cat/thumbs/{{ name }}" alt="{{ name }}"  class="img-gallery" />
-     </a>
-    </div>
- {% endfor %}
-</div>
+### Outside the Lab
+Outside of research and teaching, I enjoy soccer, reading, travel, and martial arts.

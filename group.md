@@ -1,57 +1,47 @@
 ---
 layout: page
-title: Group  
+title: Group
+subtitle: Students, mentoring, and opportunities
 ---
-### Master students
 
-<div class ="avatar-gallery">
-{% for student in site.data.group.master %}
-    <div class="avatar-container">
-    	<div class="avatar-img-border">
-	      <img src="{{ student.photo | relative_url }}" alt="{{ student.name }}"  class="avatar-img" />
-  		</div>	
-	    <div class="avatar-name">
-		    <a href="{{ student.url }}">{{ student.name }}</a>
-		      {% if student.coadvisor -%}
-		      <br>(co-advised with <a href="{{ student.coadvisor_url }}">{{ student.coadvisor }}</a>)
-		      {%- endif %}
-		</div>
-    </div>
- {% endfor %}
-</div>
+I work with students interested in optimization, machine learning, foundation models, sensor data, and trustworthy AI systems. Many projects in the group combine algorithmic development with real-world applications in health, agriculture, wireless sensing, and edge computing.
 
-<hr style="clear:both;">
+### Current PhD Students
+- Ke Deng
+- Jiaxi Li
 
+### Master's Students Supervised at UGA
+- Chaitna Sri Koganti
+- Kavin Parikh
+- Mani Deepika Adusumilli
+- Pooja Dulam
+- Sai Akshitha Reddy Kota
+- Abhishek Khedekar
+- Shreyas Peddi
+- Jielu Zhang
+- Dharati Patel
+- Yueqi Weng
+- Sathwik Katkam
+- Bibek Shah
+- Bhavya Sri Lakshmi Sravanthi Pallabothu
 
-<!-- ### PhD students
+### Undergraduate Researchers
+- Chih Yuan Tung, now MSCS at Northwestern University
+- Noah Prevallet
+- Khoa Le, now Master in AI at UGA
 
-<div class ="avatar-gallery">
-{% for student in site.data.group.phd %}
-    <div class="avatar-container">
-    	<div class="avatar-img-border">
-	      <img src="{{ student.photo | relative_url }}" alt="{{ student.name }}"  class="avatar-img" />
-  		</div>	
-	    <div class="avatar-name">
-		    <a href="{{ student.url }}">{{ student.name }}</a>
-		      {% if student.coadvisor -%}
-		      <br>(co-advised with <a href="{{ student.coadvisor_url }}">{{ student.coadvisor }}</a>)
-		      {%- endif %}
-		</div>
-    </div>
- {% endfor %}
-</div> -->
+### Recent Student Highlights
+- Jiaxi Li has contributed to papers in MobiCom 2024, EMNLP 2025, and PAKDD 2026.
+- Sai Akshitha Reddy Kota's work was selected for presentation at the 2025 SoC Day Event.
+- Khoa Le's work was selected for presentation at the 2026 SoC Day Event.
+- Students from my machine learning and optimization courses have continued into independent research, master's project work, and thesis research.
 
-<!-- <hr style="clear:both;"> -->
+### Committee and Advising Service
+In addition to direct supervision, I have served on graduate advisory committees for master's and PhD students across the School of Computing and related programs. These collaborations span computer science, artificial intelligence, engineering, integrative biology, and allied areas.
 
-<!-- ### Collaborators
+### How to Join
+- PhD applicants: apply through the [UGA School of Computing PhD program](https://www.cs.uga.edu/doctor-philosophy-computer-science) and indicate interest in working with me.
+- Master's project applicants: use this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSevdmLbC-GsE4u-pA57T2jd1ZAHnOAm5R-8peGjHstPMOm6Kg/viewform?usp=sf_link).
+- UGA undergraduates: email me with your CV, transcript, research interests, and relevant coursework if you are interested in joining the group.
 
-In addition, I have had the fortune of being able to work on various papers with the following students/postdocs here at UPenn: 
-
-+ [Aaditya Naik](https://www.seas.upenn.edu/~asnaik/) 
-+ [Adam Stein](https://www.seas.upenn.edu/~steinad/)
-+ [Natalie Maus](https://antonxue.github.io/)
-+ [Patrick Chao](https://patrickrchao.github.io/)
-+ [Tai Nguyen](https://taidnguyen.github.io/)
-+ [Veronica Lyu](https://veronica320.github.io/)
-+ [Yinjun Wu](https://www.seas.upenn.edu/~wuyinjun/) -->
-
+I am especially interested in students who enjoy mathematical thinking, careful experimentation, and building AI systems that can stand up to real constraints.
