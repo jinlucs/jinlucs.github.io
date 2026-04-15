@@ -1,6 +1,6 @@
 - bibkey: zhang2026roots
   type: inproceedings
-  title: 'Roots Beneath the Cut: Uncovering the Risk of Concept Revival in Pruning-Based
+  title: 'Roots Beneath the Cut: Uncovering the Risk of Concept Recovery in Pruning-Based
     Unlearning for Diffusion Models'
   authors:
   - Ci Zhang
@@ -22,22 +22,109 @@
   url: https://arxiv.org/abs/2603.06640
   note: ''
   sort_key: 202600
+- bibkey: yang2025rethinking
+  type: article
+  title: Rethinking the Potential of Layer Freezing for Efficient DNN Training
+  authors:
+  - Chence Yang
+  - Ci Zhang
+  - Lei Lu
+  - Qitao Tan
+  - Sheng Li
+  - Ao Li
+  - Xulong Tang
+  - Shaoyi Huang
+  - Jinzhen Wang
+  - Guoming Li
+  - Jin Lu
+  - Geng Yuan
+  authors_html: Chence Yang, Ci Zhang, Lei Lu, Qitao Tan, Sheng Li, Ao Li, Xulong
+    Tang, Shaoyi Huang, Jinzhen Wang, Guoming Li, <strong>Jin Lu</strong>, Geng Yuan
+  year: 2026
+  month: 0
+  venue: Submitted to IEEE World Congress on Computational Intelligence (WCCI)
+  url: https://arxiv.org/abs/2508.15033
+  note: Under review
+  sort_key: 202600
+- bibkey: dai2026pecanagent
+  type: misc
+  title: 'Pecan-Agent: Closed-Loop Industrial Shelling with MLLM-Optimized Morphological
+    Priors'
+  authors:
+  - Zuxin Dai
+  - Churan Yu
+  - Bruna Karoline Valiate
+  - Aarti Singh
+  - Jin Lu
+  - Beshoy Morkos
+  authors_html: Zuxin Dai, Churan Yu, Bruna Karoline Valiate, Aarti Singh, <strong>Jin
+    Lu</strong>, Beshoy Morkos
+  year: 2026
+  month: 0
+  venue: Submitted to the IEEE/RSJ International Conference on Intelligent Robots
+    and Systems (IROS)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: li2026peakdetector
+  type: misc
+  title: 'Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language
+    Models in Physiological Signal'
+  authors:
+  - Jiahui Li
+  - Yida Zhang
+  - Zixuan Zeng
+  - Jiayu Chen
+  - Yingjian Song
+  - Yin Xiao
+  - Nishan Dong
+  - Junjie Lu
+  - Younghoon Kwon
+  - Xiang Zhang
+  - Jin Lu
+  - WenZhan Song
+  - Fei Dou
+  authors_html: Jiahui Li, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin
+    Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, <strong>Jin Lu</strong>,
+    WenZhan Song, Fei Dou
+  year: 2026
+  month: 0
+  venue: Submitted to ACM International Joint Conference on Pervasive and Ubiquitous
+    Computing (UbiComp)
+  url: null
+  note: Under review
+  sort_key: 202600
 - bibkey: li2026mits
   type: inproceedings
   title: 'MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual Information'
   authors:
   - Jiaxi Li
-  - Yucheng Shi
-  - Xiao Huang
+  - Yuceng Shi
   - Jin Lu
   - Ninghao Liu
-  authors_html: Jiaxi Li, Yucheng Shi, Xiao Huang, <strong>Jin Lu</strong>, Ninghao
-    Liu
+  authors_html: Jiaxi Li, Yuceng Shi, <strong>Jin Lu</strong>, Ninghao Liu
   year: 2026
   month: 0
   venue: Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)
   url: https://arxiv.org/abs/2510.03632
   note: Oral presentation
+  sort_key: 202600
+- bibkey: liu2026lastact
+  type: misc
+  title: 'LastAct: Trajectory-Guided Latest-Activity Localization for Real-Time Smart-Home
+    Activity Recognition'
+  authors:
+  - Zishuai Liu
+  - Ruili Fang
+  - Jin Lu
+  - Fei Dou
+  authors_html: Zishuai Liu, Ruili Fang, <strong>Jin Lu</strong>, Fei Dou
+  year: 2026
+  month: 0
+  venue: Submitted to ACM International Joint Conference on Pervasive and Ubiquitous
+    Computing (UbiComp)
+  url: null
+  note: Under review
   sort_key: 202600
 - bibkey: ruan2026large
   type: article
@@ -63,6 +150,105 @@
   url: null
   note: ''
   sort_key: 202600
+- bibkey: chatterjee2026kysslam
+  type: misc
+  title: 'Know Your Scene (KYS-SLAM): Leveraging Semantic and Motion Priors for Robust
+    Feature Matching in Stereo Visual SLAM'
+  authors:
+  - Preeti Chatterjee
+  - Jin Lu
+  - Jin Sun
+  - Suchendra M. Bhandarkar
+  authors_html: Preeti Chatterjee, <strong>Jin Lu</strong>, Jin Sun, Suchendra M.
+    Bhandarkar
+  year: 2026
+  month: 0
+  venue: Submitted to the European Conference on Computer Vision (ECCV)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: okonkwo2026instruction
+  type: misc
+  title: Instruction Tuning Redistributes Causal Control Rather Than Improving Semantic
+    Robustness
+  authors:
+  - Dominic Okonkwo
+  - Jin Lu
+  authors_html: Dominic Okonkwo, <strong>Jin Lu</strong>
+  year: 2026
+  month: 0
+  venue: Submitted to Annual Meeting of the Association for Computational Linguistics
+    (ACL)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: zhao2026fedconcord
+  type: misc
+  title: 'FedConcord: Concordant Client Updates via Guided Local Objectives for Task-Heterogeneous
+    Federated LoRA'
+  authors:
+  - Huaqin Zhao
+  - Zhaojun Ding
+  - Ke Deng
+  - Yifan Zhou
+  - Jiaxi Li
+  - Yiwei Li
+  - Geng Yuan
+  - Fei Dou
+  - Tianming Liu
+  - Jin Lu
+  authors_html: Huaqin Zhao, Zhaojun Ding, Ke Deng, Yifan Zhou, Jiaxi Li, Yiwei Li,
+    Geng Yuan, Fei Dou, Tianming Liu, <strong>Jin Lu</strong>
+  year: 2026
+  month: 0
+  venue: Submitted to International Conference on Machine Learning (ICML)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: tan2026endtoend
+  type: misc
+  title: End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost
+  authors:
+  - Qitao Tan
+  - Xiaoying Song
+  - Ningxi Cheng
+  - Guoming Li
+  - Jun Liu
+  - Lingzi Hong
+  - Caiwen Ding
+  - Jundong Li
+  - Xiaoming Zhai
+  - Shaoyi Huang
+  - Jin Lu
+  - Wei Niu
+  - Geng Yuan
+  authors_html: Qitao Tan, Xiaoying Song, Ningxi Cheng, Guoming Li, Jun Liu, Lingzi
+    Hong, Caiwen Ding, Jundong Li, Xiaoming Zhai, Shaoyi Huang, <strong>Jin Lu</strong>,
+    Wei Niu, Geng Yuan
+  year: 2026
+  month: 0
+  venue: Submitted to Annual Meeting of the Association for Computational Linguistics
+    (ACL)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: wang2026dial
+  type: misc
+  title: 'DIAL: Data-Free Interference-Aware Layer-Scaling via Diagnostic Composition
+    for Task-Vector Model Merging'
+  authors:
+  - Xinyu Wang
+  - Ke Deng
+  - Fei Dou
+  - Jinbo Bi
+  - Jin Lu
+  authors_html: Xinyu Wang, Ke Deng, Fei Dou, Jinbo Bi, <strong>Jin Lu</strong>
+  year: 2026
+  month: 0
+  venue: Submitted to the European Conference on Computer Vision (ECCV)
+  url: null
+  note: Under review
+  sort_key: 202600
 - bibkey: zhao2025care
   type: inproceedings
   title: 'CARE: Contrastive Alignment for ADL Recognition from Event-Triggered Sensor
@@ -78,34 +264,81 @@
     Zhang, Fei Dou
   year: 2026
   month: 0
-  venue: IEEE International Conference on Pervasive Computing and Communications
+  venue: International Conference on Pervasive Computing and Communications (PerCom)
   url: https://arxiv.org/abs/2510.16988
   note: ''
   sort_key: 202600
+- bibkey: li2026beaconbp
+  type: misc
+  title: 'BEACON-BP: Bodyseismography-Enabled Contactless Monitoring of Blood Pressure
+    via Mixture-of-Experts'
+  authors:
+  - Jiahui Li
+  - Yida Zhang
+  - Zixuan Zeng
+  - Jiayu Chen
+  - Yingjian Song
+  - Yin Xiao
+  - Nishan Dong
+  - Junjie Lu
+  - Xiang Zhang
+  - Jin Lu
+  - WenZhan Song
+  - Fei Dou
+  authors_html: Jiahui Li, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin
+    Xiao, Nishan Dong, Junjie Lu, Xiang Zhang, <strong>Jin Lu</strong>, WenZhan Song,
+    Fei Dou
+  year: 2026
+  month: 0
+  venue: Submitted to ACM International Joint Conference on Pervasive and Ubiquitous
+    Computing (UbiComp)
+  url: null
+  note: Under review
+  sort_key: 202600
+- bibkey: zhang2026attack
+  type: misc
+  title: Attack the Machine Unlearning on Diffusion Models
+  authors:
+  - Ci Zhang
+  - Zhaojun Ding
+  - Chence Yang
+  - Jin Lu
+  - Xiaoming Zhai
+  - Shaoyi Huang
+  - Beiwen Li
+  - Xiaolong Ma
+  - Geng Yuan
+  authors_html: Ci Zhang, Zhaojun Ding, Chence Yang, <strong>Jin Lu</strong>, Xiaoming
+    Zhai, Shaoyi Huang, Beiwen Li, Xiaolong Ma, Geng Yuan
+  year: 2026
+  month: 0
+  venue: Submitted to International Conference on Machine Learning (ICML)
+  url: null
+  note: Under review
+  sort_key: 202600
 - bibkey: you2026adlgen
   type: inproceedings
-  title: 'ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Human
-    Activity Modeling'
+  title: 'ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences'
   authors:
   - Weihang You
   - Hanqi Jiang
   - Jiahui Li
-  - Zishuai Liu
   - Tianming Liu
   - Jin Lu
   - Fei Dou
-  authors_html: Weihang You, Hanqi Jiang, Jiahui Li, Zishuai Liu, Tianming Liu, <strong>Jin
-    Lu</strong>, Fei Dou
+  authors_html: Weihang You, Hanqi Jiang, Jiahui Li, Tianming Liu, <strong>Jin Lu</strong>,
+    Fei Dou
   year: 2026
   month: 0
-  venue: Proceedings of the ACM Conference on Embedded Networked Sensor Systems (SenSys)
+  venue: International Conference on Embedded Artificial Intelligence and Sensing
+    Systems (SenSys)
   url: null
   note: ''
   sort_key: 202600
 - bibkey: zhang2025towards
   type: inproceedings
-  title: Towards memory-efficient and sustainable machine unlearning on edge using
-    zeroth-order optimizer
+  title: Towards Memory-Efficient and Sustainable Machine Unlearning on Edge Using
+    Zeroth-Order Optimizer
   authors:
   - Ci Zhang
   - Chence Yang
@@ -148,34 +381,10 @@
   url: null
   note: ''
   sort_key: 202500
-- bibkey: yang2025rethinking
-  type: article
-  title: Rethinking the Potential of Layer Freezing for Efficient DNN Training
-  authors:
-  - Chence Yang
-  - Ci Zhang
-  - Lei Lu
-  - Qitao Tan
-  - Sheng Li
-  - Ao Li
-  - Xulong Tang
-  - Shaoyi Huang
-  - Jinzhen Wang
-  - Guoming Li
-  - Jin Lu
-  - Geng Yuan
-  authors_html: Chence Yang, Ci Zhang, Lei Lu, Qitao Tan, Sheng Li, Ao Li, Xulong
-    Tang, Shaoyi Huang, Jinzhen Wang, Guoming Li, <strong>Jin Lu</strong>, Geng Yuan
-  year: 2025
-  month: 0
-  venue: arXiv preprint arXiv:2508.15033
-  url: https://arxiv.org/abs/2508.15033
-  note: ''
-  sort_key: 202500
 - bibkey: tan2025perturbation
   type: inproceedings
-  title: Perturbation-efficient zeroth-order optimization for hardware-friendly on-device
-    training
+  title: Perturbation-Efficient Zeroth-Order Optimization for Hardware-Friendly On-Device
+    Training
   authors:
   - Qitao Tan
   - Sung-En Chang
@@ -231,9 +440,9 @@
   authors_html: Fei Dou, <strong>Jin Lu</strong>, Tan Zhu, Jinbo Bi
   year: 2025
   month: 0
-  venue: Findings of the IEEE/CVF International Conference on Computer Vision
-  url: https://openaccess.thecvf.com/content/ICCV2025W/Findings/html/Dou_LOCAL_Latent_Orthonormal_Contrastive_Learning_for_Paired_Image_Classification_ICCVW_2025_paper.html
-  note: Oral presentation
+  venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
+  url: null
+  note: ''
   sort_key: 202500
 - bibkey: deng2025hop
   type: article
@@ -250,50 +459,48 @@
   url: null
   note: ''
   sort_key: 202500
+- bibkey: tan2025harmony
+  type: inproceedings
+  title: 'Harmony in Divergence: Towards Fast, Accurate, and Memory-Efficient Zeroth-Order
+    LLM Fine-Tuning'
+  authors:
+  - Qitao Tan
+  - Jun Liu
+  - Zheng Zhan
+  - Caiwei Ding
+  - Yanzhi Wang
+  - Xiaolong Ma
+  - Jaewoo Lee
+  - Jin Lu
+  - Geng Yuan
+  authors_html: Qitao Tan, Jun Liu, Zheng Zhan, Caiwei Ding, Yanzhi Wang, Xiaolong
+    Ma, Jaewoo Lee, <strong>Jin Lu</strong>, Geng Yuan
+  year: 2025
+  month: 0
+  venue: Advances in Neural Information Processing Systems
+  url: https://arxiv.org/abs/2502.03304
+  note: ''
+  sort_key: 202500
 - bibkey: zhao2025helene
   type: inproceedings
-  title: 'Helene: Hessian layer-wise clipping and gradient annealing for accelerating
-    fine-tuning llm with zeroth-order optimization'
+  title: 'HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating
+    Fine-Tuning LLM with Zeroth-Order Optimization'
   authors:
   - Huaqin Zhao
   - Jiaxi Li
   - Yi Pan
   - Shizhe Liang
   - Xiaofeng Yang
-  - Wei Liu
-  - Xiang Li
   - Fei Dou
   - Tianming Liu
   - Jin Lu
-  authors_html: Huaqin Zhao, Jiaxi Li, Yi Pan, Shizhe Liang, Xiaofeng Yang, Wei Liu,
-    Xiang Li, Fei Dou, Tianming Liu, <strong>Jin Lu</strong>
+  authors_html: Huaqin Zhao, Jiaxi Li, Yi Pan, Shizhe Liang, Xiaofeng Yang, Fei Dou,
+    Tianming Liu, <strong>Jin Lu</strong>
   year: 2025
   month: 0
   venue: Proceedings of the 2025 Conference on Empirical Methods in Natural Language
     Processing
   url: https://aclanthology.org/2025.emnlp-main.1323/
-  note: ''
-  sort_key: 202500
-- bibkey: tan2025harmony
-  type: inproceedings
-  title: 'Harmony in divergence: Towards fast, accurate, and memory-efficient zeroth-order
-    llm fine-tuning'
-  authors:
-  - Qitao Tan
-  - Jun Liu
-  - Zheng Zhan
-  - Caiwen Ding
-  - Yanzhi Wang
-  - Xiaolong Ma
-  - Jaewoo Lee
-  - Jin Lu
-  - Geng Yuan
-  authors_html: Qitao Tan, Jun Liu, Zheng Zhan, Caiwen Ding, Yanzhi Wang, Xiaolong
-    Ma, Jaewoo Lee, <strong>Jin Lu</strong>, Geng Yuan
-  year: 2025
-  month: 0
-  venue: Advances in Neural Information Processing Systems
-  url: https://arxiv.org/abs/2502.03304
   note: ''
   sort_key: 202500
 - bibkey: zeng2025fusion
@@ -414,7 +621,7 @@
   sort_key: 202400
 - bibkey: li2024proximal
   type: inproceedings
-  title: Proximal Federated Learning for Body Mass Index Monitoring using Commodity
+  title: Proximal Federated Learning for Body Mass Index Monitoring Using Commodity
     WiFi
   authors:
   - Jiaxi Li
@@ -434,8 +641,8 @@
   sort_key: 202400
 - bibkey: kusam2024generative
   type: inproceedings
-  title: Generative-AI assisted feedback provisioning for project-based learning in
-    CS courses
+  title: Generative-AI Assisted Feedback Provisioning for Project-Based Learning in
+    CS Courses
   authors:
   - Venkata Alekhya Kusam
   - Larnell Moore
@@ -565,7 +772,7 @@
   sort_key: 202300
 - bibkey: zhu2023polyhedron
   type: article
-  title: 'Polyhedron Attention Module: Learning Adaptive-order Interactions'
+  title: 'Polyhedron Attention Module: Learning Adaptive-Order Interactions'
   authors:
   - Tan Zhu
   - Fei Dou
@@ -614,7 +821,7 @@
   sort_key: 202300
 - bibkey: davuluri2023bmeye
   type: inproceedings
-  title: 'BMEye: Public Health-Oriented Body Mass Index Monitoring using Commodity
+  title: 'BMEye: Public Health-Oriented Body Mass Index Monitoring Using Commodity
     WiFi'
   authors:
   - Kiran Davuluri
