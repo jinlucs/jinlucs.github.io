@@ -1,4 +1,3 @@
-@'
 ---
 layout: page
 title: Group
@@ -46,4 +45,3 @@ In addition to direct supervision, I have served on graduate advisory committees
 - UGA undergraduates: email me with your CV, transcript, research interests, and relevant coursework if you are interested in joining the group.
 
 I am especially interested in students who enjoy mathematical thinking, careful experimentation, and building AI systems that can stand up to real constraints.
-'@ | Set-Content -Path .\group.md -Encoding UTF8

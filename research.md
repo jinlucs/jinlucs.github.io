@@ -1,4 +1,3 @@
-@'
 ---
 layout: page
 title: Research
@@ -78,4 +77,3 @@ I regularly present this work in conference venues, invited seminars, and univer
 - [Teaching](/teaching/)
 - [Group](/group/)
 - [Daily arXiv Digest](/arxiv/)
-'@ | Set-Content -Path .\research.md -Encoding UTF8

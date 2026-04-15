@@ -1,4 +1,3 @@
-@'
 title: Jin Lu
 author: Jin Lu
 email: jin.lu@uga.edu
@@ -86,4 +85,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-spaceship
-'@ | Set-Content -Path .\_config.yml -Encoding UTF8

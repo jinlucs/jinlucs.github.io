@@ -1,4 +1,3 @@
-@'
 ---
 layout: page
 title: Teaching
@@ -66,4 +65,3 @@ Before joining UGA, I taught at the University of Michigan-Dearborn:
 - CIS 405/505 Algorithm Analysis and Design
 
 I also served as a co-lecturer for CSE 5820 Machine Learning at the University of Connecticut.
-'@ | Set-Content -Path .\teaching.md -Encoding UTF8

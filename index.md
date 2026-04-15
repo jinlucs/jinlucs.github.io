@@ -1,4 +1,3 @@
-@'
 ---
 layout: page
 title: Jin Lu
@@ -44,4 +43,3 @@ My group is especially interested in problems where theory, systems, and applica
 - Fall 2023: I joined the University of Georgia as an Assistant Professor in the School of Computing.
 
 For a fuller overview, visit the [Research](/research/), [Teaching](/teaching/), [Group](/group/), and [Papers](/papers/) pages.
-'@ | Set-Content -Path .\index.md -Encoding UTF8
