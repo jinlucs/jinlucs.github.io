@@ -2,3 +2,4 @@ bibtexparser
 PyYAML
 feedparser
 requests
+beautifulsoup4

@@ -14,9 +14,11 @@ from urllib.parse import urlencode
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 
 
 ARXIV_API = "https://export.arxiv.org/api/query"
+DEFAULT_USER_AGENT = "jinlucs.github.io arxiv-digest (contact: jin.lu@uga.edu)"
 
 
 @dataclass
@@ -29,6 +31,13 @@ class Paper:
     published: datetime
     abs_url: str
     pdf_url: str
+
+
+@dataclass
+class PaperContext:
+    source_label: str
+    source_url: Optional[str]
+    text: str
 
 
 def _norm_space(s: str) -> str:
@@ -48,7 +57,7 @@ def fetch_recent_arxiv(
     cats: List[str],
     hours_back: int = 36,
     max_results: int = 80,
-    user_agent: str = "jinlucs.github.io arxiv-digest (contact: jin.lu@uga.edu)",
+    user_agent: str = DEFAULT_USER_AGENT,
 ) -> List[Paper]:
     # One request total (good for arXiv rate limits).
     search_query = " OR ".join([f"cat:{c.strip()}" for c in cats if c.strip()])
@@ -117,6 +126,33 @@ def fetch_recent_arxiv(
 class LLM:
     def generate(self, system: str, user: str, max_tokens: int = 1200) -> str:
         raise NotImplementedError
+
+
+class OpenAICompatibleLLM(LLM):
+    def __init__(self, api_key: str, model: str, base_url: str = "https://api.openai.com/v1") -> None:
+        self.api_key = api_key
+        self.model = model
+        self.url = f"{base_url.rstrip('/')}/chat/completions"
+
+    def generate(self, system: str, user: str, max_tokens: int = 1200) -> str:
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            "temperature": 0.2,
+            "max_tokens": max_tokens,
+        }
+        r = requests.post(
+            self.url,
+            headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=90,
+        )
+        r.raise_for_status()
+        data = r.json()
+        return data["choices"][0]["message"]["content"]
 
 
 
@@ -242,6 +278,14 @@ class GeminiLLM(LLM):
 def get_llm_from_env() -> Optional[LLM]:
     provider = (os.getenv("LLM_PROVIDER") or "").strip().lower()
 
+    # OpenAI / Codex-style compatible API
+    if provider in {"openai", "codex", "openai-compatible", "openai_compatible"}:
+        key = (os.getenv("OPENAI_API_KEY") or "").strip()
+        model = (os.getenv("OPENAI_MODEL") or "gpt-4.1-mini").strip()
+        base_url = (os.getenv("OPENAI_BASE_URL") or "https://api.openai.com/v1").strip()
+        if key:
+            return OpenAICompatibleLLM(key, model, base_url)
+
     # Cloudflare Workers AI (OpenAI compatible)
     if provider in {"cloudflare", "workersai", "workers-ai", "workers_ai", "cf"}:
         token = (
@@ -361,6 +405,199 @@ def explain_with_math(p: Paper, llm: Optional[LLM]) -> str:
     return llm.generate(system, user, max_tokens=1200).strip()
 
 
+def _dedupe_keep_order(items: List[str]) -> List[str]:
+    seen = set()
+    out = []
+    for item in items:
+        norm = item.strip()
+        if not norm or norm in seen:
+            continue
+        seen.add(norm)
+        out.append(norm)
+    return out
+
+
+def _extract_equations(soup: BeautifulSoup, max_items: int = 8) -> List[str]:
+    eqs: List[str] = []
+    for math_tag in soup.find_all("math"):
+        eq = _norm_space(math_tag.get("alttext") or "")
+        if 3 < len(eq) <= 300:
+            eqs.append(eq)
+        if len(eqs) >= max_items:
+            break
+
+    if len(eqs) < max_items:
+        for ann in soup.find_all("annotation"):
+            if ann.get("encoding") == "application/x-tex":
+                eq = _norm_space(ann.get_text(" ", strip=True))
+                if 3 < len(eq) <= 300:
+                    eqs.append(eq)
+            if len(eqs) >= max_items:
+                break
+
+    return _dedupe_keep_order(eqs)[:max_items]
+
+
+def _extract_section_blocks(article: BeautifulSoup) -> List[Tuple[str, List[str]]]:
+    blocks: List[Tuple[str, List[str]]] = []
+    for sec in article.find_all("section"):
+        title_tag = sec.find(["h2", "h3", "h4", "h5"])
+        if not title_tag:
+            continue
+        title = _norm_space(title_tag.get_text(" ", strip=True))
+        if not title:
+            continue
+
+        paras: List[str] = []
+        for ptag in sec.find_all("p"):
+            text = _norm_space(ptag.get_text(" ", strip=True))
+            if len(text) >= 40:
+                paras.append(text)
+            if len(paras) >= 2:
+                break
+
+        if paras:
+            blocks.append((title, paras))
+    return blocks
+
+
+def _select_context_sections(blocks: List[Tuple[str, List[str]]]) -> Tuple[List[Tuple[str, List[str]]], List[Tuple[str, List[str]]]]:
+    method_keywords = (
+        "method", "methodology", "approach", "algorithm", "objective", "problem", "preliminary", "analysis", "derivation"
+    )
+    experiment_keywords = (
+        "experiment", "evaluation", "result", "ablation", "setup", "benchmark", "case study"
+    )
+
+    method_sections: List[Tuple[str, List[str]]] = []
+    experiment_sections: List[Tuple[str, List[str]]] = []
+
+    for title, paras in blocks:
+        t = title.lower()
+        if any(k in t for k in experiment_keywords):
+            experiment_sections.append((title, paras))
+        elif any(k in t for k in method_keywords):
+            method_sections.append((title, paras))
+
+    if not method_sections:
+        method_sections = blocks[:3]
+    if not experiment_sections:
+        experiment_sections = [b for b in blocks if b not in method_sections][:3]
+
+    return method_sections[:4], experiment_sections[:4]
+
+
+def fetch_paper_context(
+    p: Paper,
+    user_agent: str = DEFAULT_USER_AGENT,
+    max_chars: int = 16000,
+) -> PaperContext:
+    html_candidates = []
+    if "/abs/" in p.abs_url:
+        html_candidates.append(p.abs_url.replace("/abs/", "/html/"))
+    html_candidates.append(f"https://arxiv.org/html/{p.arxiv_id}")
+    html_candidates = _dedupe_keep_order(html_candidates)
+
+    html_text = None
+    html_url = None
+    for candidate in html_candidates:
+        try:
+            r = requests.get(candidate, headers={"User-Agent": user_agent}, timeout=45)
+            if r.ok and "text/html" in (r.headers.get("Content-Type") or ""):
+                html_text = r.text
+                html_url = candidate
+                break
+        except Exception:
+            continue
+
+    if not html_text:
+        fallback = (
+            f"TITLE: {p.title}\n"
+            f"AUTHORS: {', '.join(p.authors)}\n"
+            f"ABSTRACT: {p.abstract}\n"
+        )
+        return PaperContext(source_label="abstract only", source_url=None, text=fallback[:max_chars])
+
+    soup = BeautifulSoup(html_text, "html.parser")
+    article = soup.select_one("article.ltx_document") or soup
+
+    abstract_tag = article.select_one("div.ltx_abstract p")
+    abstract_text = _norm_space(abstract_tag.get_text(" ", strip=True)) if abstract_tag else p.abstract
+    equations = _extract_equations(article, max_items=8)
+    blocks = _extract_section_blocks(article)
+    method_sections, experiment_sections = _select_context_sections(blocks)
+
+    lines: List[str] = []
+    lines.append(f"HTML source: {html_url}")
+    lines.append(f"Title: {p.title}")
+    lines.append("")
+    lines.append("Abstract:")
+    lines.append(abstract_text)
+    lines.append("")
+
+    if equations:
+        lines.append("Candidate equations extracted from arXiv HTML:")
+        for i, eq in enumerate(equations, start=1):
+            lines.append(f"[Eq {i}] {eq}")
+        lines.append("")
+
+    if method_sections:
+        lines.append("Method-related sections:")
+        for title, paras in method_sections:
+            lines.append(f"Section: {title}")
+            for para in paras:
+                lines.append(f"- {para}")
+        lines.append("")
+
+    if experiment_sections:
+        lines.append("Experiment-related sections:")
+        for title, paras in experiment_sections:
+            lines.append(f"Section: {title}")
+            for para in paras:
+                lines.append(f"- {para}")
+
+    text = "\n".join(lines).strip()
+    return PaperContext(source_label="arXiv HTML", source_url=html_url, text=text[:max_chars])
+
+
+def explain_with_context(p: Paper, context: PaperContext, llm: Optional[LLM]) -> str:
+    if llm is None:
+        return (
+            "_(No LLM key configured — set `LLM_PROVIDER` plus a compatible API secret. "
+            "For reliable scheduled generation, also set `LLM_REQUIRED=1` in the workflow.)_"
+        )
+
+    system = (
+        "You write concise research notes for ML/optimization papers.\n"
+        "CRITICAL: Use ONLY the provided metadata and extracted paper context.\n"
+        "Do not invent formulas, datasets, baselines, or claims that are not present.\n"
+        "If a requested item is missing, say 'Not found in extracted context.'\n"
+        "Return Markdown only."
+    )
+    user = (
+        f"TITLE: {p.title}\n"
+        f"AUTHORS: {', '.join(p.authors)}\n"
+        f"CATEGORIES: {', '.join(p.categories)}\n"
+        f"CONTEXT SOURCE: {context.source_label}\n"
+        f"ARXIV ABSTRACT URL: {p.abs_url}\n"
+        f"PDF URL: {p.pdf_url}\n\n"
+        f"EXTRACTED CONTEXT:\n{context.text}\n\n"
+        "Write these sections in Markdown:\n"
+        "1) Formula walkthrough\n"
+        "- Explain up to 5 equations one by one from the extracted context.\n"
+        "- For each one: equation, symbols, and why it matters.\n"
+        "2) Method summary\n"
+        "- 3 to 5 bullets.\n"
+        "3) Experimental overview\n"
+        "- tasks/datasets\n"
+        "- baselines/comparisons\n"
+        "- main claimed findings\n"
+        "4) What to verify in the PDF\n"
+        "- 2 to 4 bullets on details that still need the full paper.\n"
+    )
+    return llm.generate(system, user, max_tokens=1600).strip()
+
+
 def _append_raw_block(lines: List[str], block_lines: List[str]) -> None:
     lines.append("{% raw %}")
     lines.extend(block_lines)
@@ -400,10 +637,12 @@ def write_digest_post(
     lines.append("")
 
     for i, p in enumerate(chosen, start=1):
+        context = fetch_paper_context(p)
         metadata_lines = [
             f"## {i}) {p.title}",
             f"- **Authors:** {', '.join(p.authors)}",
             f"- **arXiv:** [{p.arxiv_id}]({p.abs_url}) · [pdf]({p.pdf_url})",
+            f"- **LLM context source:** {context.source_label}" + (f" ([html]({context.source_url}))" if context.source_url else ""),
         ]
         if p.categories:
             metadata_lines.append(f"- **Categories:** {', '.join(p.categories)}")
@@ -414,8 +653,8 @@ def write_digest_post(
         ])
         _append_raw_block(lines, metadata_lines)
         lines.append("")
-        lines.append("### Math explanation (LLM)")
-        _append_raw_block(lines, [explain_with_math(p, llm)])
+        lines.append("### Formula and Experiment Notes (LLM)")
+        _append_raw_block(lines, [explain_with_context(p, context, llm)])
         lines.append("")
 
     out_path.write_text("\n".join(lines), encoding="utf-8")
@@ -440,9 +679,18 @@ def main() -> None:
     hours_back = int(os.getenv("HOURS_BACK") or "36")
     max_results = int(os.getenv("MAX_RESULTS") or "80")
     top_n = int(os.getenv("TOP_N") or "5")
+    llm_required = (os.getenv("LLM_REQUIRED") or "").strip().lower() in ("1", "true", "yes")
 
     llm = get_llm_from_env()
     force = (os.getenv("FORCE") or "").strip().lower() in ("1", "true", "yes")
+
+    if llm_required and llm is None:
+        raise SystemExit(
+            "LLM_REQUIRED is set, but no supported provider credentials were found. "
+            "Set LLM_PROVIDER plus matching secrets, e.g. OPENAI_API_KEY for the OpenAI/Codex-compatible path."
+        )
+
+    print(f"LLM enabled: {'yes' if llm else 'no'}")
 
     papers = fetch_recent_arxiv(cats=cats, hours_back=hours_back, max_results=max_results)
 
