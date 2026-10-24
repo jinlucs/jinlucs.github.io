@@ -64,6 +64,9 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
+      {% if page.categories contains 'paper-analysis' %}
+      <p class="reading-return"><a href="{{ '/arxiv/' | relative_url }}">&larr; All research reading notes</a></p>
+      {% else %}
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
@@ -76,6 +79,7 @@ layout: base
         </li>
         {% endif %}
       </ul>
+      {% endif %}
       {% include comments.html %}
     </div>
   </div>
