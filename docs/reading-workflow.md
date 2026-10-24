@@ -19,7 +19,9 @@ an older work was published today. If no suitable paper is available, preserve
 the previous notes and report a skipped update.
 
 ## Write
-Use English to match the academic site, with a short Chinese reading guide.
+Use English throughout: titles, subtitles, descriptions, body text, comic labels,
+captions, alt text, and homepage news. Do not add a Chinese reading guide or
+Chinese translations. The user explicitly requires English-only publication.
 Use your own reasoning rather than a separate small-model/API summarizer.
 Provide a concise source-backed account, then original analysis:
 - problem and connection to this research group;

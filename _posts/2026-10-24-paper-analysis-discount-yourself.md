@@ -17,8 +17,6 @@ comments: false
 social-share: false
 ---
 
-**中文导读：** 这篇 10 月 20 日公开的论文讨论设备离线后重返联邦学习网络的情形：自己的模型可能比邻居更旧，所以也应降权。下面用可手算的例子说明权重归一化，再讨论一个更难的问题：追求信息新鲜度，会不会改变不同用户数据的长期影响力？
-
 ## What the paper contributes
 
 Qiyuan Wang, Ke Xiao and Christos Anagnostopoulos posted *Discount Yourself* on 20 October 2026. Their SFG-L rule weights every candidate, including the receiver, using inherited lag. The paper bounds aggregation error; it does not prove convergence of training. Its synchronous image-classification experiments also leave deployment questions open. [Original paper and full text](https://arxiv.org/html/2610.28545v1), especially Sections 4–7 and Appendix A.2.
