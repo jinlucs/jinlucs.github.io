@@ -11,7 +11,7 @@ navbar-links:
   Group: "group"
   Teaching: "teaching"
   Papers: "papers"
-  ArXiv Digest: "arxiv"
+  Reading Notes: "arxiv"
   CV: "/assets/files/cv.pdf"
   About: "about"
 

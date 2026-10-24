@@ -38,3 +38,10 @@ table {
     border-bottom-left-radius: 50%;
     display: block;
 }
+.reading-list { margin: 1.5rem 0; }
+.reading-card { border-top: 1px solid #ddd; padding: 1.5rem 0; }
+.reading-card h2 { font-size: 1.6rem; margin-top: .4rem; }
+.reading-date { color: #666; font-size: .9rem; }
+.reading-card img, .blog-post img { max-width: 100%; height: auto; }
+.blog-post mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: .6rem 0; }
+@media(max-width: 600px) { .reading-card h2 { font-size: 1.35rem; } }

@@ -147,4 +147,19 @@
     {% endfor %}
   {% endif %}
 
+{% if page.mathjax %}
+<script>
+window.MathJax = {
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]},
+  startup: {ready: function () {
+    document.querySelectorAll('script[type^="math/tex"]').forEach(function (node) {
+      var display = node.type.indexOf('mode=display') >= 0;
+      node.replaceWith(document.createTextNode((display ? '\\[' : '\\(') + node.textContent + (display ? '\\]' : '\\)')));
+    });
+    MathJax.startup.defaultReady();
+  }}
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+{% endif %}
 </head>

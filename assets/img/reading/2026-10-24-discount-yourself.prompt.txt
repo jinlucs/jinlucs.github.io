@@ -1,0 +1,9 @@
+Use case: scientific-educational, illustration-story.
+Asset type: four-panel mathematical comic for an academic research reading article, wide 2x2 grid, crisp editorial ink with warm paper background, burgundy and teal accent colors, generous readable typography. Title: "Discount Yourself".
+Explain a TOY weighted gossip aggregation, NOT an experimental result. Friendly anthropomorphic smartphones A (burgundy, returning from outage), B and C (teal, up-to-date). Keep identities consistent. Mathematical text must be exact. No logos.
+Panel 1 title "1. Back after 4 rounds". A holds "x = 0, lag = 4". B holds "x = 6, lag = 0". C holds "x = 9, lag = 0". A says "I am the stale one!"
+Panel 2 title "2. Count myself, too". A B C each place a vote on a scale. Under A "1/16"; under B "1"; under C "1". Caption "Discount factor = 1/2 per extra lag". No fixed equal self-weight.
+Panel 3 title "3. Normalize all three". Show proportional weight bars A tiny, B,C equal large. Labels "A: 1/33", "B: 16/33", "C: 16/33". Text "x_mix = (0 + 16x6 + 16x9) / 33" then "= 80/11 = 7.27..." Do not use letter x as variable in multiplication but render multiplication sign. Ensure result 7.27. This is a convex average below 9 above 0.
+Panel 4 title "4. A new timestamp is not a clean slate". A is training after mixing. A now holds two tags "age = 0" and "inherited lag = 4/33". Caption "Local training resets age, not inherited lag." No claim about training accuracy or convergence.
+Footer "Toy arithmetic, not measured performance. Fresh-only mean: 7.5."
+Use exact fractions, no extra formulas. Ensure all four panels unclipped and legible at mobile zoom.

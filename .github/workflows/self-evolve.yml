@@ -1,78 +1,42 @@
-name: Self-evolve website (publications + daily arXiv)
+name: Update publications from BibTeX
 
 on:
   schedule:
-    # daily at 09:15 UTC (adjust as you like)
     - cron: "15 9 * * *"
   workflow_dispatch:
   push:
     paths:
       - "assets/bib/**"
-      - "scripts/**"
+      - "scripts/update_publications.py"
+      - "scripts/requirements.txt"
       - ".github/workflows/self-evolve.yml"
-      # Avoid infinite loops: don't re-run when the bot commits generated outputs.
-      # GitHub docs: you can't use both paths and paths-ignore; use "!" exclusions inside paths. :contentReference[oaicite:4]{index=4}
-      - "!_data/publications.yml"
-      - "!_data/arxiv_seen.json"
-      - "!_posts/**"
 
 permissions:
   contents: write
 
+concurrency:
+  group: publications-update
+  cancel-in-progress: false
+
 jobs:
-  evolve:
+  publications:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
       - name: Update publications from BibTeX
-        run: |
-          python scripts/update_publications.py \
-            --bib assets/bib/publications.bib \
-            --out _data/publications.yml \
-            --me "Jin Lu"
-
-      - name: Generate daily arXiv digest
-        env:
-          ARXIV_CATS: "cs.LG,stat.ML,math.OC"
-          HOURS_BACK: "36"
-          MAX_RESULTS: "80"
-          TOP_N: "5"
-
-          # Recommended free daily setup: Cloudflare Workers AI.
-          # Official free allocation: 10,000 neurons/day, which is usually plenty for one daily digest.
-          LLM_PROVIDER: "cloudflare"
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_MODEL: "@cf/meta/llama-3.2-3b-instruct"
-          LLM_REQUIRED: "1"
-
-          # Overwrite today's digest when manually triggered (workflow_dispatch)
-          FORCE: ${{ github.event_name == 'workflow_dispatch' }}
-
-        run: |
-          python scripts/arxiv_digest.py
-
-      - name: Commit & push (if changed)
+        run: python scripts/update_publications.py --bib assets/bib/publications.bib --out _data/publications.yml --me "Jin Lu"
+      - name: Commit publication changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add -A
-            git commit -m "Auto-update: publications + daily arXiv digest"
+          git add -- _data/publications.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Update publications from BibTeX"
+            git pull --rebase
             git push
-          else
-            echo "No changes to commit."
           fi
