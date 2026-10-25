@@ -1,0 +1,13 @@
+INITIAL GENERATION
+Use case: scientific-educational / illustration-story.
+Create a polished four-panel mathematical comic, 2x2 grid, landscape academic reading-note illustration, English text only. Editorial ink, warm ivory paper, burgundy and teal accents matching an academic research website. Friendly tiny courier character carrying a teal parcel marked "r". Main title "Small Gradient, Big Difference". Clean simple scenes, exact equations and very readable typography, no logos.
+This is a carefully defined binary32 floating-point toy arithmetic illustration, NOT a benchmark or training experiment. r is already computed, exactly representable residual probability mass; no claim about an exactly represented logit.
+Panel 1, title "1. The small signal survives". Courier holds parcel r. Exact labels "r = 2^(-25)" and "r is representable". Optional small text "About 2.98 x 10^(-8)". No claims about underflow.
+Panel 2, title "2. Addition loses the parcel". The courier tries adding the tiny parcel r to a giant block labeled "1". A rounding gate outputs a block labeled "1". Exact equation "fl32(1 + r) = 1". Caption "Round to nearest in binary32". The parcel is visually lost only by this addition.
+Panel 3, title "3. The gradient loses its balance". A target-class red robot has label "1 / 1 - 1 = 0". The non-target teal robot has label "+r". Their balance beam is visibly tilted. Exact caption "Standard: (0, +r)" and "Sum = r". The two gradients have not both vanished.
+Panel 4, title "4. Keep the small numerator". Two balanced robots hold "-r" and "+r". Show exact equation "-r / fl32(1 + r) = -r". Caption "Rearranged: (-r, +r)" and "Sum = 0". Do not say exact real-valued gradient; these are the computed float32 gradients in this toy.
+Footer: "Toy arithmetic under round-to-nearest, not a training experiment."
+Keep all four panels and footer fully visible. No Chinese. No extra formulas or claimed accuracy gains.
+
+TARGETED CORRECTION
+Edit this four-panel comic. Preserve the title, layout, palette, all other panels, and all correct English labels and equations. Correct PANEL 3 ONLY: remove the incorrect fraction on the RED target robot's chest entirely and replace it with the single large numeral '0'. The teal non-target robot must still show '+r'. Tilt the balance the mathematically intuitive way: the right teal +r side is LOWER and the left red 0 side is HIGHER. Preserve the caption 'Standard: (0, +r)' and 'Sum = r'. Do not write any division or extra equation on either robot in panel 3. Everything in panels 1, 2 and 4, including r=2^(-25), fl32(1+r)=1, the fixed (-r,+r) and Sum=0, must remain correct and unchanged. All text English only. Preserve footer saying this is toy arithmetic, not a training experiment.
