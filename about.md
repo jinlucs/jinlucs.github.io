@@ -36,7 +36,7 @@ Mentoring is a central part of my work. At UGA, I have supervised master's stude
 Recent conference service includes:
 
 - **Area Chair**, ICLR 2027
-- **Virtual Session Chair**, EMNLP 2026
+- **Session Chair**, EMNLP 2026
 
 ### Selected Recognition
 - Student Career Success Influencer Award, University of Georgia, 2024
