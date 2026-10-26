@@ -83,10 +83,12 @@ These equations retain both the squared mean and the noise variance. Following o
 
 Compare a constant profile (0.3, 0.3) with a decreasing profile (0.5, 0.1). Both have total step-size sum 0.6. Within each profile, the orders also share the same per-step learning rates.
 
-| Step-size profile | EARLY: MT then PT | LATE: PT then MT | Lower expected loss |
-|---|---:|---:|---|
-| Constant (0.3, 0.3) | 0.335 | 0.31205 | LATE |
-| Decreasing (0.5, 0.1) | 0.255 | 0.51125 | EARLY |
+| Step-size profile | EARLY: MT then PT | LATE: PT then MT |
+|---|---:|---:|
+| Constant (0.3, 0.3) | 0.335 | **0.31205** |
+| Decreasing (0.5, 0.1) | **0.255** | 0.51125 |
+
+*Bold values mark the lower expected loss in each row.*
 
 For the constant profile, both final means are 0.7. EARLY has variance 0.18; LATE has variance 0.1341 because the final MT step attenuates the first noise contribution. Their difference is entirely variance.
 
