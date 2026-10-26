@@ -6,8 +6,8 @@ date: 2026-10-26 09:00:00 -0400
 permalink: /reading/2026-10-26-data-order-step-size/
 categories: [paper-analysis]
 tags: [optimization, data-scheduling, foundation-models]
-author: "Research reading notes · prepared with Codex"
-description: "A checked two-step example reverses the preferred data order while keeping the target-step budget and total step-size sum fixed."
+author: "Research reading notes"
+description: "A two-step example reverses the preferred data order while keeping the target-step budget and total step-size sum fixed."
 source_url: "https://arxiv.org/abs/2610.29348v1"
 paper_date: "2026-10-21"
 comic: "/assets/img/reading/2026-10-26-data-order-step-size.png"
@@ -21,7 +21,7 @@ social-share: false
 
 Haodong Wen and colleagues posted *Data Schedules and Learning Rate Schedules Should Be Designed Together* on 21 October 2026. They study pretraining (PT) and target mid-training (MT) allocations under fixed compute and MT-data budgets. Their experiments show that changing the learning-rate schedule can reverse data-schedule rankings. Their theory uses noisy quadratic objectives and an SDE approximation. [Original paper](https://arxiv.org/html/2610.29348v1), Sections 2–3.
 
-How can the same amount of target data favor a different order? We can inspect that question with an original, finite, two-step example. Every expected loss below is calculated exactly. These numbers are teaching examples, not language-model measurements.
+A finite, two-step stochastic model makes this interaction visible through exact expected losses.
 
 ## Four panels, one ranking reversal
 
@@ -118,7 +118,7 @@ $$
 
 Raw data counts leave this optimizer-weighted exposure uncontrolled. That is precisely why order and step size make a joint choice.
 
-## Verify every noise path
+## Account for every noise path
 
 There are only four equally likely noise pairs. This exact-fraction enumeration checks the second-moment derivation without Monte Carlo error:
 
@@ -164,10 +164,10 @@ For federated learning, a related research question is whether a client-sampling
 
 Treat the data schedule and the learning-rate schedule as a single experimental choice.
 
-## Sources and verification
+## Sources
 
 - [Authors, first-publication date and version](https://arxiv.org/abs/2610.29348v1).
 - [Full text](https://arxiv.org/html/2610.29348v1): Section 3 and Appendix H define the noisy quadratic setup; Appendix J develops its bias/variance analysis; Appendices I–K and N state the theorem conditions and proofs.
 - [PDF](https://arxiv.org/pdf/2610.29348v1).
 
-Read on 26 October 2026. Prepared with Codex. The mathematical comic was generated with ImageGen and its labels checked against exact arithmetic. No language-model training experiment was reproduced for this note.
+The comic was created with AI.

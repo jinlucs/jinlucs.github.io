@@ -6,7 +6,7 @@ date: 2026-10-25 09:00:00 -0400
 permalink: /reading/2026-10-25-softmax-small-gradient/
 categories: [paper-analysis]
 tags: [optimization, numerical-stability, efficient-learning]
-author: "Research reading notes · prepared with Codex"
+author: "Research reading notes"
 description: "An exact binary32 example shows how equivalent cross-entropy formulas produce different gradients, and why a zero-sum check is necessary but insufficient."
 source_url: "https://arxiv.org/abs/2610.31642v1"
 paper_date: "2026-10-22"
@@ -21,7 +21,7 @@ social-share: false
 
 Jonathan T. Barron, Dan Gnanapragasam and Michael Tschannen posted *A Fix for Softmax and Cross-Entropy* on 22 October 2026. They study numerical failures in high-confidence classification and near-matching teacher/student predictions, and propose stable reformulations. Their evaluation covers arithmetic-learning and distillation settings; it does not establish universal training acceleration. The margin-equilibrium discussion uses approximate assumptions about optimizer moments and gradient decay. [Full text, Sections 2–7](https://arxiv.org/html/2610.31642v1).
 
-This note focuses on the hard-target case in Section 2. The worked arithmetic, invariance argument and proposed diagnostics below are an independent explanation. We verified scalar rounding operations, not a training run or a framework implementation.
+This note examines Section 2's hard-target case through an invariance argument, a worked binary32 example, and practical gradient diagnostics.
 
 ## Four panels, one rounding error
 
@@ -100,7 +100,7 @@ $$
 
 Now the computed sum is zero. The exact real-valued target gradient remains -r/(1+r); the computed value -r is a floating-point approximation, not a claim of exact real arithmetic.
 
-The forward loss has a related issue: log(d) is zero, while a stable log1p(r) calculation preserves approximately r. A short verification rounds each operation explicitly:
+The forward loss has a related issue: log(d) is zero, while a stable log1p(r) calculation preserves approximately r. The following calculation rounds each operation explicitly:
 
 ~~~python
 import math
@@ -149,10 +149,10 @@ A concrete next experiment is to hold initialization, batches, optimizer and lea
 
 The lesson is operational: preserve the small quantity before subtraction destroys it, and verify both the gradient's structure and its scale.
 
-## Sources and verification
+## Sources
 
 - [Version and authors](https://arxiv.org/abs/2610.31642v1), first posted 22 October 2026.
 - [Full text](https://arxiv.org/html/2610.31642v1): hard-target reformulation in Section 2; separate soft-target treatment in Section 3; approximate equilibrium analysis in Section 5; evaluations in Sections 6–7.
 - [PDF](https://arxiv.org/pdf/2610.31642v1).
 
-Read on 25 October 2026. Prepared with Codex. The four-panel comic was generated with ImageGen and corrected after checking its arithmetic labels. No training or framework benchmark was reproduced for this note.
+The comic was created with AI.

@@ -6,8 +6,8 @@ date: 2026-10-24 09:00:00 -0400
 permalink: /reading/2026-10-24-discount-yourself/
 categories: [paper-analysis]
 tags: [federated-learning, optimization, decentralized-learning]
-author: "Research reading notes · prepared with Codex"
-description: "Why a returning device should discount its own stale model, with checked arithmetic and a four-panel mathematical comic."
+author: "Research reading notes"
+description: "Why a returning device should discount its own stale model, with a worked example and a four-panel mathematical comic."
 source_url: "https://arxiv.org/abs/2610.28545v1"
 paper_date: "2026-10-20"
 comic: "/assets/img/reading/2026-10-24-discount-yourself.png"
@@ -20,8 +20,6 @@ social-share: false
 ## What the paper contributes
 
 Qiyuan Wang, Ke Xiao and Christos Anagnostopoulos posted *Discount Yourself* on 20 October 2026. Their SFG-L rule weights every candidate, including the receiver, using inherited lag. The paper bounds aggregation error; it does not prove convergence of training. Its synchronous image-classification experiments also leave deployment questions open. [Original paper and full text](https://arxiv.org/html/2610.28545v1), especially Sections 4–7 and Appendix A.2.
-
-The calculations and research questions below are an independent reading aid. They are not reproduced experiments.
 
 ## A comic you can check
 
@@ -129,10 +127,10 @@ For random-walk ADMM, replacing an averaging coefficient requires further care: 
 
 The next theoretical question is specific: under which conditions do freshness weights preserve the intended solution while controlling missed-progress errors? An old model can deserve less weight while its owner's data still deserves the influence promised by the learning objective.
 
-## Sources and reading boundary
+## Sources
 
 - [Paper metadata and version date](https://arxiv.org/abs/2610.28545v1).
 - [Full text](https://arxiv.org/html/2610.28545v1): model assumptions in Sections 4.1 and 4.3; weighting and lag updates in Equations (8), (20)–(21); limitations in Section 7 and Appendix A.2.
 - [PDF](https://arxiv.org/pdf/2610.28545).
 
-Read on 24 October 2026. Prepared with Codex; mathematical comic generated with ImageGen and checked against the worked example. No training experiments were run for this note.
+The comic was created with AI.

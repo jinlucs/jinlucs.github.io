@@ -32,6 +32,15 @@ Respect copyright and source word limits. Quote minimally and link original
 full text with section/equation locators. Never claim experiments were reproduced
 unless they actually were. Obtain an independent review of math and prose.
 
+## Public credit and tone
+End each note with the simple credit: "The comic was created with AI."
+Use "Research reading notes" as the author label. Do not add reading-date
+footers, Codex or ImageGen bylines, QA/process reports, or boilerplate about
+experiments that were not run. Keep this process narration out of introductions,
+descriptions, and footers. Preserve relevant mathematical assumptions, limits,
+and source attribution in the analysis. Keep verification records in local
+working files rather than adding production reports to the published note.
+
 ## Comic
 Use the built-in image generation tool for a four-panel mathematical comic
 whose panels correspond to the worked example. Inspect every label, fraction,
@@ -44,7 +53,7 @@ decorative image that substitutes for mathematical explanation.
 New notes: _posts/YYYY-MM-DD-paper-analysis-SLUG.md.
 Front matter must include categories: [paper-analysis], mathjax: true,
 source_url, paper_date, comic, comic_alt, description, comments: false,
-social-share: false, and author: "Research reading notes · prepared with Codex".
+social-share: false, and author: "Research reading notes".
 Use a stable /reading/YYYY-MM-DD-SLUG/ permalink. Do not impersonate the site's
 owner as the author of AI-prepared notes. The reading index is arxiv.md.
 
