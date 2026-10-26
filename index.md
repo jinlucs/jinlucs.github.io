@@ -34,6 +34,7 @@ My group is especially interested in problems where theory, systems, and applica
 - I received the University of Georgia Student Career Success Influencer Award in 2024.
 
 ### Recent News
+- **Oct 2026:** I am serving as a **Virtual Session Chair for EMNLP 2026**.
 - **Oct 2026:** “GlycoGLF: Measuring and Modeling Context-Dependent Opposing Labels in Glycan Disease” was accepted as a **regular paper at IEEE BigData 2026**.
 - **Oct 2026:** [Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM](https://arxiv.org/abs/2609.27509) was accepted to **WACV 2027**.
 - **Oct 2026:** [Online Skill Learning for Web Agents via State-Grounded Dynamic Retrieval](https://arxiv.org/abs/2606.04391) was accepted to the **NeurIPS 2026 TTCL Workshop**.

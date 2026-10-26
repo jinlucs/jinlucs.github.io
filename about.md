@@ -33,6 +33,11 @@ A major theme of my work is collaboration across domains. I have worked with res
 ### Mentoring and Service
 Mentoring is a central part of my work. At UGA, I have supervised master's students in project, research, and thesis work, advised PhD students, and served on graduate committees across computing and related disciplines. I also contribute professional service to the AI community through program committee work, conference reviewing, journal reviewing, and grant review.
 
+Recent conference service includes:
+
+- **Area Chair**, ICLR 2027
+- **Virtual Session Chair**, EMNLP 2026
+
 ### Selected Recognition
 - Student Career Success Influencer Award, University of Georgia, 2024
 
