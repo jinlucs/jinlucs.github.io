@@ -171,10 +171,10 @@ Nine local steps cost more computation per round than one. This comparison diagn
 
 For convex smooth clients under full participation and averaged Hessian similarity, Proposition 1 requires both
 
-$
+$$
 \eta L_{\mathrm{loc}}\leq1,\qquad
 K\eta\delta\leq\frac{1}{3\sqrt2}.
-$
+$$
 
 With suitable steps, the exact-gradient guarantee for the average server model scales as
 
