@@ -1,0 +1,34 @@
+Use case: scientific-educational, four-panel mathematical comic for an English academic reading note.
+Create a clean 2-by-2 comic, landscape 1536 x 1024. Warm cream paper, crisp navy ink, orange and teal accents, readable English lettering with generous margins. Story: two small robot clients each have a stable local gear, but their server has a one-round memory link. Stable local maps do not automatically make the combined server recurrence stable. Use diagrams of gears, memory cards and a swinging server, not quantitative plots or number lines. No brand, byline, production credit, Chinese text, decorative fake mathematics or other unrequested text. The entire comic must contain exactly the labels specified below and the four panel numbers/headings.
+
+Panel 1 upper left heading "1. LOCAL MAPS CONTRACT".
+Two robot clients beside small interlocking gears. One orange gear marked "Client 1", one teal marked "Client 2". Equations large and exact:
+"eta = 1/9"
+"local factors: 8/9 and 0"
+Small caption "For a fixed control point"
+
+Panel 2 upper right heading "2. THE SERVER REMEMBERS".
+A server robot takes a current card marked "x" and an old card marked "p". An arrow from the old card is labeled "one-round-old controls". Place a large equation on a clean board:
+"x_new = A x + B p"
+Below, exact labels:
+"q = (8/9)^K"
+"A = q/2"
+"B = 2q - 16/9"
+Both cards feed the same server. Do not suggest that the controls are recomputed at x in the same round.
+
+Panel 3 bottom left heading "3. ONE LOCAL STEP".
+The server robot stands steady with a calm shrinking spring. Board text:
+"K = 1"
+"A = 4/9, B = 0"
+"x_new = (4/9)x"
+"converges"
+Do not add any additional mathematical numbers.
+
+Panel 4 bottom right heading "4. NINE LOCAL STEPS".
+The server robot swings on an expanding spiral spring with two opposing curved arrows, symbolizing a growing oscillation envelope rather than monotone movement. Board text, exactly:
+"K = 9"
+"A ~ 0.17322"
+"B ~ -1.08490"
+"root modulus ~ 1.04158 > 1"
+"growing oscillation"
+Use a readable tilde ~ for approximate equality. Do not label this as a theorem contradiction or suggest every larger K fails. Keep formulas separated from artwork so every digit is legible.
