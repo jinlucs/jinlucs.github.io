@@ -1,0 +1,37 @@
+Use case: scientific-educational. Create a four-panel English mathematical comic for an academic article about deployment diversity and correlated errors. Landscape 1536 x 1024, clear 2 by 2 grid, warm ivory background, crisp navy linework, readable typesetting, teal for model A and orange for model B. Friendly farmers with model tablets and simple weather-shock symbols. The numbers are dimensionless toy losses, not fertilizer quantities or measured farm outcomes. No title outside the panels, no byline, no production credit, no Chinese, no extra decorative equations. Include only the exact labels below. Use symbolic groups of farmers rather than ten individual icons, so the labels specify the group counts.
+
+Upper-left panel heading "1. SAME DEPLOYMENT".
+A teal farmer group holding tablet "A" labeled "8 farms", and an orange farmer group holding tablet "B" labeled "2 farms".
+Clean board labels:
+"risk A = 1, risk B = 2"
+"average risk = 1.20"
+"20% average cap"
+"HHI = 0.68"
+
+Upper-right panel heading "2. DISTINCT SHOCKS".
+Draw two separate weather clouds: one sends U only to the A group; another sends V + W only to the B group. Labels:
+"A: U"
+"B: V + W"
+"covariance = 0"
+"private loss = 0.60"
+"system loss = 0.36"
+"total = 0.96"
+
+Lower-left panel heading "3. A SHARED SHOCK".
+One common weather cloud marked "U" sends arrows to BOTH A and B. A small additional cloud marked "V" sends an arrow only to B. This depicts B containing both U and an independent V, not perfect correlation. Labels:
+"A: U"
+"B: U + V"
+"covariance = 1"
+"private loss = 0.60"
+"system loss = 0.52"
+"total = 1.12"
+
+Lower-right panel heading "4. THE FIXED MIX HAS A THRESHOLD".
+A thoughtful farmer compares two score cards while two different models stay on the same farm groups.
+Board labels:
+"All A: total = 1.00"
+"For 8 A + 2 B:"
+"L = 0.96 + 0.16c"
+"beats all A iff c < 1/4"
+"c = error covariance"
+Make clear that the threshold concerns the fixed 8:2 allocation, not every possible allocation. All fractions and decimal digits must be exact, with generous spacing and no obscuring illustration. Do not depict different model brands as guaranteeing independent errors.

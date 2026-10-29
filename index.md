@@ -34,6 +34,7 @@ My group is especially interested in problems where theory, systems, and applica
 - I received the University of Georgia Student Career Success Influencer Award in 2024.
 
 ### Recent News
+- **Oct 2026:** Our paper "Paraphrase-Induced Retrieval Instability: Systematic Measurement and the Limits of Inference-Time Mitigation" received a **Spotlight Paper Award** at the **UncertaiNLP 2026 workshop at EMNLP**. [Award announcement](https://uncertainlp.github.io/2026/accepted-papers)
 - **Oct 2026:** I am serving as a **Session Chair for EMNLP 2026**.
 - **Oct 2026:** “GlycoGLF: Measuring and Modeling Context-Dependent Opposing Labels in Glycan Disease” was accepted as a **regular paper at IEEE BigData 2026**.
 - **Oct 2026:** [Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM](https://arxiv.org/abs/2609.27509) was accepted to **WACV 2027**.
