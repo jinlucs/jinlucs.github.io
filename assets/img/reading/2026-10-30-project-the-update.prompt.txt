@@ -1,0 +1,36 @@
+Use case: scientific-educational. Create a precise four-panel English math comic for an academic reading note on optimizer steps and continual unlearning. Landscape 1536 x 1024, two by two grid, warm cream background, clear navy ink, teal for preserved response and orange for changed response. Friendly small robot optimizer carrying vector cards through a projection gate and a rescaling machine. Do not draw numerical coordinate plots; use schematic cards and arrows with exact labels. Plenty of space for crisp legible formulas. No Chinese, byline, production credit, brand logo, extra prose or decorative math.
+
+Panel 1 upper left heading "1. ANCHORED RESPONSE".
+A robot guards a dial displaying 2, attached to a small linear model. Exact board labels:
+"w = (2, 0)"
+"h = (1, 1)"
+"y = w dot h = 2"
+"eta = 1/4"
+The 2 is an abstract anchored response, not an erased fact or a guarantee of successful deletion.
+
+Panel 2 upper right heading "2. PROJECT THE GRADIENT".
+A vector card passes through a gate that removes the protected h direction. Robot points to the projected vector and a preserved teal dial.
+Exact labels:
+"g = (3, 1)"
+"Qg = (1, -1)"
+"h dot Qg = 0"
+"SGD keeps y = 2"
+The Q gate is an orthogonal projector onto the space perpendicular to h.
+
+Panel 3 lower left heading "3. RESCALE AFTER PROJECTION".
+The projected card (1,-1) passes through an orange machine which stretches its second component. The dial changes to 2.25 and the robot looks surprised.
+Exact labels:
+"D = diag(1, 2)"
+"v = DQg = (1, -2)"
+"h dot v = -1"
+"y_new = 2.25"
+This is fixed diagonal rescaling, not a branded optimizer implementation.
+
+Panel 4 lower right heading "4. PROJECT THE REALIZED STEP".
+The card v passes through the Q gate again, and a teal dial returns to 2.
+Exact labels:
+"Qv = (3/2, -3/2)"
+"h dot Qv = 0"
+"y_new = 2"
+Add one small label "include the full proposed change" to the gate.
+Ensure all minus signs, fractions, decimal numbers and arrows are exact. The gate in panel 4 acts on the proposed update vector, not on the already modified weights, and does not claim to fix compression or all unlearning problems.
