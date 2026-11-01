@@ -31,22 +31,22 @@ What does it mean to keep the objective while changing the data? The useful dist
 
 ## Derive the shared update
 
-Consider one prompt with three possible one-token completions. Let their logits be \(z=(z_A,z_B,z_F)\), and define the learner's probabilities by softmax:
+Consider one prompt with three possible one-token completions. Let their logits be $$z=(z_A,z_B,z_F)$$, and define the learner's probabilities by softmax:
 
 $$
 \pi_i(z)=\frac{e^{z_i}}{\sum_j e^{z_j}},\qquad
 \ell(z;q)=-\sum_i q_i\log\pi_i(z).
 $$
 
-Here \(q\) is any fixed probability target. Since
-\(\partial\log\pi_i/\partial z_j=\mathbf{1}\{i=j\}-\pi_j\), summing against \(q_i\) gives
+Here $$q$$ is any fixed probability target. Since
+$$\partial\log\pi_i/\partial z_j=\mathbf{1}\{i=j\}-\pi_j$$, summing against $$q_i$$ gives
 
 $$
 \frac{\partial\ell}{\partial z_j}
 =-q_j+\pi_j\sum_iq_i=\pi_j-q_j.
 $$
 
-Thus gradient descent takes a logit step \(z\leftarrow z+\eta(q-\pi)\). A corpus example, a demonstration, and a distribution over verified generations can all enter through \(q\). The trainer still needs to know which positions are predicted and how their losses are weighted.
+Thus gradient descent takes a logit step $$z\leftarrow z+\eta(q-\pi)$$. A corpus example, a demonstration, and a distribution over verified generations can all enter through $$q$$. The trainer still needs to know which positions are predicted and how their losses are weighted.
 
 For several sources with fixed nonnegative weights summing to one, linearity yields
 
@@ -70,7 +70,7 @@ $$
 \mu=(0,1,0).
 $$
 
-Take fixed rewards \(r(A)=r(B)=1\) and \(r(F)=0\). The generator succeeds with probability \(p_\nu=3/8+1/8=1/2\). Conditioning its output on success gives
+Take fixed rewards $$r(A)=r(B)=1$$ and $$r(F)=0$$. The generator succeeds with probability $$p_\nu=3/8+1/8=1/2$$. Conditioning its output on success gives
 
 $$
 \nu^+=\left(\frac{3/8}{1/2},\frac{1/8}{1/2},0\right)
@@ -88,22 +88,22 @@ $$
 
 The static source teaches B, while the verified generator favors A over B by three to one. Their mixture favors B, five to three. This is a concrete statement about the learning signal that a source proportion produces. It cannot be inferred from the label "post-training" alone.
 
-The direction sums to zero, as softmax's invariance to a common logit shift requires. It also decreases the failed answer's logit relative to both successful answers in this particular example. Finite steps still pass through softmax; the fractions in \(d\) are not probability increments.
+The direction sums to zero, as softmax's invariance to a common logit shift requires. It also decreases the failed answer's logit relative to both successful answers in this particular example. Finite steps still pass through softmax; the fractions in $$d$$ are not probability increments.
 
 ## Locate the RL equivalence
 
 For on-policy binary rewards with positive success probability, fitting the current policy's success-conditioned target yields MaxRL's gradient at the current parameters. A different generator supplies its own target. REINFORCE also requires prompt reweighting and the corresponding scale. [Section 3; Appendix F.1](https://arxiv.org/html/2610.40564v1#A6.SS1).
 
-For our learner, the on-policy successful target would be \(\pi^+=(1/2,1/2,0)\). The pure generated-data descent directions differ:
+For our learner, the on-policy successful target would be $$\pi^+=(1/2,1/2,0)$$. The pure generated-data descent directions differ:
 
 | Target source | Direction in logits |
 | --- | --- |
-| Current learner's successful answers | \((1/4,1/4,-1/2)\) |
-| Frozen generator's successful answers | \((1/2,0,-1/2)\) |
+| Current learner's successful answers | $$(1/4,1/4,-1/2)$$ |
+| Frozen generator's successful answers | $$(1/2,0,-1/2)$$ |
 
 Both generators have success probability one half, but they divide their successful mass differently. An old or external generator can therefore change the update even when its pass rate matches the learner's. A zero B component in the second row only means its logit has zero instantaneous change; its probability can change through the denominator.
 
-The gradient identity can also be checked directly. With a parameter-independent success set and \(p_z=\pi_A+\pi_B>0\),
+The gradient identity can also be checked directly. With a parameter-independent success set and $$p_z=\pi_A+\pi_B>0$$,
 
 $$
 \nabla_z\log p_z
@@ -117,7 +117,7 @@ This evaluates scores at the current learner and weights them with its own condi
 
 The implementation uses weighted token losses, reward verification and asynchronous generation. Its finite-sample rule assigns no update to all-failure groups. [Section 4](https://arxiv.org/html/2610.40564v1#S4).
 
-We can quantify the consequence without a language model. Keep the one-token responses above, draw two independent completions from \(\nu\), and average the scores of successful answers within a group. Use zero when both fail. The three possible success counts have probabilities
+We can quantify the consequence without a language model. Keep the one-token responses above, draw two independent completions from $$\nu$$, and average the scores of successful answers within a group. Use zero when both fail. The three possible success counts have probabilities
 
 $$
 \Pr(M=0)=\frac14,\qquad
@@ -125,8 +125,8 @@ $$
 \Pr(M=2)=\frac14.
 $$
 
-Conditional on either positive count, the successful-answer average has expectation \(\nu^+-\pi\). Hence the expected generated-data direction is only
-\(\Pr(M>0)(\nu^+-\pi)=\tfrac34(\nu^+-\pi)\).
+Conditional on either positive count, the successful-answer average has expectation $$\nu^+-\pi$$. Hence the expected generated-data direction is only
+$$\Pr(M>0)(\nu^+-\pi)=\tfrac34(\nu^+-\pi)$$.
 
 Suppose half the update groups are static and half are these two-sample generated groups, with the same outer weighting. Retain all-failure groups in that accounting. Then
 
@@ -141,9 +141,9 @@ $$
 \end{aligned}
 $$
 
-There are two effects: an overall gradient scale of \(7/8\), and an effective generated-target share of \((3/8)/(7/8)=3/7\), below the configured one half. Dropping empty groups and renormalizing would define a different sampler. Variable response lengths and token normalization introduce further changes; this calculation assumes equal lengths and the stated group averaging.
+There are two effects: an overall gradient scale of $$7/8$$, and an effective generated-target share of $$(3/8)/(7/8)=3/7$$, below the configured one half. Dropping empty groups and renormalizing would define a different sampler. Variable response lengths and token normalization introduce further changes; this calculation assumes equal lengths and the stated group averaging.
 
-More generally, with \(N\) independent attempts and success probability \(p>0\), a group contributes with probability \(1-(1-p)^N\). Thus a sampling budget is also a curriculum decision: the generator and verifier jointly determine which prompts yield a training signal. Increasing the nominal RL fraction does not by itself guarantee more effective weight on rarely solved prompts.
+More generally, with $$N$$ independent attempts and success probability $$p>0$$, a group contributes with probability $$1-(1-p)^N$$. Thus a sampling budget is also a curriculum decision: the generator and verifier jointly determine which prompts yield a training signal. Increasing the nominal RL fraction does not by itself guarantee more effective weight on rarely solved prompts.
 
 ## Reproduce the fractions
 

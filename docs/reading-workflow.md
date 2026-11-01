@@ -69,6 +69,14 @@ layout; run the repository Jekyll checks in CI. Read back the live page and veri
 the matching commit's Pages deployment. If authentication or rendering fails,
 retain the draft and report the precise failure; do not claim publication.
 
+This site uses kramdown/GFM: use its native `$$...$$` syntax for inline math
+and separate `$$` lines for display equations. Do not use single-backslash
+parenthesis delimiters in Markdown; the parser strips them before MathJax.
+Use `\vert` rather than raw pipe characters inside inline expressions to avoid
+accidental table parsing. Verify inline and display equation counts separately,
+check for raw TeX in rendered paragraphs and table cells, and ensure paragraphs
+have not become unintended tables.
+
 ## Homepage news
 Review Outlook for new confirmed awards, acceptance/publication and research
 support. Deduplicate against index.md. Use official decisions and public primary

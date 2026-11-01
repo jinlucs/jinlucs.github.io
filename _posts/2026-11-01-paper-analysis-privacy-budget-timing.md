@@ -31,7 +31,7 @@ The useful question is how much of an early perturbation survives until the end.
 
 ## Keep charge and noise distinct
 
-For a Gaussian query with sensitivity bounded by \(\Delta\) and noise standard deviation \(\Delta\sigma_t\), the certified zero-concentrated differential privacy (zCDP) charge is
+For a Gaussian query with sensitivity bounded by $$\Delta$$ and noise standard deviation $$\Delta\sigma_t$$, the certified zero-concentrated differential privacy (zCDP) charge is
 
 $$
 q_t=\frac{1}{2\sigma_t^2},\qquad
@@ -41,20 +41,20 @@ $$
 
 These are additive upper-bound certificates, not measurements of actual leakage. Schedule selection must use data-independent information or have its own privacy cost accounted for; private training uses fresh noise. [Section 2.2](https://arxiv.org/html/2610.39954v1#S2.SS2).
 
-Increasing \(q_t\) buys less noise at step \(t\), while consuming more of the allowed certificate. Equal total charges therefore leave a genuine allocation problem. We will fix \(R=1\) and use \(q_0,q_1\geq 1/10\), with \(q_0+q_1=1\).
+Increasing $$q_t$$ buys less noise at step $$t$$, while consuming more of the allowed certificate. Equal total charges therefore leave a genuine allocation problem. We will fix $$R=1$$ and use $$q_0,q_1\geq 1/10$$, with $$q_0+q_1=1$$.
 
 ## An exact public design model
 
-Let \(n_0,n_1\) be independent, centered Gaussian errors with
-\(\operatorname{Var}(n_t)=1/(2q_t)\). Start with zero deviation from a noiseless reference, and define
+Let $$n_0,n_1$$ be independent, centered Gaussian errors with
+$$\operatorname{Var}(n_t)=1/(2q_t)$$. Start with zero deviation from a noiseless reference, and define
 
 $$
 e_1=n_0,\qquad e_2=\frac13e_1+n_1.
 $$
 
-The factor \(1/3\) models a deterministic contraction between the two perturbations. Step sizes and calibrated noise scales are set to one. All utility calculations below concern this public linear design model; it supplies no private gradient query by itself.
+The factor $$1/3$$ models a deterministic contraction between the two perturbations. Step sizes and calibrated noise scales are set to one. All utility calculations below concern this public linear design model; it supplies no private gradient query by itself.
 
-Take the utility criterion to be expected squared terminal deviation, \(J=\mathbb E[e_2^2]\). Independence removes the cross term:
+Take the utility criterion to be expected squared terminal deviation, $$J=\mathbb E[e_2^2]$$. Independence removes the cross term:
 
 $$
 \begin{aligned}
@@ -70,11 +70,11 @@ For the same injected variance, the early noise contributes only one ninth as mu
 
 Three feasible schedules illustrate what that means:
 
-| Allocation | Charges \((q_0,q_1)\) | Tracking error \(J\) |
+| Allocation | Charges $$(q_0,q_1)$$ | Tracking error $$J$$ |
 | --- | --- | --- |
-| Uniform | \((1/2,1/2)\) | \(10/9\) |
-| Proportional to error coefficients | \((1/10,9/10)\) | \(10/9\) |
-| Proportional to their square roots | \((1/4,3/4)\) | \(8/9\) |
+| Uniform | $$(1/2,1/2)$$ | $$10/9$$ |
+| Coefficient weights | $$(1/10,9/10)$$ | $$10/9$$ |
+| Square roots | $$(1/4,3/4)$$ | $$8/9$$ |
 
 The second row shows that assigning nine times as much charge to the more costly step can overcorrect. The square-root schedule gives three times as much charge instead. Its relative error reduction is
 
@@ -82,11 +82,11 @@ $$
 1-\frac{8/9}{10/9}=\frac15=20\%.
 $$
 
-At that schedule, the noise variances are \((2,2/3)\), compared with \((1,1)\) under uniform allocation. We deliberately tolerate more early noise because the remaining dynamics suppress it. The percentage describes this squared-error criterion, not an accuracy gain.
+At that schedule, the noise variances are $$(2,2/3)$$, compared with $$(1,1)$$ under uniform allocation. We deliberately tolerate more early noise because the remaining dynamics suppress it. The percentage describes this squared-error criterion, not an accuracy gain.
 
 ## Derive the square root
 
-Write a linear model's objective as \(J(q)=\sum_t c_t/q_t\), with \(c_t>0\). Each coefficient combines the injection scale with downstream propagation. For positive charges totaling \(R\), Cauchy–Schwarz gives
+Write a linear model's objective as $$J(q)=\sum_t c_t/q_t$$, with $$c_t>0$$. Each coefficient combines the injection scale with downstream propagation. For positive charges totaling $$R$$, Cauchy–Schwarz gives
 
 $$
 \left(\sum_t\sqrt{c_t}\right)^2
@@ -94,15 +94,15 @@ $$
 \leq J(q)R.
 $$
 
-Equality requires \(\sqrt{c_t/q_t}\) proportional to \(\sqrt{q_t}\), hence
+Equality requires $$\sqrt{c_t/q_t}$$ proportional to $$\sqrt{q_t}$$, hence
 
 $$
 q_t^*=\frac{R\sqrt{c_t}}{\sum_s\sqrt{c_s}}.
 $$
 
-Here \(c=(1/18,1/2)\), so \(\sqrt{c_0}:\sqrt{c_1}=1:3\). The resulting charges \((1/4,3/4)\) exceed the floor, making the bound attainable. Strict convexity gives uniqueness.
+Here $$c=(1/18,1/2)$$, so $$\sqrt{c_0}:\sqrt{c_1}=1:3$$. The resulting charges $$(1/4,3/4)$$ exceed the floor, making the bound attainable. Strict convexity gives uniqueness.
 
-The marginal calculation explains the same balance. An interior optimum equates \(c_t/q_t^2\) across steps. At our solution,
+The marginal calculation explains the same balance. An interior optimum equates $$c_t/q_t^2$$ across steps. At our solution,
 
 $$
 \frac{1/18}{(1/4)^2}
@@ -122,11 +122,11 @@ $$
 J_{\mathrm{new}}(q)=\frac{1}{2q_0}+\frac{1}{2q_1}.
 $$
 
-The public model's selected schedule gives \(J_{\mathrm{new}}(1/4,3/4)=8/3\). Uniform allocation gives \(2\) and is now optimal. Thus the previously successful schedule is one third worse than uniform under the new dynamics, despite keeping the same total certified charge.
+The public model's selected schedule gives $$J_{\mathrm{new}}(1/4,3/4)=8/3$$. Uniform allocation gives $$2$$ and is now optimal. Thus the previously successful schedule is one third worse than uniform under the new dynamics, despite keeping the same total certified charge.
 
 This is an explicit model-mismatch calculation. Applied to a separately calibrated private mechanism, both allocations retain the same upper-bound certificate. That certificate says nothing about which one gives better tracking. A controller that learns an inaccurate propagation model can spend its fixed resource in the wrong places.
 
-There is no universal instruction to spend more at the end. In a general two-step scalar model with propagation factor \(a\) and unit injection scales, the interior ratio is \(q_0:q_1=|a|:1\). Contraction favors the later step; amplification favors the earlier one. At \(a=0\), the early coefficient vanishes and the positive floor becomes important.
+There is no universal instruction to spend more at the end. In a general two-step scalar model with propagation factor $$a$$ and unit injection scales, the interior ratio is $$q_0:q_1=\vert a\vert :1$$. Contraction favors the later step; amplification favors the earlier one. At $$a=0$$, the early coefficient vanishes and the positive floor becomes important.
 
 ## Reproduce the numbers
 
