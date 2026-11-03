@@ -47,10 +47,8 @@ $$
 
 The difference of variances is $$2xy$$. With reuse, the two replies have covariance $$xy$$, which enters the variance of a subtraction with a minus sign. At $$x=2$$ and $$y=1$$ the calculation is exact:
 
-| Query rule | Equally likely differences | Mean | Second moment | Variance |
-| --- | --- | --- | --- | --- |
-| Reuse one sample | 0, 2 | 1 | 2 | 1 |
-| Draw independently | 0, −2, 4, 2 | 1 | 6 | 5 |
+- **Reuse.** The two equally likely differences are 0 and 2. Their mean is 1 and their second moment is 2, giving variance 1.
+- **Fresh draws.** The four equally likely differences are 0, −2, 4, and 2. Their mean is 1 and their second moment is 6, giving variance 5.
 
 ![Four panels show two equally likely sample types, reuse at two points, independent draws at those points, and equal means of one with variances one and five.](/assets/img/reading/2026-11-03-same-example-twice.png)
 
