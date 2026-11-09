@@ -1,0 +1,9 @@
+Create a polished four-panel editorial mathematics comic in a 2 by 2 grid with numbered panels. Landscape 3:2, cream paper, restrained ink with blue for client A and orange for client B, bold dark type. Tiny mathematician characters and cable/patchbay metaphors make this a comic. Exact information and readability take priority over decoration. Use only the English and mathematical text specified below. Reproduce decimals and signs exactly. No overall headline, no footer, no watermarks.
+
+Panel 1 text: "1  Two client uploads", "Weight, precision", "Client A", "(1, 1)   (6, 1)", "Client B", "(0, 1)   (1, 4)". Show the two tuples per client as separate cards, ordered left to right. Make the B card (1, 4) visually heavier with a thicker border.
+
+Panel 2 text: "2  Start from B", "Keep the order", "Merge: (0.5, 2)", "Cost: 20.5". Draw a small patchbay with exactly two blue endpoints above two orange endpoints. Connect the left blue endpoint to the left orange endpoint, and the right blue endpoint to the right orange endpoint, with two straight vertical wires. Keep the words and numbers distinct from the wires.
+
+Panel 3 text: "3  Start from A", "Swap B's order", "Merge: (1, 3)", "Cost: 18". Draw a small patchbay with exactly two blue endpoints above two orange endpoints. Connect left blue to right orange and right blue to left orange, with exactly two crossing diagonal wires. Where they cross, do not draw any dot or junction. Keep the words and numbers distinct from the wires.
+
+Panel 4 text: "4  Compare the fixed points", "18 < 20.5", "Both passes can stop". Show the two mathematicians comparing cost cards, with no duplicate numbers on those cards and no scales, charts, arrows or other marks suggesting one of the two stationary outcomes is unstable. Treat the inequality as one clear large centered line. Equal emphasis on the two characters.
