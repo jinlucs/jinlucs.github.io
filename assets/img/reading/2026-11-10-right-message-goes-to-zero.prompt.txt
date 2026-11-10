@@ -1,0 +1,12 @@
+Draw a polished four-panel editorial math comic, landscape 3:2, arranged in a clear numbered 2 by 2 grid, crisp legible dark lettering, cream paper, teal and warm red highlights. The story follows two researchers operating a two-player communication board, with boxes for player 1 and player 2. Use only the text specified for each panel. Render every sign, number and fraction verbatim, with no decorative pseudo-text, no logo, no extra panels.
+
+Panel 1 (upper left): "1  Start at equilibrium", "x* = (1, 1)", "Local increment = (0, 0)". Show two researchers, each at a matching stable board tile marked with a single number 1. They pause because the equilibrium needs no local move.
+
+Panel 2 (upper right): "2  Compress the strategy", "Q(1) = 0 or 2", "One coin per coordinate", "Squared error = 2". Draw two separate fair coins in midair over two separate player consoles with no numbers or words on them. The two consoles shake from transmitting the whole strategy, illustrating fresh independent randomness. Use a warm red cost placard.
+
+Panel 3 (lower left): "3  Compress the increment", "Q(0) = 0", "Next strategy = (1, 1)", "Squared error = 0". Draw the same two researchers smiling at the stable board. A small silent packet marked 0 goes toward each tile, one packet per player. Use a calm teal cost placard.
+
+Panel 4 (lower right): "4  Repeat from equilibrium", "Expected squared error", "Strategy tends to 16/3", "Increment stays at 0". Show two separate horizontal result cards, warm red and teal, side by side if they fit or stacked. Put "Strategy tends to 16/3" only on the warm red card and "Increment stays at 0" only on the teal card. Show the researchers comparing the cards with a thoughtful expression. Use no graph or axes and no additional numbers.
+
+Image revision instruction
+Edit only the bottom-right panel, panel 4. Preserve the other three panels pixel-for-pixel including all lettering and numbers. In panel 4 change the heading to "4  Keep iterating". Change the white plaque heading to "Long-run expected squared error". Change the red plaque to "Strategy compression: 16/3". Change the teal plaque to "Increment compression: 0". Preserve the exact fraction 16/3 and single zero. Fit all labels cleanly inside their plaques and maintain the same four-panel landscape layout and art. Do not add any other text.
