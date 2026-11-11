@@ -1,0 +1,9 @@
+Create a four-panel mathematics comic, landscape 3:2, clear 2 by 2 grid. Elegant ink illustration on cream paper, blue and orange accent colors, very legible precise mathematical type. Two small researcher characters examine a flat valley that becomes a bowl. Reproduce only the following panel text with exactly the stated numbers and signs, with no added formula or chart labels. Do not draw coordinate axes or numerical plots.
+
+Panel 1 text: "1  The original target", "f(x) = (x1 - 1)^2 / 2", "Start: (1, 0)", "Original loss: 0". Draw a long flat-bottomed blue valley as a conceptual miniature tabletop model. A blue pin marks the current start in the flat valley. No numeric axes.
+
+Panel 2 text: "2  Add one fixed bowl", "W = [[2, 1], [1, 2]]", "Added term: x^T W x / 6". Draw the researcher bringing a translucent orange bowl above the valley to depict adding a centered positive quadratic. No funnel arrows, no new labels. The formula must include divisor 6 exactly.
+
+Panel 3 text: "3  One gradient step", "Step size: 1/2", "(1, 0) -> (2/3, -1/6)". Draw the researchers seeing a small marker move from a blue starting flag to a second pin on the combined bowl. Keep the exact coordinate arrow in a clear single line below the heading and step size.
+
+Panel 4 text: "4  Solve the new objective", "New minimizer: (2/3, -1/3)", "Original loss: 1/18". Show the orange bowl's bottom and blue original-target pin visibly separated, and the researchers comparing two distinct markers. Do not label the orange marker as the original optimum. Emphasize the fraction 1/18 in an orange plaque.
