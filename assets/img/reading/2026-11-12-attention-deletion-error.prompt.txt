@@ -1,0 +1,9 @@
+Create a precise four-panel mathematics comic in a numbered 2 by 2 grid, landscape 3:2. Cream paper, dark ink, teal/blue accents for stable values, warm orange for output change. Two curious researchers use three labeled toy blocks A, B, C as a small weighted mixer. Use large legible English text, exact fractions, and only the specified labels. No extra graphs, no decorative fake equations or fifth panel.
+
+Panel 1 (upper left) text: "1  Dense attention", "Block: (mass, value)", "A: (1/2, 2)", "B: (1/4, 0)", "C: (1/4, 4)", "Output = 2". Show exactly three distinct blocks A, B, C, ordered left to right with their corresponding tuple labels directly underneath or on the blocks. Make the three masses visually distinguishable without adding numerical labels.
+
+Panel 2 (upper right) text: "2  Remove A", "Retained mass = 1/2", "Sparse output = 2", "Absolute error = 0". Show A visibly crossed out, B and C remaining, and the two researchers checking an unchanged output card with value 2. Do not cross out B or C.
+
+Panel 3 (lower left) text: "3  Remove B", "Retained mass = 3/4", "Sparse output = 8/3", "Absolute error = 2/3". Show B visibly crossed out while A and C remain. The output card 8/3 has a warm orange border. Do not cross out A or C.
+
+Panel 4 (lower right) text: "4  Remove B and C", "Retained mass = 1/2", "Sparse output = 2", "Absolute error = 0", "Joint errors can cancel". Show B and C visibly crossed out, A remaining. The output card 2 has a blue border. Do not cross out A. All 'output' numbers are results after dividing by the retained attention mass.
