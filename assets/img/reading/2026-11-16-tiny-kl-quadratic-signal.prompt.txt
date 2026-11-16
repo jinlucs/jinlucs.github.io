@@ -1,0 +1,28 @@
+Use case: scientific-educational, illustration-story.
+Create a polished four-panel mathematical comic for an English research reading note. Exactly four numbered panels, 2 by 2 grid, generous gutters, large legible English labels and precise mathematical notation. Portrait-ish square canvas, high resolution. Warm cream paper, crisp navy ink, restrained teal and orange highlights. A curious researcher with round glasses and a small expressive calculator guide the reader. Illustration should support the equations without clutter; every equation is typeset clearly. No non-English text, no byline, no watermark, no extra title outside the panels.
+
+Panel 1, top left: researcher presents two probability cards. Exact heading "1. Close, but different". Exact math on cards:
+"t = 2⁻²⁷"
+"p = (1/2, 1/2)"
+"q = (1/2 + 2⁻²⁸, 1/2 − 2⁻²⁸)"
+Exact speech "Every input is exactly stored."
+Use actual superscript negative exponents. Both probabilities in q must be correct and distinct. Do not draw an incorrectly scaled bar chart.
+
+Panel 2, top right: calculator separately logs the probabilities. Two signed strips, labeled "−2⁻²⁸" and "+2⁻²⁸", combine and erase one another. Exact heading "2. Separate logarithms". Exact small label "Binary64 math.log evaluation". Large readout "Rounded KL = 0". Exact speech "The quadratic signal vanished."
+This zero refers specifically to separate math.log evaluations, not every possible binary64 algorithm.
+
+Panel 3, bottom left: researcher uses a magnifying glass to preserve a tiny glowing positive mathematical signal. Exact heading "3. Keep the quadratic signal". Exact math, on separate clear lines:
+"E₂(x) = x²(1/2 + x/6 + …)"
+"D = −1/2 log1p(−t²)"
+"D ≈ 2.77556 × 10⁻¹⁷ > 0"
+Exact speech "Start with the small remainder."
+The first equation is the Taylor series for exp(x)−1−x, not an approximation without the ellipsis. The binary KL formula uses minus one half multiplying log1p of negative t squared.
+
+Panel 4, bottom right: researcher draws just one category from a fair two-outcome bag labeled "A ∼ p". One draw gives a negative log-ratio sample, whereas its expectation remains positive. Exact heading "4. One random sample". Exact math:
+"Y = −log(q_A/p_A)"
+"Y₊ = −log1p(t) < 0"
+"E[Y] = D > 0"
+Exact speech "A negative sample can be valid."
+Do not say that the true KL is negative. The sample is reference-p-sampled, not q-sampled.
+
+All math must be accurate. Keep p and q directions consistent. Use approximation sign for the positive decimal KL. Render no additional numerical values, labels, captions or arrows that could imply a different computation. Make every speech bubble point to its speaker, and all labels readable at normal article width.
