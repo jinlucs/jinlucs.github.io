@@ -1,0 +1,48 @@
+Use case: scientific-educational, illustration-story.
+Create a polished four-panel math comic, exactly four numbered panels in a 2 by 2 grid. Warm cream paper, crisp navy outlines, teal for a reusable memory slot, orange for persistent additive slots. Friendly researcher and small expressive robot, clean university editorial illustration, clear typeset mathematics, ample space and very legible English labels. Large high-resolution square canvas. All visible text must be English. No byline, no watermark, no extra title outside the panels. Do not add equations or values that are not specified.
+
+The mathematics concerns THREE oracle input vectors and the rule w_k = u_k + u_(k-1), with zero initial history. w denotes a direction, not the model iterate. A reusable history buffer can be overwritten; a pure running sum keeps its old state and only adds new input with scalar weights. We count history vectors only, excluding the iterate and current input. The comic must preserve that distinction.
+
+Panel 1, top left. Heading exactly "1. Three inputs, two pairings". Researcher holds three input cards, with the following exact math clearly printed:
+"u₀ = (2, 1)"
+"u₁ = (−1, 3)"
+"u₂ = (4, −2)"
+Below the cards, show the requested directions:
+"w₁ = u₀ + u₁"
+"w₂ = u₁ + u₂"
+Speech bubble: "Keep only the previous input?"
+No other values or graphs.
+
+Panel 2, top right. Heading exactly "2. Read, then overwrite". A SINGLE teal history slot, used by the robot, clearly showing reading before replacement. On a clean board show exact formulas:
+"v₀ = 0"
+"wₖ = vₖ + uₖ"
+"vₖ₊₁ = uₖ"
+Then exact result labels:
+"w₁ = (1, 4)"
+"w₂ = (3, 1)"
+Speech bubble: "One reusable history slot."
+If arrows are used, show old v_k read into the addition before u_k replaces it. Do not show replacement before reading. The two w results are successive directions, not simultaneous values of one slot.
+
+Panel 3, bottom left. Heading exactly "3. One pure sum fails". Researcher points to a matrix on a board. Exact text above matrix: "Every running-sum completion contains". Display a proper 2 by 2 matrix with entries:
+top row: 1, *
+bottom row: 0, 1
+Exact labels below: "* is free."
+"det = 1 ⇒ rank ≥ 2"
+Speech bubble: "One additive slot cannot match this."
+This is a submatrix of a rank completion, not a matrix of numerical input vectors. The determinant remains 1 for every choice of the free star entry. Make the zero and diagonal ones unambiguous.
+
+Panel 4, bottom right. Heading exactly "4. Two sums work". Show TWO distinct orange persistent additive storage boxes, one labeled "u₀", the other labeled "u₁". They store the first and second inputs separately. Robot selects the needed stored vector for each output. Text exactly:
+"Store separately; read the needed one."
+"General history count = 1"
+"Running-sum count = 2"
+Small caption exactly: "History vectors only; three-step horizon."
+Do not draw an eraser/reset arrow on either orange slot, and do not imply their norms must grow. The teal slot in panel 2 is reusable; these orange slots are persistent. Do not count the current oracle input as a history slot. The final input u₂ need not be stored because this horizon ends.
+
+All labels, signs, subscripts, arrows and numerical values must be mathematically exact. The rank lower bound is about one PURE running sum with identity state transition, not every possible program. Keep the comic readable at a typical research article width.
+
+Targeted correction after inspecting the first generated image:
+Edit only the small flow diagram in the middle of panel 2. The arrow from w_k to v_(k+1) wrongly implies the direction is copied into state. Remove that entire small flow diagram (the u_k card, the read v_k box, plus circle, w_k box, v_(k+1) box and all its arrows/read/overwrite labels). In the same area put two large clean stacked instruction strips with exactly these English words and subscripts:
+"1. Read vₖ to form wₖ."
+"2. Replace the slot with uₖ."
+Use a teal history-slot icon beside these strips if space permits, with no arrows. Preserve the correct equation board above and correct w1=(1,4),w2=(3,1) results below. Keep every other panel, heading, word, number, equation, character and style unchanged. In particular, keep u0=(2,1),u1=(-1,3),u2=(4,-2); keep the determinant-one matrix [[1,*],[0,1]], its star-free label and rank>=2 conclusion; keep general history count1 and running-sum count2. Do not add any new flow arrows or an equation v_(k+1)=w_k.
+The only mathematical update is v_(k+1)=u_k, AFTER reading the previous v_k for w_k=v_k+u_k. Retain exactly four panels and all-English text.
