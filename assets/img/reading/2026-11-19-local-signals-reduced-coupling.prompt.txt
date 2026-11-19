@@ -1,0 +1,39 @@
+Use case: scientific-educational, illustration-story.
+Create a polished four-panel mathematical comic for an English research reading note. Exactly four numbered panels in a 2 by 2 grid. High-resolution square canvas, generous gutters, large legible English labels and precisely typeset fractions/subscripts. Warm cream paper, navy outlines, teal for the small shared target direction, orange for large local directions. Two friendly researchers represent Party A and Party B, with a small calculator robot. Editorial comic style, restrained backgrounds, no watermark, no byline, no non-English text, no extra title outside the panels.
+
+Mathematical setup: e1,e2,e3 are orthonormal vectors in R3. Fixed uncentered features, no intercept and no rescaling: X_A=[4e1,e3], X_B=[4e2,e3], y=e3. The ridge objective is ||y-Xw||² + lambda||w||² with lambda=1/2, using a sum of squared errors. Each local Gram is diag(16,1). Keeping the first local direction retains16/17 of local Gram trace but drops the target signal. Full local fitting plus a correction confined to those first directions leaves both local predictions at(2/3)y, adding to(4/3)y. Deliberately keeping e3 at each party instead, one direction PER PARTY, recovers the full ridge prediction(4/5)y with signal coefficients2/5 each, despite retainingonly1/17 of each local Gram trace. These are exact toy results, not benchmark measurements or a universal subspace-selection algorithm.
+
+Panel 1 top left. Heading exactly "1. A small shared signal". Two researchers display their feature cards. Exact labels:
+"e₁, e₂, e₃ are orthonormal."
+"X_A = [4e₁, e₃]"
+"X_B = [4e₂, e₃]"
+"y = e₃,  λ = 1/2"
+Speech bubble exactly "Both parties hold the target direction."
+Small caption exactly "Fixed features; no intercept."
+Do not draw a geometrical axis diagram; the feature cards are sufficient. Keep Party A and Party B distinct.
+
+Panel 2 top right. Heading exactly "2. Project onto large directions". Researcher selects the first feature on each card, while the shared teal e3 direction is visibly left out. Exact text:
+"Keep e₁ at A, e₂ at B."
+"Retained Gram energy: 16/17 per party"
+Large exact formula: "ŷ = 0"
+Speech bubble exactly "The target direction was dropped."
+This is Gram trace energy of uncentered fixed columns, not a claim about centered variance or predictive information. Do not change16/17toanapproximation.
+
+Panel 3 bottom left. Heading exactly "3. Keep full local fits". Sub-label exactly "Same large directions for reduced coupling". Two clear prediction cards combine with a plus sign, not an average:
+"Local A: (2/3)y"
+"Local B: (2/3)y"
+Large exact result: "ŷ = (4/3)y"
+Speech bubble exactly "The shared signal adds too strongly."
+This is the reduced-coupling LC toy. Both full local fits remain, and the correction in the large-direction subspace is zero. Do not show the exact joint ridge system producing4/3. Do not average the two predictions.
+
+Panel 4 bottom right. Heading exactly "4. Collaborate on the signal". Researchers deliberately select the teal e3 direction at BOTH parties. Exact labels:
+"Keep e₃ at both parties."
+"Retained Gram energy: 1/17 per party"
+"Signal coefficients: 2/5, 2/5"
+Large exact result: "ŷ = (4/5)y"
+Badge exactly "Matches full ridge"
+Speech bubble exactly "One direction per party is enough here."
+Small caption exactly "Deliberate signal-direction control."
+Do not imply one direction TOTAL, or that this choice can be found automatically without target/coupling information.
+
+Ensure all fractions, signs, mathematical labels and prediction directions are exact. No extra equations or values. Keep all words English. Make each speech bubble point to its speaker. Avoid arrows or decorative charts that could imply a different operation.
