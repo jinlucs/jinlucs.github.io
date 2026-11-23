@@ -1,0 +1,44 @@
+Use case: scientific-educational
+Asset type: four-panel mathematical comic for an academic research reading note.
+Primary request: Create a polished, legible square comic with EXACTLY four panels in a 2 by 2 grid. All English text. Warm cream paper, navy ink, teal for valid reasoning, coral for invalid look-ahead. A thoughtful researcher and a small friendly robot use response cards marked A or B; charming story drawings with large, precise mathematics. Strong reading order 1,2,3,4. No financial imagery. Title at top: "THE BET COMES FIRST".
+This is an ORIGINAL pre-registered fair-coin toy, not the source algorithm's discovery-weighted implementation. Draw no extra unlabeled equations. Do not imply statistical majority is correctness.
+
+Panel 1 header "1. Set the test before sampling"
+Show two pre-registered answer cards A and B and fair-coin sampling.
+Exact labels:
+"IID fair A/B answers"
+"Neither answer has a strict majority."
+"Global error budget: 1/8"
+"Weight per answer: 1/2"
+"Threshold per answer: 16"
+
+Panel 2 header "2. Valid: stake first, then draw"
+Show researcher locking the stake before robot draws a card. A-wealth starts at 1.
+Exact labels:
+"Fixed stake = 1"
+"A: multiply by 3/2"
+"B: multiply by 1/2"
+"One all-A path:"
+"6 draws: 729/64 < 16"
+"7 draws: 2187/128 > 16"
+
+Panel 3 header "3. Invalid: peek, then choose"
+Show a red warning crossed timing arrow: robot reveals card before researcher picks stake. This is a deliberate invalid modification.
+Exact labels:
+"After A: stake 1"
+"After B: stake 0"
+"A: multiply by 3/2"
+"B: multiply by 1"
+"Mean factor = 5/4 > 1"
+"Losses erased!"
+
+Panel 4 header "4. False certificates under fair draws"
+Show two clearly separated blocks with exact scopes and no misleading common timeline:
+"VALID: either answer"
+"By 20 draws: 6.35% (exact)"
+"Ever: at most 12.5% (bound)"
+"INVALID: answer A"
+"By 20 draws: 94.23% (exact)"
+Footer inside panel: "Timing creates the guarantee."
+The valid exact value is 8327/131072; invalid exact is 247029/262144; rounded percentages as given. Do not need to print those extra fractions in panel4.
+Constraints: Exact fractions 729/64 and 2187/128, inequalities, multiplication factors, and all percentage scopes must be correct. Clear typography with ample white space. All text in English. No byline, no provenance credit, no fifth panel, no unrelated claims.
