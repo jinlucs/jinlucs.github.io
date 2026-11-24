@@ -1,0 +1,46 @@
+Use case: scientific-educational
+Asset type: a four-panel mathematical comic for an academic research reading note.
+Create exactly four panels in a square 2x2 grid, crisp large English typography, warm cream paper, dark navy ink, teal and burnt orange accents. A researcher asks a friendly comparison robot which candidate point is better. Include expressive story drawings, but leave ample clear space for exact fractions and labels. Title: "A RANKING CANNOT PRICE A PENALTY".
+This is an original ONE-DIMENSIONAL TOY, not the full accelerated method. The robot observes only pairwise comparisons of the original function; numeric costs are explanatory for the reader. Every preference below is only between x=0 and x=1, not a claim these are global minimizers.
+
+Panel1 header: "1. Two hidden scales"
+Exact text:
+"f_c(x) = c(x - 2)^2 / 2"
+"c = 1 or c = 1/4"
+"Same rankings. Different magnitudes."
+Show two convex bowls with the SAME minimizer at x=2, different heights, not different horizontal positions. The robot gives the same comparison bits in both worlds.
+
+Panel2 header: "2. Compare x=0 with x=1"
+Show a clean labeled table:
+"Original costs"
+"Scale"   "x=0"   "x=1"
+"c=1"     "2"      "1/2"
+"c=1/4"   "1/2"    "1/8"
+Below the table: "Both prefer x=1."
+
+Panel3 header: "3. Add the same penalty"
+Exact equation: "F_c(x) = f_c(x) + x^2/2"
+A clean table:
+"Penalized costs"
+"Scale"   "x=0"   "x=1"
+"c=1"     "2"      "1"
+"c=1/4"   "1/2"    "5/8"
+Below table exact labels:
+"c=1: prefer x=1"
+"c=1/4: prefer x=0"
+Show robot puzzled: "The old bit cannot decide!"
+Make these PAIRWISE preferences, not global minimizers.
+
+Panel4 header: "4. Still search the original target"
+Show nested comparison-guided brackets on a number line and labels:
+"3 comparisons:"
+"[-2,2] -> [0,2] -> [1,2] -> [3/2,2]"
+"Return x = 7/4"
+"Original gap = c/32"
+"c=1: 1/32"
+"c=1/4: 1/128"
+Small conclusion: "Ranking finds location, not loss scale."
+Constraints: All numbers exactly as above; fractions correct, especially penalized5/8 and final1/128; BOTH bowls centered2. All English, no byline, no production narration, no fifth panel. No word optimal attached to x=0 or x=1. Keep type legible, no decorative irrelevant equations.
+
+Final panel4 replacement:
+Edit ONLY panel4 (bottom right) of this comic. Preserve title and panels1,2,3 exactly. Completely REPLACE the existing panel4 interval-sequence banner AND nested-bracket number-line diagram; REMOVE that entire number line and all old interval text so none survives. Build a new clean vertical stack of FOUR LARGE RECTANGULAR BOXES, joined by downward arrows, with the following EXACT verbatim labels, one label per box: 'Step 0: [-2, 2]' then 'Step 1: [0, 2]' then 'Step 2: [1, 2]' then 'Step 3: [3/2, 2]'. The third box must say [1, 2], with a TWO as right endpoint. There must be no [1,1] anywhere. Above these four boxes write '3 comparisons'. Do NOT draw a number line or geometric length scale. Equal box widths represent states, not interval lengths. Keep panel4 heading '4. Still search the original target'. Beneath the boxes retain: 'Return x = 7/4' and 'Original gap = c/32', 'c=1: 1/32', 'c=1/4: 1/128'. Bottom caption 'Ranking finds location, not loss scale.' Keep the friendly robot smaller at right if space allows. Make all four state labels large and legible. All text English. No other changes.
