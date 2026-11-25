@@ -1,0 +1,44 @@
+Use case: scientific-educational
+Asset type: four-panel mathematical comic for an academic research reading note.
+Create exactly FOUR panels in a square 2x2 grid. All text English, large precise math, warm cream paper, navy ink with teal and orange. Two friendly network robots exchange values; a researcher compares the random and averaged protocols. Strong reading order1–4. No decorative unrelated equations. Title: "A BETTER BOUND, SLOWER CONSENSUS".
+The mathematical example is two nodes with state(e,-e), averagezero and weights(1,1). Each update multiplies the scalar error amplitude by a positive numbera. Random updates choosea=1/4 or3/4 independently with equal probabilities. Replacing the communication matrix by its expectation givesa=1/2 everyupdate. Almost-sure convergence factors and mean-square factors are DIFFERENT metrics; never interchange them. Smaller factors mean faster decay. This is an original toy, not a benchmark.
+
+Panel1 header "1. Two nodes, one error"
+Show node1 with e and node2 with -e, arrows both directions.
+Exact labels:
+"Initial values: (1, -1)"
+"Target average: 0"
+"One update: e -> a e"
+"Random a: 1/4 or 3/4"
+"Fair, independent choices"
+
+Panel2 header "2. Follow the random run"
+Show a fair coin selecting fast and slow mixing, with a correct descending error illustration.
+Exact labels:
+"Actual factor (almost sure):"
+"sqrt(3) / 4 ≈ 0.433"
+"Rate upper bound:"
+"sqrt(5) / 4 ≈ 0.559"
+Render sqrt(3)/4 and sqrt(5)/4 as radicals on the NUMERATOR ONLY over denominator4. Do not put4 under the radical. These are asymptotic per-update amplitude factors.
+
+Panel3 header "3. Replace A by E[A]"
+Show same two nodes and their averaged communication update.
+Exact labels:
+"a = (1/4 + 3/4) / 2 = 1/2"
+"Error after n updates: (1/2)^n"
+"Actual factor = upper bound = 1/2"
+Do not imply averaging node predictions across runs; the communication matrix itself is replaced by its expectation.
+
+Panel4 header "4. Compare the right metric"
+Make a clear comparison card with heading:
+"Per-update asymptotic factors"
+Use three separate rows with columns "Random" and "Averaged":
+"Actual (almost sure)"   "0.433"   "0.500"
+"Rate upper bound"       "0.559"   "0.500"
+"Mean-square factor"     "5/16"    "1/4"
+Below the card: "Smaller factors decay faster."
+Concluding label: "A better bound need not mean faster almost-sure decay."
+Constraints: four panels only; exact fractions and labels as given, all English, no byline or production credit, no financial imagery, no assertion of finite-time pathwise dominance. Keep every formula readable. The approximate numbers0.433 and0.559 need the approximation sign where shown; table rounded values as given.
+
+Final panel2 replacement:
+Edit ONLY the small error-versus-n graph in PANEL2 (top right) of this comic. That graph is not a valid numeric realization and must be COMPLETELY REMOVED, including its axes, dots, curve and tick labels. In exactly that area, insert a clean compact four-row table headed 'One possible path: fast, slow, fast'. Table columns 'n' and 'Error'. Rows exactly '0 | 1', '1 | 1/4', '2 | 3/16', '3 | 3/64'. These values follow multipliers1/4,3/4,1/4 and must be copied precisely. No graph or geometric scale. Preserve ALL other content and layout: the fair-coin a=1/4 and3/4 labels; actual almost-sure factor sqrt(3)/4≈0.433; bound sqrt(5)/4≈0.559; all of panels1,3,4 and title unchanged. Keep four panels, all English. No other changes.
