@@ -1,0 +1,45 @@
+Use case: scientific-educational
+Asset type: exactly four-panel mathematical comic for an academic research reading note.
+Create a square2x2 comic, precisely FOUR panels, all English, large legible fractions and vectors, warm cream, navy ink, teal and orange highlights. A researcher adjusts a coordinate knob and a global-scale knob; a friendly robot checks the resulting gradient. Use exact labeled value cards rather than a plotted graph or number line. Title: "EXACT STEPS, MISSED JOINT OPTIMUM".
+The example is F(v)=||v-b||²/2 with b=(1,2,3), initial x=(2,2,2), coordinate1 chosen. Its minimum is0 atb. The initialx is already optimal under pure radial scaling. Compare ONE exact coordinate solve followed by ONE exact scaling solve with a JOINT two-variable solve. Do not imply alternating forever cannot converge.
+
+Panel1 heading "1. Start from a radially optimal point"
+Exact text:
+"F(v) = ||v - b||^2 / 2"
+"b = (1, 2, 3)"
+"x = (2, 2, 2)"
+"F(x) = 1"
+"Choose coordinate 1"
+Show both knobs, coordinate1 and global scale, as distinct controls.
+
+Panel2 heading "2. Two exact solves, in sequence"
+First value card:
+"Coordinate solve"
+"y = (1, 2, 2)"
+"F(y) = 1/2"
+Arrow to second card:
+"Then rescale by 11/9"
+"z = (11/9, 22/9, 22/9)"
+"F(z) = 5/18"
+Make every fraction legible. This rescales the WHOLE corrected vector y.
+
+Panel3 heading "3. Solve the two variables together"
+Exact text:
+"Use the original x"
+"v = beta x + alpha e_1"
+"beta = 5/4, alpha = -3/2"
+"p = (1, 5/2, 5/2)"
+"F(p) = 1/4"
+Render beta/alpha as Greek symbols if desired, with signs and fractions exact. The coordinate basis e1 changes only coordinate1, while beta scales every coordinate.
+
+Panel4 heading "4. Check what rescaling undid"
+Robot inspects the first-coordinate gradient and finds:
+"After the separate scaling:"
+"z_1 - 1 = 2/9"
+"At the joint optimum:"
+"p_1 - 1 = 0"
+Comparison card:
+"5/18 - 1/4 = 1/36"
+Concluding label:
+"Separate optimal steps can interfere."
+Constraints: Exactly4panels, no plots or metric axes, no byline or production credit. F values are objective gaps to the GLOBAL minimum0, whilep is the optimum only within the selected plane and is not the global minimizerb. Do not callp the global optimum. All English and all labels arithmetically exact.
