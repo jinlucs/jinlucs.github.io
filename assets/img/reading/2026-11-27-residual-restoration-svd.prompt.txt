@@ -1,0 +1,40 @@
+Use case: scientific-educational; four-panel mathematical comic for an English research reading note.
+Generate a polished square 2-by-2 comic with four clearly separated numbered panels, large legible typography, warm ivory background, navy outlines and a small recurring friendly scientist. Use teal for the first matrix coordinate and coral for the second. Matrices are numerical cards, not geometric diagrams drawn to scale. All text must be English, exact and readable. No extra panels, watermarks, production bylines, or unrequested labels. Every mathematical value below is deliberate. Use conventional rendered mathematical typography, with subscripts where specified. Do not swap the labels H and P. A^T is not needed anywhere.
+
+Top overall heading: "What does SVD keep?"
+
+Panel 1 (upper left), heading "1. Set the coordinates"
+Scientist places three cards side by side or vertically, keeping them readable.
+Exact text: "Original W0 = diag(3, 2)"
+Exact text: "Assumed view H = diag(1, 0)"
+Exact text: "Residual R = diag(0, 2)"
+Small caption: "An algebraic example"
+
+Panel 2 (upper right), heading "2. Restore the residual"
+Show H and R cards joining into one P card, with a simple plus arrow. Exact central equation: "P = H + R = diag(1, 2)"
+Two value cards below, exact text:
+"Squared distance to W0"
+"H: 8"
+"P: 4"
+Scientist speech bubble: "A closer completed weight."
+
+Panel 3 (lower left), heading "3. Keep rank one"
+Show two separate SVD selection tracks. On H's diagonal card, circle or highlight the first value 1, leaving the second value zero. On P's diagonal card, circle or highlight the second value 2, leaving the first value zero in its output card. Exact equations:
+"[H]1 = diag(1, 0)"
+"[P]1 = diag(0, 2)"
+Below, exact text:
+"Squared distance to W0"
+"[H]1: 8"
+"[P]1: 9"
+Scientist speech bubble: "The retained direction changed!"
+
+Panel 4 (lower right), heading "4. Allow rank two"
+Show both diagonal entries of P preserved. Exact text:
+"No truncation"
+"Squared distance to W0"
+"H: 8"
+"P: 4"
+Scientist speech bubble: "The rank changes the verdict."
+Small concluding caption: "Nearest completion does not guarantee best reconstruction after truncation."
+
+Subscripts in W0 and [H]1 and [P]1 must render as conventional 0 and 1 subscripts. diag(a,b) means a diagonal matrix with entries a and b and zero off-diagonal entries. All distances above are squared Frobenius distances to W0. Do not label these numbers as task loss, perplexity, accuracy, training results, compression ratios or memory savings. Do not add plots or scale-dependent bars.
